@@ -47,3 +47,14 @@ Vérifications:
 - s'assurer que les principaux outils utilisés lors de la formation sont compatibles avec ce template
 - deploiements ? Compatible avec Netlify/Vercel/Heroku ?
 - fonctionnement avec yarn/pnpm
+
+
+## Description Projet 
+Bienvenue chez Oniriq ! 
+
+Notre site Web est la destination idéale pour le monde des rêves. 
+Nous avons une grande variété de rêves et de cauchemars. 
+Notre équipe d'experts a soigneusement sélectionné et testé chaque produit pour s'assurer qu'il offre la meilleure expérience de rêve possible. 
+Alors pourquoi attendre ?
+Commencez votre voyage dans le monde des rêves aujourd'hui et découvrez les merveilles qui vous attendent.
+Laisser libre cours à votre imagination et laisser la magie du sommeil vous emmener dans un voyage inoubliable.
