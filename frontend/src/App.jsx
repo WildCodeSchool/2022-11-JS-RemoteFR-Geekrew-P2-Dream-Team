@@ -1,5 +1,13 @@
+import CardsList from "./components/CardsList";
+
 function App() {
-  return <div />;
+  return (
+    <div>
+      <div>
+        <CardsList />
+      </div>
+    </div>
+  );
 }
 
 export default App;
