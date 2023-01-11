@@ -129,6 +129,8 @@ module.exports = {
     backdropSepia: ({ theme }) => theme("sepia"),
     backgroundColor: ({ theme }) => theme("colors"),
     backgroundImage: {
+      searchBarIcon: "url('./assets/icons/search.svg')",
+      searchBarCloud: "url('./assets/searchCloud/search-cloud.svg')",
       none: "none",
       "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
       "gradient-to-tr":
