@@ -29,7 +29,6 @@ module.exports = {
       green: "#54A05C",
       red: "#FF4343",
       black: "#03030E",
-      "real-white": "#FFFFFF",
     },
     columns: {
       auto: "auto",
@@ -603,7 +602,6 @@ module.exports = {
     }),
     maxWidth: ({ theme, breakpoints }) => ({
       none: "none",
-      "w-max-card": "10.875rem",
       0: "0rem",
       xs: "20rem",
       sm: "24rem",
