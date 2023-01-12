@@ -101,6 +101,7 @@ module.exports = {
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
       pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
+      glow: "glow 2s infinite",
     },
     aria: {
       checked: 'checked="true"',
@@ -527,6 +528,7 @@ module.exports = {
       "1/3": "33.333333%",
       "2/3": "66.666667%",
       "1/4": "25%",
+      "1/5": "20%",
       "2/4": "50%",
       "3/4": "75%",
       full: "100%",
@@ -557,6 +559,11 @@ module.exports = {
           transform: "none",
           animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
         },
+      },
+      glow: {
+        "0%": { opacity: "0" },
+        "50%": { opacity: "1" },
+        "100%": { opacity: "0" },
       },
     },
     letterSpacing: {
@@ -628,6 +635,7 @@ module.exports = {
       min: "min-content",
       max: "max-content",
       fit: "fit-content",
+      "4/5": "75%",
     },
     minWidth: {
       0: "0px",

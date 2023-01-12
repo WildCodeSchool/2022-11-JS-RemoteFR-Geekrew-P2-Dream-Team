@@ -16,7 +16,9 @@
   "author": "Wild Code School",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "concurrently": "^7.0.0",
-    "husky": "^7.0.0"
+    "husky": "^7.0.0",
+    "vite": "^4.0.4"
   }
 }
