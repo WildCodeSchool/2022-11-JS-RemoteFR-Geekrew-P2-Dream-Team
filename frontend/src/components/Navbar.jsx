@@ -52,6 +52,7 @@ function Navbar() {
             <li className="mb-4 md:ml-4 pt-6 pb-6 md:p-0 ">
               <NavLink
                 style={getActiveLinkStyle}
+                onClick={() => setIsOpen(!isOpen)}
                 to="/"
                 className=" md:w-full px-3  rounded-md text-white"
               >
@@ -61,6 +62,7 @@ function Navbar() {
             <li className="mb-4 md:ml-4 pb-6 md:p-0">
               <NavLink
                 style={getActiveLinkStyle}
+                onClick={() => setIsOpen(!isOpen)}
                 to="/Apropos"
                 className="  md:w-full px-3   text-white  "
               >
@@ -70,6 +72,7 @@ function Navbar() {
             <li className="mb-4 md:ml-4 pb-6 md:p-0 ">
               <NavLink
                 style={getActiveLinkStyle}
+                onClick={() => setIsOpen(!isOpen)}
                 to="/Catalogue"
                 className="  md:w-full px-3 pb-6 md:p-0 text-white"
               >
@@ -79,6 +82,7 @@ function Navbar() {
             <li className="mb-4 md:ml-4 pb-6 md:p-0">
               <NavLink
                 style={getActiveLinkStyle}
+                onClick={() => setIsOpen(!isOpen)}
                 to="/Panier"
                 className=" md:w-full px-3  pb-6 text-white"
               >
@@ -88,6 +92,7 @@ function Navbar() {
             <li className="mb-4 md:ml-4 pb-6 md:p-0">
               <NavLink
                 style={getActiveLinkStyle}
+                onClick={() => setIsOpen(!isOpen)}
                 to="/Contact"
                 className="md:w-full px-3  pb-6 text-white"
               >
