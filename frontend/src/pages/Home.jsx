@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-blue-d h-screen">
+    <div className="flex flex-col justify-center min-h-full">
       <Hero />
     </div>
   );
