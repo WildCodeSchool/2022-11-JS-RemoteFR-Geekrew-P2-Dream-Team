@@ -1,5 +1,24 @@
-function App() {
-  return <div />;
-}
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "@components/Navbar";
+import Home from "./pages/Home";
+import Apropos from "./pages/A-Propos";
+import Catalogue from "./pages/Catalogue";
+import Panier from "./pages/Panier";
+import Contact from "./pages/Contact";
 
+function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Apropos" element={<Apropos />} />
+        <Route path="/Catalogue" element={<Catalogue />} />
+        <Route path="/Panier" element={<Panier />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 export default App;
