@@ -2,10 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Card({ elem, handlePopUpOn }) {
-  Card.propTypes = {
-    elem: PropTypes.func.isRequired,
-    handlePopUpOn: PropTypes.func.isRequired,
-  };
   return (
     <button
       key={elem.ID}
@@ -42,5 +38,10 @@ function Card({ elem, handlePopUpOn }) {
     </button>
   );
 }
+
+Card.propTypes = {
+  elem: PropTypes.func.isRequired,
+  handlePopUpOn: PropTypes.func.isRequired,
+};
 
 export default Card;

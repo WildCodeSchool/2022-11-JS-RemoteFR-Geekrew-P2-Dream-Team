@@ -2,11 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function PopUpCard({ popUp, onClose }) {
-  PopUpCard.propTypes = {
-    popUp: PropTypes.func.isRequired,
-    onClose: PropTypes.func.isRequired,
-  };
-
   if (popUp.length !== 1) return null;
   return (
     <div className="overlay bg-gradient-blue-d md:bg-blue md:bg-opacity-30 fixed w-full h-full md:h-full backdrop-blur-sm ">
@@ -83,5 +78,10 @@ function PopUpCard({ popUp, onClose }) {
     </div>
   );
 }
+
+PopUpCard.propTypes = {
+  popUp: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
 
 export default PopUpCard;
