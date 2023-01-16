@@ -1,11 +1,9 @@
-import CardsList from "./components/CardsList";
+import Catalogue from "./pages/Catalogue";
 
 function App() {
   return (
     <div>
-      <div>
-        <CardsList />
-      </div>
+      <Catalogue />
     </div>
   );
 }
