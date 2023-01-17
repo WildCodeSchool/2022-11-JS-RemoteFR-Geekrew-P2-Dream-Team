@@ -36,12 +36,12 @@ function CardsList() {
         <PopUpCard popUp={popUp} onClose={() => handlePopUpOff()} />
       </div>
       <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m md:px-6">
-        <div className="md:flex-row   flex flex-col  justify-between flex-nowrap w-full items-center">
-          <div className="justify-start">
+        <div className="md:flex-row   flex flex-col  items-center justify-between flex-nowrap w-full">
+          <div className="">
             <SearchBar search={search} setSearch={setSearch} />
           </div>
 
-          <div className="flex justify-between w-full md:w-1/3 ">
+          <div className="flex w-full justify-evenly md:w-4/5 ">
             <TypePicker
               setSelectedValue={setSelectedValue}
               selectedValue={selectedValue}

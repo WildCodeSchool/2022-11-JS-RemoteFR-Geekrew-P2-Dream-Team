@@ -4,18 +4,18 @@ import PropTypes from "prop-types";
 export default function TypePicker({ selectedValue, setSelectedValue }) {
   return (
     <select
-      className="scroll-selector2 bg-filterCloud text-xs text-grey bg-gradient-blue-d bg-center bg-contain bg-no-repeat h-16"
+      className="bg-filterCloud flex text-xs text-grey bg-gradient-blue-d bg-center w-[80px] h-[65px] bg-contain bg-no-repeat"
       name="selectedType"
       onChange={(e) => setSelectedValue(e.target.value)}
       value={selectedValue}
     >
-      <option className="dropdown-item text-white" value="">
+      <option className="dropdown-item text-white w-full" value="">
         Type
       </option>
-      <option className="dropdown-item text-white" value="Rêve">
+      <option className="dropdown-item text-white w-full" value="REVE">
         Rêve
       </option>
-      <option className="dropdown-item text-white" value="Cauchemar">
+      <option className="dropdown-item text-white w-full" value="CAUCHEMAR">
         Cauchemar
       </option>
     </select>

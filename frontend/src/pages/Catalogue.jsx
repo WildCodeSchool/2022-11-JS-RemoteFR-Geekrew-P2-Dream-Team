@@ -3,7 +3,7 @@ import CardsList from "../components/CardsList";
 
 function Catalogue() {
   return (
-    <div>
+    <div className="flex flex-col justify-center">
       <CardsList />
     </div>
   );

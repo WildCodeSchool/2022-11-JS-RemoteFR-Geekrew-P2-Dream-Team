@@ -1,7 +1,7 @@
 [
   {
     "ID": 1,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "VILLE",
     "METEO": "CHALEUR",
@@ -11,7 +11,7 @@
   },
   {
     "ID": 2,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "VILLE",
     "METEO": "PLUVIEUX",
@@ -21,7 +21,7 @@
   },
   {
     "ID": 3,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "VILLE",
     "METEO": "FROID",
@@ -31,7 +31,7 @@
   },
   {
     "ID": 4,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "MER",
     "METEO": "CHALEUR",
@@ -41,7 +41,7 @@
   },
   {
     "ID": 5,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "MER",
     "METEO": "PLUVIEUX",
@@ -51,7 +51,7 @@
   },
   {
     "ID": 6,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "MER",
     "METEO": "FROID",
@@ -61,7 +61,7 @@
   },
   {
     "ID": 7,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "MONTAGNE",
     "METEO": "CHALEUR",
@@ -71,7 +71,7 @@
   },
   {
     "ID": 8,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "MONTAGNE",
     "METEO": "PLUVIEUX",
@@ -81,7 +81,7 @@
   },
   {
     "ID": 9,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "MONTAGNE",
     "METEO": "FROID",
@@ -91,7 +91,7 @@
   },
   {
     "ID": 10,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "CAMPAGNE",
     "METEO": "CHALEUR",
@@ -101,7 +101,7 @@
   },
   {
     "ID": 11,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "CAMPAGNE",
     "METEO": "PLUVIEUX",
@@ -111,7 +111,7 @@
   },
   {
     "ID": 12,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "JOIE",
     "LIEU": "CAMPAGNE",
     "METEO": "FROID",
@@ -121,7 +121,7 @@
   },
   {
     "ID": 13,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "VILLE",
     "METEO": "CHALEUR",
@@ -131,7 +131,7 @@
   },
   {
     "ID": 14,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "VILLE",
     "METEO": "PLUVIEUX",
@@ -141,7 +141,7 @@
   },
   {
     "ID": 15,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "VILLE",
     "METEO": "FROID",
@@ -151,7 +151,7 @@
   },
   {
     "ID": 16,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "MER",
     "METEO": "CHALEUR",
@@ -161,7 +161,7 @@
   },
   {
     "ID": 17,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "MER",
     "METEO": "PLUVIEUX",
@@ -171,7 +171,7 @@
   },
   {
     "ID": 18,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "MER",
     "METEO": "FROID",
@@ -181,7 +181,7 @@
   },
   {
     "ID": 19,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "MONTAGNE",
     "METEO": "CHALEUR",
@@ -191,7 +191,7 @@
   },
   {
     "ID": 20,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "MONTAGNE",
     "METEO": "PLUVIEUX",
@@ -201,7 +201,7 @@
   },
   {
     "ID": 21,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "MONTAGNE",
     "METEO": "FROID",
@@ -211,7 +211,7 @@
   },
   {
     "ID": 22,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "CAMPAGNE",
     "METEO": "CHALEUR",
@@ -221,7 +221,7 @@
   },
   {
     "ID": 23,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "CAMPAGNE",
     "METEO": "PLUVIEUX",
@@ -231,7 +231,7 @@
   },
   {
     "ID": 24,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMOUR",
     "LIEU": "CAMPAGNE",
     "METEO": "FROID",
@@ -241,7 +241,7 @@
   },
   {
     "ID": 25,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "VILLE",
     "METEO": "CHALEUR",
@@ -251,7 +251,7 @@
   },
   {
     "ID": 26,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "VILLE",
     "METEO": "PLUVIEUX",
@@ -261,7 +261,7 @@
   },
   {
     "ID": 27,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "VILLE",
     "METEO": "FROID",
@@ -271,7 +271,7 @@
   },
   {
     "ID": 28,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "MER",
     "METEO": "CHALEUR",
@@ -281,7 +281,7 @@
   },
   {
     "ID": 29,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "MER",
     "METEO": "PLUVIEUX",
@@ -291,7 +291,7 @@
   },
   {
     "ID": 30,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "MER",
     "METEO": "FROID",
@@ -301,7 +301,7 @@
   },
   {
     "ID": 31,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "MONTAGNE",
     "METEO": "CHALEUR",
@@ -311,7 +311,7 @@
   },
   {
     "ID": 32,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "MONTAGNE",
     "METEO": "PLUVIEUX",
@@ -321,7 +321,7 @@
   },
   {
     "ID": 33,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "MONTAGNE",
     "METEO": "FROID",
@@ -331,7 +331,7 @@
   },
   {
     "ID": 34,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "CAMPAGNE",
     "METEO": "CHALEUR",
@@ -341,7 +341,7 @@
   },
   {
     "ID": 35,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "CAMPAGNE",
     "METEO": "PLUVIEUX",
@@ -351,7 +351,7 @@
   },
   {
     "ID": 36,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "AMUSEMENT",
     "LIEU": "CAMPAGNE",
     "METEO": "FROID",
@@ -361,7 +361,7 @@
   },
   {
     "ID": 37,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "VILLE",
     "METEO": "CHALEUR",
@@ -371,7 +371,7 @@
   },
   {
     "ID": 38,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "VILLE",
     "METEO": "PLUVIEUX",
@@ -381,7 +381,7 @@
   },
   {
     "ID": 39,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "VILLE",
     "METEO": "FROID",
@@ -391,7 +391,7 @@
   },
   {
     "ID": 40,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "MER",
     "METEO": "CHALEUR",
@@ -401,7 +401,7 @@
   },
   {
     "ID": 41,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "MER",
     "METEO": "PLUVIEUX",
@@ -411,7 +411,7 @@
   },
   {
     "ID": 42,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "MER",
     "METEO": "FROID",
@@ -421,7 +421,7 @@
   },
   {
     "ID": 43,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "MONTAGNE",
     "METEO": "CHALEUR",
@@ -431,7 +431,7 @@
   },
   {
     "ID": 44,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "MONTAGNE",
     "METEO": "PLUVIEUX",
@@ -441,7 +441,7 @@
   },
   {
     "ID": 45,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "MONTAGNE",
     "METEO": "FROID",
@@ -451,7 +451,7 @@
   },
   {
     "ID": 46,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "CAMPAGNE",
     "METEO": "CHALEUR",
@@ -461,7 +461,7 @@
   },
   {
     "ID": 47,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "CAMPAGNE",
     "METEO": "PLUVIEUX",
@@ -471,7 +471,7 @@
   },
   {
     "ID": 48,
-    "TYPE DE REVE": "REVE",
+    "TYPE": "REVE",
     "EMOTION": "SERENITE",
     "LIEU": "CAMPAGNE",
     "METEO": "FROID",
@@ -481,7 +481,7 @@
   },
   {
     "ID": 49,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "VILLE",
     "METEO": "CANICULE",
@@ -491,7 +491,7 @@
   },
   {
     "ID": 50,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "VILLE",
     "METEO": "TEMPETE",
@@ -501,7 +501,7 @@
   },
   {
     "ID": 51,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "VILLE",
     "METEO": "GLACIAL",
@@ -511,7 +511,7 @@
   },
   {
     "ID": 52,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "MER",
     "METEO": "CANICULE",
@@ -521,7 +521,7 @@
   },
   {
     "ID": 53,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "MER",
     "METEO": "TEMPETE",
@@ -531,7 +531,7 @@
   },
   {
     "ID": 54,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "MER",
     "METEO": "GLACIAL",
@@ -541,7 +541,7 @@
   },
   {
     "ID": 55,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "MONTAGNE",
     "METEO": "CANICULE",
@@ -551,7 +551,7 @@
   },
   {
     "ID": 56,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "MONTAGNE",
     "METEO": "TEMPETE",
@@ -561,7 +561,7 @@
   },
   {
     "ID": 57,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "MONTAGNE",
     "METEO": "GLACIAL",
@@ -571,7 +571,7 @@
   },
   {
     "ID": 58,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "CAMPAGNE",
     "METEO": "CANICULE",
@@ -581,7 +581,7 @@
   },
   {
     "ID": 59,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "CAMPAGNE",
     "METEO": "TEMPETE",
@@ -591,7 +591,7 @@
   },
   {
     "ID": 60,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "CULPABILITE",
     "LIEU": "CAMPAGNE",
     "METEO": "GLACIAL",
@@ -601,7 +601,7 @@
   },
   {
     "ID": 61,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "VILLE",
     "METEO": "CANICULE",
@@ -611,7 +611,7 @@
   },
   {
     "ID": 62,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "VILLE",
     "METEO": "TEMPETE",
@@ -621,7 +621,7 @@
   },
   {
     "ID": 63,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "VILLE",
     "METEO": "GLACIAL",
@@ -631,7 +631,7 @@
   },
   {
     "ID": 64,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "MER",
     "METEO": "CANICULE",
@@ -641,7 +641,7 @@
   },
   {
     "ID": 65,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "MER",
     "METEO": "TEMPETE",
@@ -651,7 +651,7 @@
   },
   {
     "ID": 66,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "MER",
     "METEO": "GLACIAL",
@@ -661,7 +661,7 @@
   },
   {
     "ID": 67,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "MONTAGNE",
     "METEO": "CANICULE",
@@ -671,7 +671,7 @@
   },
   {
     "ID": 68,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "MONTAGNE",
     "METEO": "TEMPETE",
@@ -681,7 +681,7 @@
   },
   {
     "ID": 69,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "MONTAGNE",
     "METEO": "GLACIAL",
@@ -691,7 +691,7 @@
   },
   {
     "ID": 70,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "CAMPAGNE",
     "METEO": "CANICULE",
@@ -701,7 +701,7 @@
   },
   {
     "ID": 71,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "CAMPAGNE",
     "METEO": "TEMPETE",
@@ -711,7 +711,7 @@
   },
   {
     "ID": 72,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "COLERE",
     "LIEU": "CAMPAGNE",
     "METEO": "GLACIAL",
@@ -721,7 +721,7 @@
   },
   {
     "ID": 73,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "VILLE",
     "METEO": "CANICULE",
@@ -731,7 +731,7 @@
   },
   {
     "ID": 74,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "VILLE",
     "METEO": "TEMPETE",
@@ -741,7 +741,7 @@
   },
   {
     "ID": 75,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "VILLE",
     "METEO": "GLACIAL",
@@ -751,7 +751,7 @@
   },
   {
     "ID": 76,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "MER",
     "METEO": "CANICULE",
@@ -761,7 +761,7 @@
   },
   {
     "ID": 77,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "MER",
     "METEO": "TEMPETE",
@@ -771,7 +771,7 @@
   },
   {
     "ID": 78,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "MER",
     "METEO": "GLACIAL",
@@ -781,7 +781,7 @@
   },
   {
     "ID": 79,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "MONTAGNE",
     "METEO": "CANICULE",
@@ -791,7 +791,7 @@
   },
   {
     "ID": 80,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "MONTAGNE",
     "METEO": "TEMPETE",
@@ -801,7 +801,7 @@
   },
   {
     "ID": 81,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "MONTAGNE",
     "METEO": "GLACIAL",
@@ -811,7 +811,7 @@
   },
   {
     "ID": 82,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "CAMPAGNE",
     "METEO": "CANICULE",
@@ -821,7 +821,7 @@
   },
   {
     "ID": 83,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "CAMPAGNE",
     "METEO": "TEMPETE",
@@ -831,7 +831,7 @@
   },
   {
     "ID": 84,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "TRISTESSE",
     "LIEU": "CAMPAGNE",
     "METEO": "GLACIAL",
@@ -841,7 +841,7 @@
   },
   {
     "ID": 85,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "VILLE",
     "METEO": "CANICULE",
@@ -851,7 +851,7 @@
   },
   {
     "ID": 86,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "VILLE",
     "METEO": "TEMPETE",
@@ -861,7 +861,7 @@
   },
   {
     "ID": 87,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "VILLE",
     "METEO": "GLACIAL",
@@ -871,7 +871,7 @@
   },
   {
     "ID": 88,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "MER",
     "METEO": "CANICULE",
@@ -881,7 +881,7 @@
   },
   {
     "ID": 89,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "MER",
     "METEO": "TEMPETE",
@@ -891,7 +891,7 @@
   },
   {
     "ID": 90,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "MER",
     "METEO": "GLACIAL",
@@ -901,7 +901,7 @@
   },
   {
     "ID": 91,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "MONTAGNE",
     "METEO": "CANICULE",
@@ -911,7 +911,7 @@
   },
   {
     "ID": 92,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "MONTAGNE",
     "METEO": "TEMPETE",
@@ -921,7 +921,7 @@
   },
   {
     "ID": 93,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "MONTAGNE",
     "METEO": "GLACIAL",
@@ -931,7 +931,7 @@
   },
   {
     "ID": 94,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
     "LIEU": "FORET",
     "METEO": "CANICULE",
@@ -941,9 +941,9 @@
   },
   {
     "ID": 95,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
-    "LIEU": "FORET",
+    "LIEU": "MONTAGNE",
     "METEO": "TEMPETE",
     "DESCRIPTION": "Je cours pendant qu'un ours me poursuit dans la forêt, une tempête fait rage !",
     "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/1c6ea946-806f-452b-81a1-e4350a4f471d",
@@ -951,9 +951,9 @@
   },
   {
     "ID": 96,
-    "TYPE DE REVE": "CAUCHEMAR",
+    "TYPE": "CAUCHEMAR",
     "EMOTION": "PEUR",
-    "LIEU": "FORET",
+    "LIEU": "MONTAGNE",
     "METEO": "GLACIAL",
     "DESCRIPTION": "Je suis perdu au milieu d'une forêt sombre et enneigée. J'ai peur.",
     "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2e20b23f-8800-4ffc-ba70-57bd84e6c97b"

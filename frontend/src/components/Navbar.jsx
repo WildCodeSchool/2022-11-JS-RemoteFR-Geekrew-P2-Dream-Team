@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="absolute  md:fixed z-50 w-full flex md:flex  items-center flex-nowrap justify-between md:flex-nowrap  md:bg-opacity-0 ">
+      <nav className=" z-50 w-full flex md:flex  items-center flex-nowrap justify-between md:flex-nowrap  md:bg-opacity-0 ">
         <div className="w-full flex flex-wrap justify-between md:items-center ">
           <img src={logo} alt="logo" className="flex" />
           <button
@@ -45,14 +45,14 @@ function Navbar() {
           <ul
             className={
               isOpen
-                ? "absolute min-h-[700%] bottom-0 top-20 w-full flex flex-col items-center md:flex-row md:justify-end bg-gradient-blue-m backdrop-blur-md bg-opacity-30 text-xl"
+                ? "absolute min-h-[700%] md:min-h-[0%] bottom-0 top-20 w-full flex flex-col items-center md:flex-row md:justify-end bg-gradient-blue-m backdrop-blur-md md:backdrop-blur-0 bg-opacity-30 text-xl"
                 : "relative md:mr-6 hidden md:flex md:flex-row md:justify-end text-xl "
             }
           >
             <li className="mb-4 md:ml-4 pt-6 pb-6 md:p-0 ">
               <NavLink
                 style={getActiveLinkStyle}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(false)}
                 to="/"
                 className=" md:w-full px-3  rounded-md text-white"
               >
@@ -62,7 +62,7 @@ function Navbar() {
             <li className="mb-4 md:ml-4 pb-6 md:p-0">
               <NavLink
                 style={getActiveLinkStyle}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(false)}
                 to="/Apropos"
                 className="  md:w-full px-3   text-white  "
               >
@@ -72,7 +72,7 @@ function Navbar() {
             <li className="mb-4 md:ml-4 pb-6 md:p-0 ">
               <NavLink
                 style={getActiveLinkStyle}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(false)}
                 to="/Catalogue"
                 className="  md:w-full px-3 pb-6 md:p-0 text-white"
               >
@@ -82,7 +82,7 @@ function Navbar() {
             <li className="mb-4 md:ml-4 pb-6 md:p-0">
               <NavLink
                 style={getActiveLinkStyle}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(false)}
                 to="/Panier"
                 className=" md:w-full px-3  pb-6 text-white"
               >
@@ -92,7 +92,7 @@ function Navbar() {
             <li className="mb-4 md:ml-4 pb-6 md:p-0">
               <NavLink
                 style={getActiveLinkStyle}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(false)}
                 to="/Contact"
                 className="md:w-full px-3  pb-6 text-white"
               >

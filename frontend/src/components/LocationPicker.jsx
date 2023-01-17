@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function LocationPicker({ setSelectedLocation, selectedLocation }) {
   return (
     <select
-      className="scroll-selector2 bg-filterCloud text-xs text-grey bg-gradient-blue-d bg-center bg-contain bg-no-repeat h-16"
+      className="bg-filterCloud flex text-xs text-grey bg-gradient-blue-d bg-center w-[80px] h-[65px] bg-contain bg-no-repeat"
       name="selectedType"
       onChange={(e) => setSelectedLocation(e.target.value)}
       value={selectedLocation}
@@ -12,20 +12,17 @@ function LocationPicker({ setSelectedLocation, selectedLocation }) {
       <option className="dropdown-item text-white" value="">
         Lieu
       </option>
-      <option className="dropdown-item text-white" value="Campagne">
+      <option className="dropdown-item text-white" value="CAMPAGNE">
         Campagne
       </option>
-      <option className="dropdown-item text-white" value="Montagne">
+      <option className="dropdown-item text-white" value="MONTAGNE">
         Montagne
       </option>
-      <option className="dropdown-item text-white" value="Mer">
+      <option className="dropdown-item text-white" value="MER">
         Mer
       </option>
-      <option className="dropdown-item text-white" value="Ville">
+      <option className="dropdown-item text-white" value="VILLE">
         Ville
-      </option>
-      <option className="dropdown-item text-white" value="Forêt">
-        Forêt
       </option>
     </select>
   );
