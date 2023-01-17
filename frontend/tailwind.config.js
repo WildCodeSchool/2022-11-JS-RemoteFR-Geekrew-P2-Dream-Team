@@ -131,6 +131,7 @@ module.exports = {
     backgroundImage: {
       searchBarIcon: "url('./assets/icons/search.svg')",
       searchBarCloud: "url('./assets/searchCloud/search-cloud.svg')",
+      filterCloud: "url('./assets/Cloud/cloud.svg')",
       none: "none",
       "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
       "gradient-to-tr":

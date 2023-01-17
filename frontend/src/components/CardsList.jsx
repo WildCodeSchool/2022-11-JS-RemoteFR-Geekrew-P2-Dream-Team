@@ -41,7 +41,7 @@ function CardsList() {
             <SearchBar search={search} setSearch={setSearch} />
           </div>
 
-          <div className="flex justify-end">
+          <div className="flex justify-between w-full md:w-1/3 ">
             <TypePicker
               setSelectedValue={setSelectedValue}
               selectedValue={selectedValue}

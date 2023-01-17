@@ -41,7 +41,7 @@ function Card({ elem, handlePopUpOn }) {
 
 Card.propTypes = {
   elem: PropTypes.func.isRequired,
-  handlePopUpOn: PropTypes.func.isRequired,
+  handlePopUpOn: PropTypes.shape().isRequired,
 };
 
 export default Card;
