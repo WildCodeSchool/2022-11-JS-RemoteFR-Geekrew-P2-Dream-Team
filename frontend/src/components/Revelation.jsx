@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 import dreams from "../../csvjson.json";
 
 function Revelation({ type, emotion, loc, meteo }) {
@@ -9,10 +10,21 @@ function Revelation({ type, emotion, loc, meteo }) {
       d.LIEU === loc &&
       d.METEO === meteo
   );
+  const [isRevelated, setIsRevelated] = useState(false);
 
   return (
     <div>
-      <img src={dream.URL} alt={`${type} ${emotion} ${loc} ${meteo}`} />
+      <button
+        onClick={() => setIsRevelated(true)}
+        type="button"
+        className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+      >
+        {" "}
+        Découvrir mon {type}
+      </button>
+      {isRevelated && (
+        <img src={dream.URL} alt={`${type} ${emotion} ${loc} ${meteo}`} />
+      )}
     </div>
   );
 }

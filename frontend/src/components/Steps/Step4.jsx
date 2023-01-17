@@ -5,6 +5,9 @@ function Step4({ onSelectMeteo, type }) {
     onSelectMeteo(meteo);
   };
 
+  const positiveMeteos = ["Chaleur", "Pluvieux", "Froid"];
+  const negativeMeteos = ["Canicule", "Tempete", "Glacial"];
+
   return (
     <div>
       <h1 className="text-white font-cinzel text-2xl">
@@ -12,51 +15,29 @@ function Step4({ onSelectMeteo, type }) {
       </h1>
       {type === "REVE" ? (
         <div className="flex flex-col">
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleMeteoChange("CHALEUR")}
-          >
-            Chaleur
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleMeteoChange("PLUIE")}
-          >
-            Pluie
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleMeteoChange("FROID")}
-          >
-            Froid
-          </button>
+          {positiveMeteos.map((meteo) => (
+            <button
+              key={meteo}
+              type="button"
+              className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+              onClick={() => handleMeteoChange(meteo.toUpperCase())}
+            >
+              {meteo}
+            </button>
+          ))}
         </div>
       ) : (
         <div className="flex flex-col">
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleMeteoChange("CANICULE")}
-          >
-            Canicule
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleMeteoChange("TEMPETE")}
-          >
-            Tempête
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleMeteoChange("GLACIAL")}
-          >
-            Glacial
-          </button>
+          {negativeMeteos.map((meteo) => (
+            <button
+              key={meteo}
+              type="button"
+              className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+              onClick={() => handleMeteoChange(meteo.toUpperCase())}
+            >
+              {meteo}
+            </button>
+          ))}
         </div>
       )}
     </div>

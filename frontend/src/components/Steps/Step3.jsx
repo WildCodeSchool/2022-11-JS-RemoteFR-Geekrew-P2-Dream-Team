@@ -4,6 +4,7 @@ function Step3({ onSelectLoc, emotion }) {
   const handleLocChange = (Loc) => {
     onSelectLoc(Loc);
   };
+  const locations = ["Mer", "Ville", "Montagne"];
 
   return (
     <div>
@@ -11,27 +12,16 @@ function Step3({ onSelectLoc, emotion }) {
         Choisissez votre type de lieu
       </h1>
       <div className="flex flex-col">
-        <button
-          type="button"
-          className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-          onClick={() => handleLocChange("MER")}
-        >
-          Mer
-        </button>
-        <button
-          type="button"
-          className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-          onClick={() => handleLocChange("VILLE")}
-        >
-          Ville
-        </button>
-        <button
-          type="button"
-          className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-          onClick={() => handleLocChange("MONTAGNE")}
-        >
-          Montagne
-        </button>
+        {locations.map((location) => (
+          <button
+            key={location}
+            type="button"
+            className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+            onClick={() => handleLocChange(location.toUpperCase())}
+          >
+            {location}
+          </button>
+        ))}
         {emotion === "PEUR" ? (
           <button
             type="button"

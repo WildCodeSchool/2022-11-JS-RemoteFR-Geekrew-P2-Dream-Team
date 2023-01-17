@@ -45,8 +45,6 @@ function Experience() {
       {isStep3 && <Step3 onSelectLoc={handleLoc} emotion={emotion} />}
       {isStep4 && <Step4 onSelectMeteo={handleMeteo} type={type} />}
 
-      <button type="button"> Découvrir mon {type}</button>
-
       {isFinish && (
         <Revelation type={type} emotion={emotion} loc={loc} meteo={meteo} />
       )}

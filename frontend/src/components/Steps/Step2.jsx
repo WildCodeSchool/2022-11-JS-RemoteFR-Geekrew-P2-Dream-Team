@@ -5,6 +5,9 @@ function Step2({ onSelectEmotion, type }) {
     onSelectEmotion(emotion);
   };
 
+  const positiveEmotions = ["Joie", "Amour", "Serenite", "Amusement"];
+  const negativeEmotions = ["Culpabilite", "Colere", "Tristesse", "Peur"];
+
   return (
     <div>
       <h1 className="text-white font-cinzel text-2xl">
@@ -12,65 +15,29 @@ function Step2({ onSelectEmotion, type }) {
       </h1>
       {type === "REVE" ? (
         <div className="flex flex-col">
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleEmotionChange("JOIE")}
-          >
-            Joie
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleEmotionChange("AMOUR")}
-          >
-            Amour
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleEmotionChange("SERENITE")}
-          >
-            Sérénité
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleEmotionChange("AMUSEMENT")}
-          >
-            Amusement
-          </button>
+          {positiveEmotions.map((emotion) => (
+            <button
+              key={emotion}
+              type="button"
+              className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+              onClick={() => handleEmotionChange(emotion.toUpperCase())}
+            >
+              {emotion}
+            </button>
+          ))}
         </div>
       ) : (
         <div className="flex flex-col">
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleEmotionChange("CULPABILITE")}
-          >
-            Culpabilité
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleEmotionChange("COLERE")}
-          >
-            Colère
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleEmotionChange("TRISTESSE")}
-          >
-            Tristesse
-          </button>
-          <button
-            type="button"
-            className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleEmotionChange("PEUR")}
-          >
-            Peur
-          </button>
+          {negativeEmotions.map((emotion) => (
+            <button
+              key={emotion}
+              type="button"
+              className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+              onClick={() => handleEmotionChange(emotion.toUpperCase())}
+            >
+              {emotion}
+            </button>
+          ))}
         </div>
       )}
     </div>
