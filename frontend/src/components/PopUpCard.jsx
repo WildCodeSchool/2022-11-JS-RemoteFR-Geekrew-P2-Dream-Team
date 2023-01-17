@@ -7,11 +7,11 @@ function PopUpCard({ popUp, onClose }) {
     <div className="overlay bg-gradient-blue-d md:bg-blue md:bg-opacity-30 fixed w-full h-full md:h-full backdrop-blur-sm ">
       <div className="modal container max-w-lg md:max-h-[80%] fixed top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex flex-col items-center md:items-end justify-between py-12 md:bg-white rounded-xl px-12 md:px-0">
         <div className="flex w-11/12  flex-col items-center md:pr-[10%]">
-          {popUp.map((x) => {
+          {popUp.map((elem) => {
             return (
               <img
                 className="image md:aspect-square md:w-8/12 object-contain"
-                src={x.URL}
+                src={elem.URL}
                 alt="reve"
               />
             );
@@ -27,16 +27,16 @@ function PopUpCard({ popUp, onClose }) {
               X{" "}
             </button>
             <div className="content flex flex-col justify-around items-between my-8">
-              {popUp.map((x) => {
+              {popUp.map((elem) => {
                 return (
                   <div className="flex flex-col justify-between">
                     <h1 className="font-sans text-base md:w-11/12 md:text-right	 mt-8 md:mt-4 text text-white md:text-gradient-blue-d">
-                      {x.DESCRIPTION}
+                      {elem.DESCRIPTION}
                     </h1>
                     <div className="flex flex-row items-baseline justify-between w-5/12 ">
                       <div className="flex">
                         <span className="font-sans font-medium text-base mt-8 md:mt-4 text-white md:hidden">
-                          {x.TYPE === "Rêve" ? "30" : "5"}
+                          {elem.TYPE === "Rêve" ? "30" : "5"}
                         </span>
                         <span className="font-sans font-medium text-base mt-8 md:mt-4 text-white md:hidden">
                           000{" "}
