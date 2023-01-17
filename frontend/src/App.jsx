@@ -1,3 +1,4 @@
+import React from "react";
 import Catalogue from "./pages/Catalogue";
 
 function App() {
