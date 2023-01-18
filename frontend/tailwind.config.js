@@ -156,6 +156,9 @@ module.exports = {
     backdropSepia: ({ theme }) => theme("sepia"),
     backgroundColor: ({ theme }) => theme("colors"),
     backgroundImage: {
+      searchBarIcon: "url('./assets/icons/search.svg')",
+      searchBarCloud: "url('./assets/searchCloud/search-cloud.svg')",
+      filterCloud: "url('./assets/Cloud/cloud.svg')",
       none: "none",
       "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
       "gradient-to-tr":
@@ -169,6 +172,7 @@ module.exports = {
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl":
         "linear-gradient(to top left, var(--tw-gradient-stops))",
+      "scrolCloud ": "url('./assets/Cloud/cloud.svg')",
     },
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {
