@@ -5,7 +5,7 @@ import dreams from "../../csvjson.json";
 function Revelation({ type, emotion, loc, meteo }) {
   const dream = dreams.find(
     (d) =>
-      d["TYPE DE REVE"] === type &&
+      d.TYPE === type &&
       d.EMOTION === emotion &&
       d.LIEU === loc &&
       d.METEO === meteo
@@ -23,7 +23,10 @@ function Revelation({ type, emotion, loc, meteo }) {
         Découvrir mon {type}
       </button>
       {isRevelated && (
-        <img src={dream.URL} alt={`${type} ${emotion} ${loc} ${meteo}`} />
+        <>
+          <img src={dream.URL} alt={`${type} ${emotion} ${loc} ${meteo}`} />
+          <p className="pt-5 font-sans text-white">{dream.DESCRIPTION}</p>
+        </>
       )}
     </div>
   );

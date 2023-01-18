@@ -39,7 +39,7 @@ function Experience() {
     setIsFinish(true);
   };
   return (
-    <div className="pt-40 px-5">
+    <div className="mt-10 px-5">
       {isStep1 && <Step1 onSelectType={handleType} />}
       {isStep2 && <Step2 onSelectEmotion={handleEmotion} type={type} />}
       {isStep3 && <Step3 onSelectLoc={handleLoc} emotion={emotion} />}
