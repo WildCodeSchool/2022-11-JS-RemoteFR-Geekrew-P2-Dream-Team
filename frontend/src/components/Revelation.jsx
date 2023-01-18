@@ -13,11 +13,11 @@ function Revelation({ type, emotion, loc, meteo }) {
   const [isRevelated, setIsRevelated] = useState(false);
 
   return (
-    <div>
+    <div className="flex flex-col item-center">
       <button
         onClick={() => setIsRevelated(true)}
         type="button"
-        className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+        className=" bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
       >
         {" "}
         Découvrir mon {type}

@@ -11,7 +11,7 @@ function Step3({ onSelectLoc, emotion }) {
       <h1 className="text-white font-cinzel text-2xl">
         Choisissez votre type de lieu
       </h1>
-      <div className="flex flex-col">
+      <div className=" bg-noise-pattern mt-3 px-5 flex flex-col justify-center border-solid border-2 border-medium-grey h-[32rem]">
         {locations.map((location) => (
           <button
             key={location}

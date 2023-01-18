@@ -169,6 +169,7 @@ module.exports = {
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl":
         "linear-gradient(to top left, var(--tw-gradient-stops))",
+      "noise-pattern": "url('./assets/noise.png')",
     },
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {

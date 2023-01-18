@@ -12,12 +12,12 @@ function Step1({ onSelectType }) {
       <h1 className="text-white font-cinzel text-2xl">
         Choisissez votre type de rêve
       </h1>
-      <div className="mt-3 flex flex-col border-solid border-2 border-medium-grey ">
+      <div className="bg-noise-pattern mt-3 px-5 flex flex-col justify-center border-solid border-2 border-medium-grey h-[32rem]">
         {types.map((type) => (
           <button
             key={type}
             type="button"
-            className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+            className=" bg-yellow justify-center py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
             onClick={() => handleTypeChange(type.toUpperCase())}
           >
             {type}

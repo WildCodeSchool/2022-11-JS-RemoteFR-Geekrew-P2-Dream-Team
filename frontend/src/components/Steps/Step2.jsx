@@ -14,7 +14,7 @@ function Step2({ onSelectEmotion, type }) {
         Choisissez votre type d'émotion
       </h1>
       {type === "REVE" ? (
-        <div className="flex flex-col">
+        <div className="bg-noise-pattern mt-3 px-5 flex flex-col justify-center border-solid border-2 border-medium-grey h-[32rem]">
           {positiveEmotions.map((emotion) => (
             <button
               key={emotion}
@@ -27,7 +27,7 @@ function Step2({ onSelectEmotion, type }) {
           ))}
         </div>
       ) : (
-        <div className="flex flex-col">
+        <div className="bg-noise-pattern mt-3 px-5 flex flex-col justify-center border-solid border-2 border-medium-grey h-[32rem]">
           {negativeEmotions.map((emotion) => (
             <button
               key={emotion}
