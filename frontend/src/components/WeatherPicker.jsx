@@ -9,25 +9,25 @@ function WeatherPicker({ setSelectedWeather, selectedWeather }) {
       onChange={(e) => setSelectedWeather(e.target.value)}
       value={selectedWeather}
     >
-      <option className="dropdown-item text-white w-7/12 " value="">
+      <option className="dropdown-item text-white" value="">
         Météo
       </option>
-      <option className="dropdown-item text-white w-5/12 " value="CHALEUR">
+      <option className="dropdown-item text-white" value="CHALEUR">
         Chaleur
       </option>
-      <option className="dropdown-item text-white w-5/12 " value="PLUVIEUX">
+      <option className="dropdown-item text-white" value="PLUVIEUX">
         Pluvieux
       </option>
-      <option className="dropdown-item text-white w-5/12 " value="FROID">
+      <option className="dropdown-item text-white" value="FROID">
         Froid
       </option>
-      <option className="dropdown-item text-white w-5/12 " value="GLACIAL">
+      <option className="dropdown-item text-white" value="GLACIAL">
         Glacial
       </option>
-      <option className="dropdown-item text-white w-5/12 " value="TEMPETE">
+      <option className="dropdown-item text-white" value="TEMPETE">
         Tempête
       </option>
-      <option className="dropdown-item text-white w-5/12 " value="CANICULE">
+      <option className="dropdown-item text-white" value="CANICULE">
         Canicule
       </option>
     </select>
