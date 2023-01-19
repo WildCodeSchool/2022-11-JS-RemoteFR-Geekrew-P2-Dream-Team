@@ -5,7 +5,10 @@ function Step1({ onSelectType }) {
     onSelectType(type);
   };
 
-  const types = ["reve", "cauchemar"];
+  const types = [
+    { value: "reve", label: "Rêve" },
+    { value: "cauchemar", label: "Cauchemar" },
+  ];
 
   return (
     <div>
@@ -13,14 +16,14 @@ function Step1({ onSelectType }) {
         Choisissez votre type de rêve
       </h1>
       <div className="bg-noise-pattern mt-3 px-5 flex flex-col justify-center border-solid border-2 border-medium-grey h-[32rem]">
-        {types.map((type) => (
+        {types.map(({ value, label }) => (
           <button
-            key={type}
+            key={value}
             type="button"
             className=" bg-yellow justify-center py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleTypeChange(type)}
+            onClick={() => handleTypeChange({ value, label })}
           >
-            {type}
+            {label}
           </button>
         ))}
       </div>

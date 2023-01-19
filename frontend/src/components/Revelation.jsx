@@ -7,7 +7,7 @@ function Revelation({ type, emotion, loc, meteo }) {
   const navigate = useNavigate();
   const dream = dreams.find(
     (d) =>
-      d.type === type &&
+      d.type === type.value &&
       d.emotion === emotion &&
       d.lieu === loc &&
       d.meteo === meteo
@@ -22,7 +22,7 @@ function Revelation({ type, emotion, loc, meteo }) {
           type="button"
           className=" bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
         >
-          Découvrir mon {type}
+          Découvrir mon {type.label}
         </button>
       )}
 
@@ -51,7 +51,8 @@ function Revelation({ type, emotion, loc, meteo }) {
 }
 
 Revelation.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.shape({ value: PropTypes.string, label: PropTypes.string })
+    .isRequired,
   emotion: PropTypes.string.isRequired,
   loc: PropTypes.string.isRequired,
   meteo: PropTypes.string.isRequired,

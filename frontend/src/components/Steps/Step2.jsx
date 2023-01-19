@@ -4,8 +4,18 @@ function Step2({ onSelectEmotion, type }) {
   const handleEmotionChange = (emotion) => {
     onSelectEmotion(emotion);
   };
-  const positiveEmotions = ["joie", "amour", "serenite", "amusement"];
-  const negativeEmotions = ["culpabilite", "colere", "tristesse", "peur"];
+  const positiveEmotions = [
+    { value: "joie", label: "Joie" },
+    { value: "amour", label: "Amour" },
+    { value: "serenite", label: "Sérénité" },
+    { value: "amusement", label: "Amusement" },
+  ];
+  const negativeEmotions = [
+    { value: "culpabilite", label: "Culpabilité" },
+    { value: "colere", label: "Colère" },
+    { value: "tristesse", label: "Tristesse" },
+    { value: "peur", label: "Peur" },
+  ];
 
   return (
     <div>
@@ -14,27 +24,27 @@ function Step2({ onSelectEmotion, type }) {
       </h1>
       {type === "reve" ? (
         <div className="bg-noise-pattern mt-3 px-5 flex flex-col justify-center border-solid border-2 border-medium-grey h-[32rem]">
-          {positiveEmotions.map((emotion) => (
+          {positiveEmotions.map(({ value, label }) => (
             <button
-              key={emotion}
+              key={value}
               type="button"
               className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-              onClick={() => handleEmotionChange(emotion)}
+              onClick={() => handleEmotionChange(value)}
             >
-              {emotion}
+              {label}
             </button>
           ))}
         </div>
       ) : (
         <div className="bg-noise-pattern mt-3 px-5 flex flex-col justify-center border-solid border-2 border-medium-grey h-[32rem]">
-          {negativeEmotions.map((emotion) => (
+          {negativeEmotions.map(({ value, label }) => (
             <button
-              key={emotion}
+              key={value}
               type="button"
               className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-              onClick={() => handleEmotionChange(emotion)}
+              onClick={() => handleEmotionChange(value)}
             >
-              {emotion}
+              {label}
             </button>
           ))}
         </div>

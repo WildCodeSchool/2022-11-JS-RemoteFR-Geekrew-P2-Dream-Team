@@ -41,9 +41,9 @@ function Experience() {
   return (
     <div className="mt-10 px-5">
       {isStep1 && <Step1 onSelectType={handleType} />}
-      {isStep2 && <Step2 onSelectEmotion={handleEmotion} type={type} />}
+      {isStep2 && <Step2 onSelectEmotion={handleEmotion} type={type.value} />}
       {isStep3 && <Step3 onSelectLoc={handleLoc} emotion={emotion} />}
-      {isStep4 && <Step4 onSelectMeteo={handleMeteo} type={type} />}
+      {isStep4 && <Step4 onSelectMeteo={handleMeteo} type={type.value} />}
 
       {isFinish && (
         <Revelation type={type} emotion={emotion} loc={loc} meteo={meteo} />
