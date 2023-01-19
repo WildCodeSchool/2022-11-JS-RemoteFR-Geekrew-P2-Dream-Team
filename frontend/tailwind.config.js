@@ -47,6 +47,7 @@ module.exports = {
       "gradient-blue-d": "#101127",
       "gradient-blue-m": "#1B1D42",
       yellow: "#A8791D",
+      "light-yellow": "#F8B128",
       "dark-yellow": "#815F1E",
       blue: "#313350",
       grey: "#666666",

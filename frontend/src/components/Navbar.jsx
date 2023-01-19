@@ -45,7 +45,7 @@ function Navbar() {
           <ul
             className={
               isOpen
-                ? "absolute min-h-[700%] md:min-h-[0%] bottom-0 top-20 w-full flex flex-col items-center md:flex-row md:justify-end bg-gradient-blue-m backdrop-blur-md md:backdrop-blur-0 bg-opacity-30 text-xl"
+                ? "absolute min-h-[700%] md:min-h-[0%] bottom-0 top-20 w-full flex flex-col items-center md:flex-row md:justify-end bg-gradient-blue-m backdrop-blur-md md:backdrop-blur-0 bg-opacity-40 text-xl z-40 md:z-0"
                 : "relative md:mr-6 hidden md:flex md:flex-row md:justify-end text-xl "
             }
           >
