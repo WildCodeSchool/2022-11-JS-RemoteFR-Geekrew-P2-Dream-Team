@@ -13,6 +13,12 @@ function Revelation({ type, emotion, loc, meteo }) {
       d.meteo === meteo
   );
   const [isRevelated, setIsRevelated] = useState(false);
+  const shoppingList = [];
+
+  const addToCart = () => {
+    shoppingList.push(dream);
+    navigate("/Panier");
+  };
 
   return (
     <div className="flex flex-col item-center">
@@ -31,7 +37,9 @@ function Revelation({ type, emotion, loc, meteo }) {
           <img src={dream.URL} alt={`${type} ${emotion} ${loc} ${meteo}`} />
           <p className="pt-5 font-sans text-white">{dream.description}</p>
           <button
-            onClick={() => navigate("/Panier")}
+            onClick={() => {
+              addToCart();
+            }}
             type="button"
             className=" bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
           >
