@@ -61,51 +61,51 @@ VALUES (12, 'reve', 'joie', 'campagne', 'froid', 'La journée était remplie de 
 
 /* INSERT QUERY NO: 13 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (13, 'reve', 'AMOUR', 'ville', 'chaleur', 'La chaleur et la ville animées donnent de l\’amour autour de nous.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/c8b2ff9d-c681-4c2a-9b0a-78be61555ccf', 'false');
+VALUES (13, 'reve', 'amour', 'ville', 'chaleur', 'La chaleur et la ville animées donnent de l\’amour autour de nous.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/c8b2ff9d-c681-4c2a-9b0a-78be61555ccf', 'false');
 
 /* INSERT QUERY NO: 14 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (14, 'reve', 'AMOUR', 'ville', 'pluvieux', 'Il chante en ville sous la pluie l\’amour qu\’il a pour sa dulcinée.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/07dd0850-4f60-42fe-b625-9240d942e175', 'false');
+VALUES (14, 'reve', 'amour', 'ville', 'pluvieux', 'Il chante en ville sous la pluie l\’amour qu\’il a pour sa dulcinée.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/07dd0850-4f60-42fe-b625-9240d942e175', 'false');
 
 /* INSERT QUERY NO: 15 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (15, 'reve', 'AMOUR', 'ville', 'froid', 'Le froid de la ville n’empêche pas l\’amour qui y règne.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/643ba781-c8ba-4227-a00e-033947553886', 'false');
+VALUES (15, 'reve', 'amour', 'ville', 'froid', 'Le froid de la ville n’empêche pas l\’amour qui y règne.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/643ba781-c8ba-4227-a00e-033947553886', 'false');
 
 /* INSERT QUERY NO: 16 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (16, 'reve', 'AMOUR', 'mer', 'chaleur', 'La chaleur du sable chaud se mélange aux vagues de l\’eau de la mer.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/49a4e66c-5c06-4a92-bd5f-393acc60bee6', 'false');
+VALUES (16, 'reve', 'amour', 'mer', 'chaleur', 'La chaleur du sable chaud se mélange aux vagues de l\’eau de la mer.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/49a4e66c-5c06-4a92-bd5f-393acc60bee6', 'false');
 
 /* INSERT QUERY NO: 17 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (17, 'reve', 'AMOUR', 'mer', 'pluvieux', 'Je fais du paddle surf sous la pluie et je tombe amoureux du paysage.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/c7f426af-67bc-4bbf-ae53-854729b0e878', 'false');
+VALUES (17, 'reve', 'amour', 'mer', 'pluvieux', 'Je fais du paddle surf sous la pluie et je tombe amoureux du paysage.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/c7f426af-67bc-4bbf-ae53-854729b0e878', 'false');
 
 /* INSERT QUERY NO: 18 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (18, 'reve', 'AMOUR', 'mer', 'froid', 'Nous chantons amoureusement sur une plage enneigée.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/3d38e98c-6c86-4759-a04f-a5c09727cee5', 'false');
+VALUES (18, 'reve', 'amour', 'mer', 'froid', 'Nous chantons amoureusement sur une plage enneigée.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/3d38e98c-6c86-4759-a04f-a5c09727cee5', 'false');
 
 /* INSERT QUERY NO: 19 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (19, 'reve', 'AMOUR', 'montagne', 'chaleur', 'Cette chaleur dans les hautes montagnes nous donne des idées folles amoureuses.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/bf25a457-1b59-4383-b8a2-593557497bbd', 'false');
+VALUES (19, 'reve', 'amour', 'montagne', 'chaleur', 'Cette chaleur dans les hautes montagnes nous donne des idées folles amoureuses.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/bf25a457-1b59-4383-b8a2-593557497bbd', 'false');
 
 /* INSERT QUERY NO: 20 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (20, 'reve', 'AMOUR', 'montagne', 'pluvieux', 'La montagne pluvieuse nous rendait amoureux dans cet abris bien chaud.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/6613cd7f-5715-4f26-b0d4-66ee59c87c6d', 'false');
+VALUES (20, 'reve', 'amour', 'montagne', 'pluvieux', 'La montagne pluvieuse nous rendait amoureux dans cet abris bien chaud.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/6613cd7f-5715-4f26-b0d4-66ee59c87c6d', 'false');
 
 /* INSERT QUERY NO: 21 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (21, 'reve', 'AMOUR', 'montagne', 'froid', 'Un weekend en amoureux dans un chalet de haute montagne.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/1192764f-6c65-4bef-82cd-66bee77e706d', 'false');
+VALUES (21, 'reve', 'amour', 'montagne', 'froid', 'Un weekend en amoureux dans un chalet de haute montagne.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/1192764f-6c65-4bef-82cd-66bee77e706d', 'false');
 
 /* INSERT QUERY NO: 22 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (22, 'reve', 'AMOUR', 'campagne', 'chaleur', 'La chaude campagne de nos escapades amoureuses.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/173b1636-465b-40c8-a45b-26811a8d6d1c', 'false');
+VALUES (22, 'reve', 'amour', 'campagne', 'chaleur', 'La chaude campagne de nos escapades amoureuses.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/173b1636-465b-40c8-a45b-26811a8d6d1c', 'false');
 
 /* INSERT QUERY NO: 23 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (23, 'reve', 'AMOUR', 'campagne', 'pluvieux', 'L\'amour à la campagne, sous la pluie, c\'est quand même bien!', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/15c25eb2-7365-4ea9-9be1-927cc3e583e0', 'false');
+VALUES (23, 'reve', 'amour', 'campagne', 'pluvieux', 'L\'amour à la campagne, sous la pluie, c\'est quand même bien!', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/15c25eb2-7365-4ea9-9be1-927cc3e583e0', 'false');
 
 /* INSERT QUERY NO: 24 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (24, 'reve', 'AMOUR', 'campagne', 'froid', 'Les nuits froides de la campagnes rapprochent les amoureux.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/fcfc06de-c179-4bba-923e-d3184f0c40ec', 'false');
+VALUES (24, 'reve', 'amour', 'campagne', 'froid', 'Les nuits froides de la campagnes rapprochent les amoureux.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/fcfc06de-c179-4bba-923e-d3184f0c40ec', 'false');
 
 /* INSERT QUERY NO: 25 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
