@@ -7,10 +7,10 @@ function Revelation({ type, emotion, loc, meteo }) {
   const navigate = useNavigate();
   const dream = dreams.find(
     (d) =>
-      d.TYPE === type &&
-      d.EMOTION === emotion &&
-      d.LIEU === loc &&
-      d.METEO === meteo
+      d.type === type &&
+      d.emotion === emotion &&
+      d.lieu === loc &&
+      d.meteo === meteo
   );
   const [isRevelated, setIsRevelated] = useState(false);
 
@@ -29,7 +29,7 @@ function Revelation({ type, emotion, loc, meteo }) {
       {isRevelated && (
         <>
           <img src={dream.URL} alt={`${type} ${emotion} ${loc} ${meteo}`} />
-          <p className="pt-5 font-sans text-white">{dream.DESCRIPTION}</p>
+          <p className="pt-5 font-sans text-white">{dream.description}</p>
           <button
             onClick={() => setIsRevelated(true)}
             type="button"

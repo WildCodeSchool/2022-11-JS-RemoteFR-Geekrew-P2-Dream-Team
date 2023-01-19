@@ -5,22 +5,22 @@ function Step4({ onSelectMeteo, type }) {
     onSelectMeteo(meteo);
   };
 
-  const positiveMeteos = ["Chaleur", "Pluvieux", "Froid"];
-  const negativeMeteos = ["Canicule", "Tempete", "Glacial"];
+  const positiveMeteos = ["chaleur", "pluvieux", "froid"];
+  const negativeMeteos = ["canicule", "tempete", "glacial"];
 
   return (
     <div>
       <h1 className="text-white font-cinzel text-2xl">
         Choisissez votre type d'émotion
       </h1>
-      {type === "REVE" ? (
+      {type === "reve" ? (
         <div className=" bg-noise-pattern mt-3 px-5 flex flex-col justify-center border-solid border-2 border-medium-grey h-[32rem]">
           {positiveMeteos.map((meteo) => (
             <button
               key={meteo}
               type="button"
               className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-              onClick={() => handleMeteoChange(meteo.toUpperCase())}
+              onClick={() => handleMeteoChange(meteo)}
             >
               {meteo}
             </button>
@@ -33,7 +33,7 @@ function Step4({ onSelectMeteo, type }) {
               key={meteo}
               type="button"
               className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-              onClick={() => handleMeteoChange(meteo.toUpperCase())}
+              onClick={() => handleMeteoChange(meteo)}
             >
               {meteo}
             </button>

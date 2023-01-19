@@ -5,7 +5,7 @@ function Step1({ onSelectType }) {
     onSelectType(type);
   };
 
-  const types = ["Reve", "Cauchemar"];
+  const types = ["reve", "cauchemar"];
 
   return (
     <div>
@@ -18,7 +18,7 @@ function Step1({ onSelectType }) {
             key={type}
             type="button"
             className=" bg-yellow justify-center py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-            onClick={() => handleTypeChange(type.toUpperCase())}
+            onClick={() => handleTypeChange(type)}
           >
             {type}
           </button>

@@ -4,23 +4,22 @@ function Step2({ onSelectEmotion, type }) {
   const handleEmotionChange = (emotion) => {
     onSelectEmotion(emotion);
   };
-
-  const positiveEmotions = ["Joie", "Amour", "Serenite", "Amusement"];
-  const negativeEmotions = ["Culpabilite", "Colere", "Tristesse", "Peur"];
+  const positiveEmotions = ["joie", "amour", "serenite", "amusement"];
+  const negativeEmotions = ["culpabilite", "colere", "tristesse", "peur"];
 
   return (
     <div>
       <h1 className="text-white font-cinzel text-2xl">
         Choisissez votre type d'émotion
       </h1>
-      {type === "REVE" ? (
+      {type === "reve" ? (
         <div className="bg-noise-pattern mt-3 px-5 flex flex-col justify-center border-solid border-2 border-medium-grey h-[32rem]">
           {positiveEmotions.map((emotion) => (
             <button
               key={emotion}
               type="button"
               className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-              onClick={() => handleEmotionChange(emotion.toUpperCase())}
+              onClick={() => handleEmotionChange(emotion)}
             >
               {emotion}
             </button>
@@ -33,7 +32,7 @@ function Step2({ onSelectEmotion, type }) {
               key={emotion}
               type="button"
               className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
-              onClick={() => handleEmotionChange(emotion.toUpperCase())}
+              onClick={() => handleEmotionChange(emotion)}
             >
               {emotion}
             </button>
