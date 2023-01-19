@@ -122,7 +122,7 @@
   {
     "id": 13,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "ville",
     "meteo": "chaleur",
     "description": "La chaleur et la ville animées donnent de l’amour autour de nous.",
@@ -132,7 +132,7 @@
   {
     "id": 14,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "ville",
     "meteo": "pluvieux",
     "description": "Il chante en ville sous la pluie l’amour qu’il a pour sa dulcinée.",
@@ -142,7 +142,7 @@
   {
     "id": 15,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "ville",
     "meteo": "froid",
     "description": "Le froid de la ville n’empêche pas l’amour qui y règne.",
@@ -152,7 +152,7 @@
   {
     "id": 16,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "mer",
     "meteo": "chaleur",
     "description": "La chaleur du sable chaud se mélange aux vagues de l’eau de la mer.",
@@ -162,7 +162,7 @@
   {
     "id": 17,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "mer",
     "meteo": "pluvieux",
     "description": "Je fais du paddle surf sous la pluie et je tombe amoureux du paysage.",
@@ -172,7 +172,7 @@
   {
     "id": 18,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "mer",
     "meteo": "froid",
     "description": "Nous chantons amoureusement sur une plage enneigée.",
@@ -182,7 +182,7 @@
   {
     "id": 19,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "montagne",
     "meteo": "chaleur",
     "description": "Cette chaleur dans les hautes montagnes nous donne des idées folles amoureuses.",
@@ -192,7 +192,7 @@
   {
     "id": 20,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "montagne",
     "meteo": "pluvieux",
     "description": "La montagne pluvieuse nous rendait amoureux dans cet abris bien chaud.",
@@ -202,7 +202,7 @@
   {
     "id": 21,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "montagne",
     "meteo": "froid",
     "description": "Un weekend en amoureux dans un chalet de haute montagne.",
@@ -212,7 +212,7 @@
   {
     "id": 22,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "campagne",
     "meteo": "chaleur",
     "description": "La chaude campagne de nos escapades amoureuses.",
@@ -222,7 +222,7 @@
   {
     "id": 23,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "campagne",
     "meteo": "pluvieux",
     "description": "L'amour à la campagne, sous la pluie, c'est quand même bien!",
@@ -232,7 +232,7 @@
   {
     "id": 24,
     "type": "reve",
-    "emotion": "AMOUR",
+    "emotion": "amour",
     "lieu": "campagne",
     "meteo": "froid",
     "description": "Les nuits froides de la campagnes rapprochent les amoureux.",
