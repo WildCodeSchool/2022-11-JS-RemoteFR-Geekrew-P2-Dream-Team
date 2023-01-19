@@ -12,10 +12,10 @@ export default function TypePicker({ selectedValue, setSelectedValue }) {
       <option className="dropdown-item text-white w-full" value="">
         Type
       </option>
-      <option className="dropdown-item text-white w-full" value="REVE">
+      <option className="dropdown-item text-white w-full" value="reve">
         Rêve
       </option>
-      <option className="dropdown-item text-white w-full" value="CAUCHEMAR">
+      <option className="dropdown-item text-white w-full" value="cauchemar">
         Cauchemar
       </option>
     </select>

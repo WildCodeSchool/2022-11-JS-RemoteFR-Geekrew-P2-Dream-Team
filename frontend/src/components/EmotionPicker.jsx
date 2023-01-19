@@ -12,28 +12,28 @@ function EmotionPicker({ setSelectedEmotion, selectedEmotion }) {
       <option className="dropdown-item text-white" value="">
         Émotion
       </option>
-      <option className="dropdown-item text-white" value="JOIE">
+      <option className="dropdown-item text-white" value="joie">
         Joie
       </option>
-      <option className="dropdown-item text-white" value="AMOUR">
+      <option className="dropdown-item text-white" value="amour">
         Amour
       </option>
-      <option className="dropdown-item text-white" value="AMUSEMENT">
+      <option className="dropdown-item text-white" value="amusement">
         Amusement
       </option>
-      <option className="dropdown-item text-white" value="SERENITE">
+      <option className="dropdown-item text-white" value="serenite">
         Sérénité
       </option>
-      <option className="dropdown-item text-white" value="CULPABILITE">
+      <option className="dropdown-item text-white" value="culpabilite">
         Culpabilité
       </option>
-      <option className="dropdown-item text-white" value="PEUR">
+      <option className="dropdown-item text-white" value="peur">
         Peur
       </option>
-      <option className="dropdown-item text-white" value="COLERE">
+      <option className="dropdown-item text-white" value="colere">
         Colère
       </option>
-      <option className="dropdown-item text-white" value="TRISTESSE">
+      <option className="dropdown-item text-white" value="tristesse">
         Tristesse
       </option>
     </select>

@@ -12,22 +12,22 @@ function WeatherPicker({ setSelectedWeather, selectedWeather }) {
       <option className="dropdown-item text-white" value="">
         Météo
       </option>
-      <option className="dropdown-item text-white" value="CHALEUR">
+      <option className="dropdown-item text-white" value="chaleur">
         Chaleur
       </option>
-      <option className="dropdown-item text-white" value="PLUVIEUX">
+      <option className="dropdown-item text-white" value="pluvieux">
         Pluvieux
       </option>
-      <option className="dropdown-item text-white" value="FROID">
+      <option className="dropdown-item text-white" value="froid">
         Froid
       </option>
-      <option className="dropdown-item text-white" value="GLACIAL">
+      <option className="dropdown-item text-white" value="glacial">
         Glacial
       </option>
-      <option className="dropdown-item text-white" value="TEMPETE">
+      <option className="dropdown-item text-white" value="tempete">
         Tempête
       </option>
-      <option className="dropdown-item text-white" value="CANICULE">
+      <option className="dropdown-item text-white" value="canicule">
         Canicule
       </option>
     </select>

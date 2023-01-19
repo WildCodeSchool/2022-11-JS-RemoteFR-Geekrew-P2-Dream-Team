@@ -12,16 +12,16 @@ function LocationPicker({ setSelectedLocation, selectedLocation }) {
       <option className="dropdown-item text-white" value="">
         Lieu
       </option>
-      <option className="dropdown-item text-white" value="CAMPAGNE">
+      <option className="dropdown-item text-white" value="campagne">
         Campagne
       </option>
-      <option className="dropdown-item text-white" value="MONTAGNE">
+      <option className="dropdown-item text-white" value="montagne">
         Montagne
       </option>
-      <option className="dropdown-item text-white" value="MER">
+      <option className="dropdown-item text-white" value="mer">
         Mer
       </option>
-      <option className="dropdown-item text-white" value="VILLE">
+      <option className="dropdown-item text-white" value="ville">
         Ville
       </option>
     </select>

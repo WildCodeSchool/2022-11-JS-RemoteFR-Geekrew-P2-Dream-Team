@@ -31,12 +31,12 @@ function PopUpCard({ popUp, onClose }) {
                 return (
                   <div className="flex flex-col justify-between">
                     <h1 className="font-sans text-base md:w-11/12 md:text-right	 mt-8 md:mt-4 text text-white md:text-gradient-blue-d">
-                      {card.DESCRIPTION}
+                      {card.description}
                     </h1>
                     <div className="flex flex-row items-baseline justify-between w-5/12 ">
                       <div className="flex">
                         <span className="font-sans font-medium text-base mt-8 md:mt-4 text-white md:hidden">
-                          {card.TYPE === "Rêve" ? "30" : "5"}
+                          {card.type === "reve" ? "30" : "5"}
                         </span>
                         <span className="font-sans font-medium text-base mt-8 md:mt-4 text-white md:hidden">
                           000{" "}
