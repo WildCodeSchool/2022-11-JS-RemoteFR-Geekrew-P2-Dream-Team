@@ -1,9 +1,10 @@
 import React from "react";
+import Slider from "../components/Slider";
 
 function Apropos() {
   return (
-    <div>
-      <h1>Bienvenue sur la page A Propos</h1>
+    <div className="flex flex-col justify-center">
+      <Slider />
     </div>
   );
 }
