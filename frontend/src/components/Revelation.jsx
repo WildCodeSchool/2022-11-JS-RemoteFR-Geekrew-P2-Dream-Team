@@ -31,7 +31,7 @@ function Revelation({ type, emotion, loc, meteo }) {
           <img src={dream.URL} alt={`${type} ${emotion} ${loc} ${meteo}`} />
           <p className="pt-5 font-sans text-white">{dream.description}</p>
           <button
-            onClick={() => setIsRevelated(true)}
+            onClick={() => navigate("/Panier")}
             type="button"
             className=" bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
           >
