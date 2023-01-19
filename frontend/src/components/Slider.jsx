@@ -47,13 +47,11 @@ function Slider() {
     <>
       <div className="md:hidden">
         <Carousel
-          infinite
-          arrows={false}
-          autoPlay
-          shouldResetAutoplay
-          customTransition="all 10s linear"
-          pauseOnHover
           responsive={responsive}
+          arrows={false}
+          infinite
+          showDots
+          minimumTouchDrag={20}
         >
           {imgCarousel.map((slide) => (
             <div className="flex justify-center animate-pulse" key={slide.id}>

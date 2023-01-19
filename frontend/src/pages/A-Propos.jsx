@@ -11,7 +11,7 @@ function Apropos() {
         </h2>
       </title>
       <Slider />
-      <div className="font-sans text-white md:text-1xl text-xl font-thin flex flex-col justify-end md:items-center">
+      <div className="font-sans text-white md:text-1xl text-l font-thin flex flex-col justify-end md:items-center">
         <p className="m-4">
           Parce qu’on ne rêve jamais assez, on vous emmène aux pays des rêves!
           Plongez dans une expérience immersive et maîtrisez vos rêves et
