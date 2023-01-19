@@ -2,40 +2,31 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function EmotionPicker({ setSelectedEmotion, selectedEmotion }) {
+  const options = [
+    { value: "", label: "Émotion" },
+    { value: "joie", label: "Joie" },
+    { value: "amour", label: "Amour" },
+    { value: "amusement", label: "Amusement" },
+    { value: "serenite", label: "Sérénité" },
+    { value: "culpabilite", label: "Culpabilité" },
+    { value: "peur", label: "Peur" },
+    { value: "colere", label: "Colère" },
+    { value: "tristesse", label: "Tristesse" },
+  ];
+
   return (
     <select
+      aria-label="State"
       className="bg-filterCloud flex text-xs text-grey bg-gradient-blue-d bg-center w-[80px] h-[65px] bg-contain bg-no-repeat"
       name="selectedType"
       onChange={(e) => setSelectedEmotion(e.target.value)}
       value={selectedEmotion}
     >
-      <option className="dropdown-item text-white" value="">
-        Émotion
-      </option>
-      <option className="dropdown-item text-white" value="JOIE">
-        Joie
-      </option>
-      <option className="dropdown-item text-white" value="AMOUR">
-        Amour
-      </option>
-      <option className="dropdown-item text-white" value="AMUSEMENT">
-        Amusement
-      </option>
-      <option className="dropdown-item text-white" value="SERENITE">
-        Sérénité
-      </option>
-      <option className="dropdown-item text-white" value="CULPABILITE">
-        Culpabilité
-      </option>
-      <option className="dropdown-item text-white" value="PEUR">
-        Peur
-      </option>
-      <option className="dropdown-item text-white" value="COLERE">
-        Colère
-      </option>
-      <option className="dropdown-item text-white" value="TRISTESSE">
-        Tristesse
-      </option>
+      {options.map(({ value, label }) => (
+        <option className="dropdown-item text-white" key={value} value={value}>
+          {label}
+        </option>
+      ))}
     </select>
   );
 }

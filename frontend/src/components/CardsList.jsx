@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 
+import PropTypes from "prop-types";
 import data from "../../csvjson.json";
 import SearchBar from "./SearchBar";
 import TypePicker from "./TypePicker";
@@ -9,7 +10,7 @@ import EmotionPicker from "./EmotionPicker";
 import LocationPicker from "./LocationPicker";
 import WeatherPicker from "./WeatherPicker";
 
-function CardsList() {
+function CardsList({ setAddToCart, addToCart }) {
   const [search, setSearch] = useState(" ");
   const [selectedValue, setSelectedValue] = useState("");
   const [selectedEmotion, setSelectedEmotion] = useState("");
@@ -33,7 +34,12 @@ function CardsList() {
   return (
     <div className="flex flex-col justify-center bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m ">
       <div>
-        <PopUpCard popUp={popUp} onClose={() => handlePopUpOff()} />
+        <PopUpCard
+          popUp={popUp}
+          onClose={() => handlePopUpOff()}
+          addToCart={addToCart}
+          setAddToCart={setAddToCart}
+        />
       </div>
       <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m md:px-6">
         <div className="md:flex-row   flex flex-col  items-center justify-between flex-nowrap w-full">
@@ -95,5 +101,14 @@ function CardsList() {
     </div>
   );
 }
-
+CardsList.propTypes = {
+  addToCart: PropTypes.arrayOf(
+    PropTypes.shape({
+      ID: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      quantity: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  setAddToCart: PropTypes.func.isRequired,
+};
 export default CardsList;
