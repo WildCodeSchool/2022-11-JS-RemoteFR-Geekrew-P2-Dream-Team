@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Lune from "../assets/Lune.svg";
 import Botcloud from "../assets/botcloud.svg";
 import backimg1 from "../assets/backimg1.svg";
@@ -7,6 +8,8 @@ import backcloud2 from "../assets/backcloud2.svg";
 import CreateStarGroup from "./CreateStarGroup";
 
 function Stars() {
+  const navigate = useNavigate();
+
   return (
     <div className=" md:h-min h-full">
       <img
@@ -20,6 +23,7 @@ function Stars() {
           Ici, on vend du rêve
         </h2>
         <button
+          onClick={() => navigate("/Experience")}
           type="button"
           className=" bg-yellow z-10 px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
         >

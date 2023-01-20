@@ -10,7 +10,7 @@ function Card({ elem, handlePopUpOn }) {
     >
       <img
         className="aspect-square w-11/12 md:max-h-64 rounded-xl"
-        src={elem.URL}
+        src={elem.url}
         alt={elem.description}
       />
       <span className="hidden font-base font-medium md:flex">
@@ -22,7 +22,7 @@ function Card({ elem, handlePopUpOn }) {
       <span className="hidden ">{elem.emotion}</span>
       <span className="hidden">{elem.lieu}</span>
       <span className="hidden">{elem.meteo}</span>
-      {elem.type === "rêve" && (
+      {elem.type === "reve" && (
         <span className="flex flex-row items-baseline text-white my-1">
           <p className="font-medium text-xl mr-1">30 000 {"  "}</p>
           <p className="font-normal text-xs"> {"  "}dreameez</p>

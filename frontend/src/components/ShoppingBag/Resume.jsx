@@ -23,7 +23,7 @@ function Resume({ addToCart }) {
       <div className="flex flex-col rounded-xl justify-between w-full items-center bg-blue md:bg-white text-white md:text-black m-2">
         <div className="flex flex-nowrap justify-between w-11/12 mt-4">
           <p>
-            {dreamSubTotal} {dreamSubTotal === 0 ? "rêve" : "rêves"}{" "}
+            {dreamSubTotal} {dreamSubTotal < 2 ? "rêve" : "rêves"}{" "}
           </p>
           <p className="flex flex-nowrap justify-between w-3/12">
             {dreamsPrice} <img src={dreameez} alt="dreameez" />
@@ -32,7 +32,7 @@ function Resume({ addToCart }) {
         <div className="flex justify-between flex-nowrap w-11/12 mt-4">
           <p>
             {nightmareSubTotal}{" "}
-            {nightmareSubTotal === 0 ? "cauchemar" : "cauchermars"}
+            {nightmareSubTotal < 2 ? "cauchemar" : "cauchermars"}
           </p>
           <p className="flex flex-nowrap justify-between w-3/12">
             {nightmaresPrice}

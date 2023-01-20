@@ -11,7 +11,7 @@ function ShoppingBagContent({ addToCart }) {
           <div className="flex w-full">
             <div className="flex flex-row justify-between mb-2 md:w-full">
               <img
-                src={dream.URL}
+                src={dream.url}
                 alt="dream"
                 className="w-[100px] h-[100px] my-1 aspect-square"
               />

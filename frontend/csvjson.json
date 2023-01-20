@@ -6,7 +6,7 @@
     "lieu": "ville",
     "meteo": "chaleur",
     "description": "Le soleil en ville me rend heureux malgré la chaleur.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/08e1e7d3-abe0-4064-962b-24911fb8fb49",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/08e1e7d3-abe0-4064-962b-24911fb8fb49",
     "modal": false
   },
   {
@@ -16,7 +16,7 @@
     "lieu": "ville",
     "meteo": "pluvieux",
     "description": "Je suis heureux et je chante sous la pluie en centre ville.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/d684f404-f512-436d-bc7e-d7c40f4fd53a",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/d684f404-f512-436d-bc7e-d7c40f4fd53a",
     "modal": false
   },
   {
@@ -26,7 +26,7 @@
     "lieu": "ville",
     "meteo": "froid",
     "description": "Je me promène en ville joyeusement dans le froid hivernal.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/70993717-5c58-4155-86a2-76115ce18c6e",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/70993717-5c58-4155-86a2-76115ce18c6e",
     "modal": false
   },
   {
@@ -36,7 +36,7 @@
     "lieu": "mer",
     "meteo": "chaleur",
     "description": "Je suis heureux les doigts de pied en éventail au bord de la mer avec la chaleur qui me brûle la peau.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/9039ff59-b5d4-49ce-8973-96578acd4ac9",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/9039ff59-b5d4-49ce-8973-96578acd4ac9",
     "modal": false
   },
   {
@@ -46,7 +46,7 @@
     "lieu": "mer",
     "meteo": "pluvieux",
     "description": "Je suis en bateau, il pleut mais j’aime bien.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/21d50390-7d7c-45bc-bafc-65937ac415c1",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/21d50390-7d7c-45bc-bafc-65937ac415c1",
     "modal": false
   },
   {
@@ -56,7 +56,7 @@
     "lieu": "mer",
     "meteo": "froid",
     "description": "Je pêche des poissons dans la mer gelée. Ca me rend heureux.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/dd23166e-ad05-4cad-83f1-1bab2a56ea32",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/dd23166e-ad05-4cad-83f1-1bab2a56ea32",
     "modal": false
   },
   {
@@ -66,7 +66,7 @@
     "lieu": "montagne",
     "meteo": "chaleur",
     "description": "Je fais du ski d’été à la montagne en short sous une chaleur écrasante.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/08bda432-9fda-4ab2-adb3-7be83292c96b",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/08bda432-9fda-4ab2-adb3-7be83292c96b",
     "modal": false
   },
   {
@@ -76,7 +76,7 @@
     "lieu": "montagne",
     "meteo": "pluvieux",
     "description": "Je suis devant la cheminée d’un chalet de haute montagne à boire mon chocolat chaud pendant qu’il pleut dehors.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/bb8e2184-b8fb-4032-a49c-0fe8f60e07f1",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/bb8e2184-b8fb-4032-a49c-0fe8f60e07f1",
     "modal": false
   },
   {
@@ -86,7 +86,7 @@
     "lieu": "montagne",
     "meteo": "froid",
     "description": "Quand te reverrai-je pays merveilleux lalalala.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/f3e95aad-ed7b-4013-a666-7ac5df44b29d",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/f3e95aad-ed7b-4013-a666-7ac5df44b29d",
     "modal": false
   },
   {
@@ -96,7 +96,7 @@
     "lieu": "campagne",
     "meteo": "chaleur",
     "description": "Il fait chaud à la campagne et je profite de l’odeur du blé et des pins qui me mettent en joie.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/5eb508e1-5935-4bdd-a1cf-8a7c46b418da",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/5eb508e1-5935-4bdd-a1cf-8a7c46b418da",
     "modal": false
   },
   {
@@ -106,7 +106,7 @@
     "lieu": "campagne",
     "meteo": "pluvieux",
     "description": "Je me balade avec mes bottes sous la pluie à la campagne et rien ne peut stopper ma bonne humeur.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/2c2f778e-ddfb-402a-8e1e-e0c233d02986",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/2c2f778e-ddfb-402a-8e1e-e0c233d02986",
     "modal": false
   },
   {
@@ -116,7 +116,7 @@
     "lieu": "campagne",
     "meteo": "froid",
     "description": "La journée était remplie de joie malgré le temps froid de la campagne.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/7c82ac49-580f-4c5e-b368-7f5d9f4d6162",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/7c82ac49-580f-4c5e-b368-7f5d9f4d6162",
     "modal": false
   },
   {
@@ -126,7 +126,7 @@
     "lieu": "ville",
     "meteo": "chaleur",
     "description": "La chaleur et la ville animées donnent de l’amour autour de nous.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/c8b2ff9d-c681-4c2a-9b0a-78be61555ccf",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/c8b2ff9d-c681-4c2a-9b0a-78be61555ccf",
     "modal": false
   },
   {
@@ -136,7 +136,7 @@
     "lieu": "ville",
     "meteo": "pluvieux",
     "description": "Il chante en ville sous la pluie l’amour qu’il a pour sa dulcinée.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/07dd0850-4f60-42fe-b625-9240d942e175",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/07dd0850-4f60-42fe-b625-9240d942e175",
     "modal": false
   },
   {
@@ -146,7 +146,7 @@
     "lieu": "ville",
     "meteo": "froid",
     "description": "Le froid de la ville n’empêche pas l’amour qui y règne.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/643ba781-c8ba-4227-a00e-033947553886",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/643ba781-c8ba-4227-a00e-033947553886",
     "modal": false
   },
   {
@@ -156,7 +156,7 @@
     "lieu": "mer",
     "meteo": "chaleur",
     "description": "La chaleur du sable chaud se mélange aux vagues de l’eau de la mer.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/49a4e66c-5c06-4a92-bd5f-393acc60bee6",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/49a4e66c-5c06-4a92-bd5f-393acc60bee6",
     "modal": false
   },
   {
@@ -166,7 +166,7 @@
     "lieu": "mer",
     "meteo": "pluvieux",
     "description": "Je fais du paddle surf sous la pluie et je tombe amoureux du paysage.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/c7f426af-67bc-4bbf-ae53-854729b0e878",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/c7f426af-67bc-4bbf-ae53-854729b0e878",
     "modal": false
   },
   {
@@ -176,7 +176,7 @@
     "lieu": "mer",
     "meteo": "froid",
     "description": "Nous chantons amoureusement sur une plage enneigée.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/3d38e98c-6c86-4759-a04f-a5c09727cee5",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/3d38e98c-6c86-4759-a04f-a5c09727cee5",
     "modal": false
   },
   {
@@ -186,7 +186,7 @@
     "lieu": "montagne",
     "meteo": "chaleur",
     "description": "Cette chaleur dans les hautes montagnes nous donne des idées folles amoureuses.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/bf25a457-1b59-4383-b8a2-593557497bbd",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/bf25a457-1b59-4383-b8a2-593557497bbd",
     "modal": false
   },
   {
@@ -196,7 +196,7 @@
     "lieu": "montagne",
     "meteo": "pluvieux",
     "description": "La montagne pluvieuse nous rendait amoureux dans cet abris bien chaud.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/6613cd7f-5715-4f26-b0d4-66ee59c87c6d",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/6613cd7f-5715-4f26-b0d4-66ee59c87c6d",
     "modal": false
   },
   {
@@ -206,7 +206,7 @@
     "lieu": "montagne",
     "meteo": "froid",
     "description": "Un weekend en amoureux dans un chalet de haute montagne.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/1192764f-6c65-4bef-82cd-66bee77e706d",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/1192764f-6c65-4bef-82cd-66bee77e706d",
     "modal": false
   },
   {
@@ -216,7 +216,7 @@
     "lieu": "campagne",
     "meteo": "chaleur",
     "description": "La chaude campagne de nos escapades amoureuses.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/173b1636-465b-40c8-a45b-26811a8d6d1c",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/173b1636-465b-40c8-a45b-26811a8d6d1c",
     "modal": false
   },
   {
@@ -226,7 +226,7 @@
     "lieu": "campagne",
     "meteo": "pluvieux",
     "description": "L'amour à la campagne, sous la pluie, c'est quand même bien!",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/15c25eb2-7365-4ea9-9be1-927cc3e583e0",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/15c25eb2-7365-4ea9-9be1-927cc3e583e0",
     "modal": false
   },
   {
@@ -236,7 +236,7 @@
     "lieu": "campagne",
     "meteo": "froid",
     "description": "Les nuits froides de la campagnes rapprochent les amoureux.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/fcfc06de-c179-4bba-923e-d3184f0c40ec",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/fcfc06de-c179-4bba-923e-d3184f0c40ec",
     "modal": false
   },
   {
@@ -246,7 +246,7 @@
     "lieu": "ville",
     "meteo": "chaleur",
     "description": "Je fais du rodéo torse nu sur une autruche, en plein centre ville.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/3a51e7e1-b098-4434-a83b-8f7209fce97c",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/3a51e7e1-b098-4434-a83b-8f7209fce97c",
     "modal": false
   },
   {
@@ -256,7 +256,7 @@
     "lieu": "ville",
     "meteo": "pluvieux",
     "description": "Je me balade en faisant la roue sous la pluie.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/1289aa08-94d2-4c34-8c8e-24365ea38513",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/1289aa08-94d2-4c34-8c8e-24365ea38513",
     "modal": false
   },
   {
@@ -266,7 +266,7 @@
     "lieu": "ville",
     "meteo": "froid",
     "description": "Je fais une boule de neige de 10 mètres de haut.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/af7081dc-4449-4983-ab24-a461ce060fe8",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/af7081dc-4449-4983-ab24-a461ce060fe8",
     "modal": false
   },
   {
@@ -276,7 +276,7 @@
     "lieu": "mer",
     "meteo": "chaleur",
     "description": "Je balade mon crabe de compagnie sur la plage.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/0aea725a-dd6f-4b87-9ae4-33337d891f32",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/0aea725a-dd6f-4b87-9ae4-33337d891f32",
     "modal": false
   },
   {
@@ -286,7 +286,7 @@
     "lieu": "mer",
     "meteo": "pluvieux",
     "description": "Je me balade sur la plage pendant une averse.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8b695513-50ef-42e8-bde6-8bf422caf0be",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8b695513-50ef-42e8-bde6-8bf422caf0be",
     "modal": false
   },
   {
@@ -296,7 +296,7 @@
     "lieu": "mer",
     "meteo": "froid",
     "description": "Je fais du patin à glace sur une mer totalement gelée.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2fdda2c7-7f56-4c29-9e9b-0c63d858ef17",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2fdda2c7-7f56-4c29-9e9b-0c63d858ef17",
     "modal": false
   },
   {
@@ -306,7 +306,7 @@
     "lieu": "montagne",
     "meteo": "chaleur",
     "description": "Je fais du parapente sur les sommets enneigés de la montagne, tout en sirotant un cocktail tropical à la noix de coco.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/d152d2e3-cfc4-4b16-a94d-399cd45d2660",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/d152d2e3-cfc4-4b16-a94d-399cd45d2660",
     "modal": false
   },
   {
@@ -316,7 +316,7 @@
     "lieu": "montagne",
     "meteo": "pluvieux",
     "description": "Je fais de la randonnée dans les forêts de montagne sous un léger crachin, tout en chantant des chansons sous mon imperméable jaune poussin.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/0a9b8c2a-d16c-43be-a256-00f7d4cda0cc",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/0a9b8c2a-d16c-43be-a256-00f7d4cda0cc",
     "modal": false
   },
   {
@@ -326,7 +326,7 @@
     "lieu": "montagne",
     "meteo": "froid",
     "description": "Un hamster descend une piste de l'everest enneigé en short et en fumant un cigare.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/751c6192-0525-4d88-81f0-8317ff7e04c1",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/751c6192-0525-4d88-81f0-8317ff7e04c1",
     "modal": false
   },
   {
@@ -336,7 +336,7 @@
     "lieu": "campagne",
     "meteo": "chaleur",
     "description": "Une glace fond sous mes yeux en pleine chaleur au fin fond de la campagne.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/13e7bfaa-c837-45c3-a5a8-f075e4ca7143",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/13e7bfaa-c837-45c3-a5a8-f075e4ca7143",
     "modal": false
   },
   {
@@ -346,7 +346,7 @@
     "lieu": "campagne",
     "meteo": "pluvieux",
     "description": "J'essaye de faire un dessin à l'eau sous la pluie dans une ferme de la campagne hongroise.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/492cda64-5724-4799-a18a-c6f6b94e02db",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/492cda64-5724-4799-a18a-c6f6b94e02db",
     "modal": false
   },
   {
@@ -356,7 +356,7 @@
     "lieu": "campagne",
     "meteo": "froid",
     "description": "C'est bientôt Noël. Avec mes amis, nous nous sommes déguisés en lutins pour aider le Père-Noël.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/d67f8bb2-a5dd-401a-8e7f-69cd5ea4e3e4",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/d67f8bb2-a5dd-401a-8e7f-69cd5ea4e3e4",
     "modal": false
   },
   {
@@ -366,7 +366,7 @@
     "lieu": "ville",
     "meteo": "chaleur",
     "description": "J'admire un beau coucher de soleil depuis les toits de Paris. Je me sens calme et appaisé.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/3ddb0e8c-b008-4fc0-b457-dcffd0788078",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/3ddb0e8c-b008-4fc0-b457-dcffd0788078",
     "modal": false
   },
   {
@@ -376,7 +376,7 @@
     "lieu": "ville",
     "meteo": "pluvieux",
     "description": "J'aime marcher sous la pluie, je suis serein et décide de sauter de joie.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/508e9aee-430c-43f0-9ab0-3d9358ae2f63",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/508e9aee-430c-43f0-9ab0-3d9358ae2f63",
     "modal": false
   },
   {
@@ -386,7 +386,7 @@
     "lieu": "ville",
     "meteo": "froid",
     "description": "Je médite sur le toit d'un building au-dessus des nuages.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/bfd46251-b186-48a9-9182-4c8654b7a5c1",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/bfd46251-b186-48a9-9182-4c8654b7a5c1",
     "modal": false
   },
   {
@@ -396,7 +396,7 @@
     "lieu": "mer",
     "meteo": "chaleur",
     "description": "Je me prélasse sur mon transat sur une plage au bord de la mer malgré la forte chaleur.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/52fe5679-74f4-4b21-a5f3-314ca59c01d5",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/52fe5679-74f4-4b21-a5f3-314ca59c01d5",
     "modal": false
   },
   {
@@ -406,7 +406,7 @@
     "lieu": "mer",
     "meteo": "pluvieux",
     "description": "Rien ne peut perturber mon bien être, même pas la pluie qui tombe sur cette mer agitée.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/f6fb554a-3b3a-4d1d-8d94-a99f1fe7bed6",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/f6fb554a-3b3a-4d1d-8d94-a99f1fe7bed6",
     "modal": false
   },
   {
@@ -416,7 +416,7 @@
     "lieu": "mer",
     "meteo": "froid",
     "description": "Je me balade calmement au bord de la mer dans un foid hivernal.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/65e96149-a2c7-41cb-85f0-5734b0e8da84",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/65e96149-a2c7-41cb-85f0-5734b0e8da84",
     "modal": false
   },
   {
@@ -426,7 +426,7 @@
     "lieu": "montagne",
     "meteo": "chaleur",
     "description": "En m'élançant du haut de cette montagne, je me sens serein. Ce n'est pas la première fois que je fais du saut à l'élastique, mais c'est la première fois que je le fais en duo.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/00e239db-d4e7-4884-84b4-53182044465e",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/00e239db-d4e7-4884-84b4-53182044465e",
     "modal": false
   },
   {
@@ -436,7 +436,7 @@
     "lieu": "montagne",
     "meteo": "pluvieux",
     "description": "Je fais une promenade en forêt de montagne, tout en admirant les arbres et la nature et en écoutant le bruit apaisant de la pluie. La paix et de serenite m'envahissent.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/02271139-7ef2-42af-a820-86d3e5ce0bed",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/02271139-7ef2-42af-a820-86d3e5ce0bed",
     "modal": false
   },
   {
@@ -446,7 +446,7 @@
     "lieu": "montagne",
     "meteo": "froid",
     "description": "Je fais du yoga en plein air à la montagne, tout en appréciant la vue panoramique sur les paysages enneigés et en ressentant un profond sentiment de serenite.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/c558e606-6d5f-4e8d-8204-106ae41d24bc",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/c558e606-6d5f-4e8d-8204-106ae41d24bc",
     "modal": false
   },
   {
@@ -456,7 +456,7 @@
     "lieu": "campagne",
     "meteo": "chaleur",
     "description": "Je fais une promenade à vélo dans les chemins de campagne, tout en admirant les champs de fleurs et en respirant l'air frais de l'été, dans la paix et la serenite.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/2c819292-efa4-4848-8031-675abedff9cc",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/2c819292-efa4-4848-8031-675abedff9cc",
     "modal": false
   },
   {
@@ -466,7 +466,7 @@
     "lieu": "campagne",
     "meteo": "pluvieux",
     "description": "Je fais une balade à cheval dans les champs de la campagne, sous un temps gris, tout en admirant la paix et la tranquillité du moment et en respirant l'air frais et revigorant.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/b570d2ae-5f46-423a-98a6-3b7151bcef86",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/b570d2ae-5f46-423a-98a6-3b7151bcef86",
     "modal": false
   },
   {
@@ -476,7 +476,7 @@
     "lieu": "campagne",
     "meteo": "froid",
     "description": "Je suis dans une campagne paisible, enveloppé dans une couverture chaude alors que je regarde la neige tomber et écoute le silence de la nature environnante.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/b063156d-fb7d-424f-957a-b7582cb32a3e",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/b063156d-fb7d-424f-957a-b7582cb32a3e",
     "modal": false
   },
   {
@@ -486,7 +486,7 @@
     "lieu": "ville",
     "meteo": "canicule",
     "description": "Je me promène dans les rues de cette ville étouffante, transpirant sous le soleil brûlant. Mais je ne peux pas me débarrasser de ce sentiment de culpabilite qui me ronge.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/0b2e9c5c-d1f2-4e85-8204-49b0ba121378",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/0b2e9c5c-d1f2-4e85-8204-49b0ba121378",
     "modal": false
   },
   {
@@ -496,7 +496,7 @@
     "lieu": "ville",
     "meteo": "tempete",
     "description": "Je suis hanté par la culpabilite tandis que j'erre dans une ville dévastée par une tempête déchaînée.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/30aae4d2-a65c-4a2c-b40e-5141fb4dbada",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/30aae4d2-a65c-4a2c-b40e-5141fb4dbada",
     "modal": false
   },
   {
@@ -506,7 +506,7 @@
     "lieu": "ville",
     "meteo": "glacial",
     "description": "Je parcours les rues de la ville glaciale en proie à une colère incontrôlable, hanté par des images qui me poursuivent alors que je tente de les fuir.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/d8cbb06f-0aaa-4c51-854e-c6afea6c93ba",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/d8cbb06f-0aaa-4c51-854e-c6afea6c93ba",
     "modal": false
   },
   {
@@ -516,7 +516,7 @@
     "lieu": "mer",
     "meteo": "canicule",
     "description": "Je me sens coupable d'avoir laissé ma famille souffrir sous la canicule, espérant que l'air frais de la mer pourra m'aider à chasser mes idées noires.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2987fc09-697f-43f8-bd9b-bb3c50074918",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2987fc09-697f-43f8-bd9b-bb3c50074918",
     "modal": false
   },
   {
@@ -526,7 +526,7 @@
     "lieu": "mer",
     "meteo": "tempete",
     "description": "Je me sens un peu coupable d'avoir laissé mon ami dans ce bateau en pleine mer et sous la tempête.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/934584bc-a1fb-40a7-bbdb-75f45204d3aa",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/934584bc-a1fb-40a7-bbdb-75f45204d3aa",
     "modal": false
   },
   {
@@ -536,7 +536,7 @@
     "lieu": "mer",
     "meteo": "glacial",
     "description": "J'aurais dû lui dire que s'il plonge sous la glace dans la mer il sera gelé.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/51026d2d-1ef9-4603-a22e-41dd2355ed1f",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/51026d2d-1ef9-4603-a22e-41dd2355ed1f",
     "modal": false
   },
   {
@@ -546,7 +546,7 @@
     "lieu": "montagne",
     "meteo": "canicule",
     "description": "Pourquoi j'ai laissé ma loupe dans cette montagne avec ce soleil qui tape? Maintenant ils vont sûrement dire que c'est de ma faute si tout est parti en fumée!",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/043a95cb-eed6-4841-a7fb-fdfedff2258a",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/043a95cb-eed6-4841-a7fb-fdfedff2258a",
     "modal": false
   },
   {
@@ -556,7 +556,7 @@
     "lieu": "montagne",
     "meteo": "tempete",
     "description": "Je me perds en montagne pendant une tempête de neige, tout en me sentant coupable d'avoir ignoré les avertissements de météo et d'avoir mis ma vie et celle de mes amis en danger.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/eff71cdb-bbd9-4191-bb10-aa9a1c5d8575",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/eff71cdb-bbd9-4191-bb10-aa9a1c5d8575",
     "modal": false
   },
   {
@@ -566,7 +566,7 @@
     "lieu": "montagne",
     "meteo": "glacial",
     "description": "Je culpabilise parce que j'ai adopté une vache rose et que mes enfants pleurent parce qu'ils en voulaient une bleue.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8dd9bf53-9a04-4c02-af39-1e4a8ea62958",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8dd9bf53-9a04-4c02-af39-1e4a8ea62958",
     "modal": false
   },
   {
@@ -576,7 +576,7 @@
     "lieu": "campagne",
     "meteo": "canicule",
     "description": "J'ai allumé un feu et ma maison a fini en cendre.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/16056986-b255-4779-a3df-3abff827870d",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/16056986-b255-4779-a3df-3abff827870d",
     "modal": false
   },
   {
@@ -586,7 +586,7 @@
     "lieu": "campagne",
     "meteo": "tempete",
     "description": "Une tornade a emporté ma maison, zut!",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/28218d84-dfc5-41e3-8ad9-59990d7773e7",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/28218d84-dfc5-41e3-8ad9-59990d7773e7",
     "modal": false
   },
   {
@@ -596,7 +596,7 @@
     "lieu": "campagne",
     "meteo": "glacial",
     "description": "Je conduis mon véhicule sur une route verglacée de la campagne, tout en me sentant coupable d'avoir pris des risques inutiles et de mettre ma vie et celle de mes passagers en danger.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8426848e-e035-40d3-9ccc-90acde81ea5b",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8426848e-e035-40d3-9ccc-90acde81ea5b",
     "modal": false
   },
   {
@@ -606,7 +606,7 @@
     "lieu": "ville",
     "meteo": "canicule",
     "description": "Je suis dans une ville où il fait beaucoup trop chaud. Les gens m'énervent. Le bêton est brûlant.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/0cedd8fc-4e5e-489f-b339-a208469b401c",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/0cedd8fc-4e5e-489f-b339-a208469b401c",
     "modal": false
   },
   {
@@ -616,7 +616,7 @@
     "lieu": "ville",
     "meteo": "tempete",
     "description": "Je suis dans une ville et me bagarre avec un vendeur de hotdog douteux, pendant une tempête de chamallow.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/cf8c8b85-99e7-40ab-84cb-fe5dc5b46c45",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/cf8c8b85-99e7-40ab-84cb-fe5dc5b46c45",
     "modal": false
   },
   {
@@ -626,7 +626,7 @@
     "lieu": "ville",
     "meteo": "glacial",
     "description": "Je parcours les rues d'une ville glaciale en proie à une colère incontrôlable.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/482bc4d0-e5a0-49fd-a77e-e01d7b6c83ed",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/482bc4d0-e5a0-49fd-a77e-e01d7b6c83ed",
     "modal": false
   },
   {
@@ -636,7 +636,7 @@
     "lieu": "mer",
     "meteo": "canicule",
     "description": "Je n'en peux plus: j'ai trop chaud dans cette barque. Je suis perdu au milieu de nul part dans la mer des Philippines.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/04ee691e-ba07-44a1-a0b2-adfe881c4503",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/04ee691e-ba07-44a1-a0b2-adfe881c4503",
     "modal": false
   },
   {
@@ -646,7 +646,7 @@
     "lieu": "mer",
     "meteo": "tempete",
     "description": "Je suis très énervé par une souris qui mange la moitié de la coque de mon bâteau alors qu'on est en pleine tempête, je coule !",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/275a4c45-6472-4c99-9e96-f122a411ea2b",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/275a4c45-6472-4c99-9e96-f122a411ea2b",
     "modal": false
   },
   {
@@ -656,7 +656,7 @@
     "lieu": "mer",
     "meteo": "glacial",
     "description": "Je me trouve sur un navire en haute mer par un temps glacial. Je suis furieux contre moi-même d'avoir ignoré les avertissements de météo et de m'être retrouvé dans une situation aussi dangereuse.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/6e1e6ab2-77f6-4549-b858-336577dd1059",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/6e1e6ab2-77f6-4549-b858-336577dd1059",
     "modal": false
   },
   {
@@ -666,7 +666,7 @@
     "lieu": "montagne",
     "meteo": "canicule",
     "description": "Je me trouve près d'un volcan par temps de canicule. Je suis effrayé et paniqué à cause de la chaleur étouffante. Je n'ai pas d'eau et mon imprudence risque de me coûter la vie.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/ba9e465c-8419-42ed-843d-9fa5cd9e8d4b",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/ba9e465c-8419-42ed-843d-9fa5cd9e8d4b",
     "modal": false
   },
   {
@@ -676,7 +676,7 @@
     "lieu": "montagne",
     "meteo": "tempete",
     "description": "Enfermé dans mon chalet à cause d'une tempête, je décide de régler le compte du moustique qui est venu me piquer un peu plus tôt.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/6600a35c-5755-44ea-8e26-4b25b198a7d1",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/6600a35c-5755-44ea-8e26-4b25b198a7d1",
     "modal": false
   },
   {
@@ -686,7 +686,7 @@
     "lieu": "montagne",
     "meteo": "glacial",
     "description": "Je crie sur des stalactites géants qui tentent de me kidnapper pendant ma randonnée à la montagne.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8cff4833-1cad-42e8-81cf-f0339c729f5e",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8cff4833-1cad-42e8-81cf-f0339c729f5e",
     "modal": false
   },
   {
@@ -696,7 +696,7 @@
     "lieu": "campagne",
     "meteo": "canicule",
     "description": "J'en peux plus de cette odeur de bouse de vache. La campagne n'est vraiment pas faite pour moi.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/629f2bdc-f180-4e9b-a0fe-c86163bc91e5",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/629f2bdc-f180-4e9b-a0fe-c86163bc91e5",
     "modal": false
   },
   {
@@ -706,7 +706,7 @@
     "lieu": "campagne",
     "meteo": "tempete",
     "description": "Si j'avais su que pendant mes vacances à la montagne, il y aurait une tempête je serais parti à la mer.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/77cdb9c7-a32c-423b-bad7-08a9503336ce",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/77cdb9c7-a32c-423b-bad7-08a9503336ce",
     "modal": false
   },
   {
@@ -716,7 +716,7 @@
     "lieu": "campagne",
     "meteo": "glacial",
     "description": "Je me dispute avec un puits parce qu'il fait froid et qu'il m'a volé ma chaussette.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/bc8f7db9-6b25-4ad1-a29a-e3f700412fb0",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/bc8f7db9-6b25-4ad1-a29a-e3f700412fb0",
     "modal": false
   },
   {
@@ -726,7 +726,7 @@
     "lieu": "ville",
     "meteo": "canicule",
     "description": "Je me retrouve seul, dans une ville abandonnée par un temps de canicule. Je suis triste et ressens de la solitude.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/8db8b176-425a-4b66-adf8-ae733eaf08ad",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/8db8b176-425a-4b66-adf8-ae733eaf08ad",
     "modal": false
   },
   {
@@ -736,7 +736,7 @@
     "lieu": "ville",
     "meteo": "tempete",
     "description": "Une tempête en pleine ville s'arrête près de moi pour me dire qu'elle ne m'aime pas.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/965030ea-cea3-4f21-991c-51d7c6cdc45a",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/965030ea-cea3-4f21-991c-51d7c6cdc45a",
     "modal": false
   },
   {
@@ -746,7 +746,7 @@
     "lieu": "ville",
     "meteo": "glacial",
     "description": "Je fais du patinage en centre ville main dans la main avec un fantôme. L'ambiance est morose et j'ai froid.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/eae4013e-e362-4c74-9463-eaa41007df58",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/eae4013e-e362-4c74-9463-eaa41007df58",
     "modal": false
   },
   {
@@ -756,7 +756,7 @@
     "lieu": "mer",
     "meteo": "canicule",
     "description": "Je suis sur une plage magnifique mais je suis en larme parce que mon cocktail à la tomate est trop chaud.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/502a3ef6-a651-46c3-ba18-f76a173e41cb",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/502a3ef6-a651-46c3-ba18-f76a173e41cb",
     "modal": false
   },
   {
@@ -766,7 +766,7 @@
     "lieu": "mer",
     "meteo": "tempete",
     "description": "Je suis perdu en mer. C'est la tempête. Je suis triste à l'idée de passer le reste de ma vie entouré de monstres marins.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2c6b5990-e5a8-44ee-ad76-1cfe3d98a4cc",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2c6b5990-e5a8-44ee-ad76-1cfe3d98a4cc",
     "modal": false
   },
   {
@@ -776,7 +776,7 @@
     "lieu": "mer",
     "meteo": "glacial",
     "description": "Une grenouille de mer gelée me raconte qu'elle a perdue toute sa famille.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/da54e57e-1d87-49a2-9228-8475651fbf62",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/da54e57e-1d87-49a2-9228-8475651fbf62",
     "modal": false
   },
   {
@@ -786,7 +786,7 @@
     "lieu": "montagne",
     "meteo": "canicule",
     "description": "Je sens les larmes couler sur mes joues en pensant qu'il me reste encore à franchir ces montagnes sous une chaleur de plomb.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/ad9321cd-06da-484c-9380-16f22a0f9856",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/ad9321cd-06da-484c-9380-16f22a0f9856",
     "modal": false
   },
   {
@@ -796,7 +796,7 @@
     "lieu": "montagne",
     "meteo": "tempete",
     "description": "En pleine montagne, pendant ma randonnée en solitaire, je me retrouve piégé dans une tempête. Un orage éclate et la foudre s'abat autour de moi. Ce spectacle me désole.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/1ee44253-26a2-4097-b9b4-267d49ab54ce",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/1ee44253-26a2-4097-b9b4-267d49ab54ce",
     "modal": false
   },
   {
@@ -806,7 +806,7 @@
     "lieu": "montagne",
     "meteo": "glacial",
     "description": "Je me trouve sur le sommet d'une montage enneigée où suis entouré uniquement de mouches, je pleure.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/f040fd34-15e8-41fa-a589-c8ff76f47c76",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/f040fd34-15e8-41fa-a589-c8ff76f47c76",
     "modal": false
   },
   {
@@ -816,7 +816,7 @@
     "lieu": "campagne",
     "meteo": "canicule",
     "description": "Quand je vois cette ferme en feu au milieu de la campagne danoise, je ne peux m'empêcher de pleurer.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/ff5c4af4-5cc5-4da2-89cb-d8fd50fd21d4",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/ff5c4af4-5cc5-4da2-89cb-d8fd50fd21d4",
     "modal": false
   },
   {
@@ -826,7 +826,7 @@
     "lieu": "campagne",
     "meteo": "tempete",
     "description": "Je suis une chenille sauf que je n'ai pas de pattes, heureusement je me transforme en papillon mais je suis aspiré par la tempête.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8627dfc4-1260-4972-94dc-6eec79245a1c",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8627dfc4-1260-4972-94dc-6eec79245a1c",
     "modal": false
   },
   {
@@ -836,7 +836,7 @@
     "lieu": "campagne",
     "meteo": "glacial",
     "description": "Je me trouve perdu dans un paysage de campagne verglacé. Je me retrouve face à face avec un bouc mutant qui me dévisage et me terrorise.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/3924f617-982b-44d3-ae84-3639c5991a65",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/3924f617-982b-44d3-ae84-3639c5991a65",
     "modal": false
   },
   {
@@ -846,7 +846,7 @@
     "lieu": "ville",
     "meteo": "canicule",
     "description": "C'est l'apocalypse. La ville est prise dans les flammes. Les gens s'affolent.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/9d80ba37-5a7a-4533-9ba1-80eace164fd3",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/9d80ba37-5a7a-4533-9ba1-80eace164fd3",
     "modal": false
   },
   {
@@ -856,7 +856,7 @@
     "lieu": "ville",
     "meteo": "tempete",
     "description": "Des extraterestres effrayants arrivent dans la ville au milieu d'une tempête. J'ai peur.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/c74c0f6d-9db7-49d0-8821-0d6b341c6a7c",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/c74c0f6d-9db7-49d0-8821-0d6b341c6a7c",
     "modal": false
   },
   {
@@ -866,7 +866,7 @@
     "lieu": "ville",
     "meteo": "glacial",
     "description": "La ville entière se transforme en stalactite géante. J'ai peur d'être congelé.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/aa70f056-6f1a-4793-b6ff-8e073aa1c9a0",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/aa70f056-6f1a-4793-b6ff-8e073aa1c9a0",
     "modal": false
   },
   {
@@ -876,7 +876,7 @@
     "lieu": "mer",
     "meteo": "canicule",
     "description": "Je tombe en mer et je coule profondément. Je me retrouve avec les cuphead qui me présentent au diable dans son antre. La chaleur y monte comme un jour de canicule. Au secours j'ai peur.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/7910c37e-d62c-4317-87b2-fea1fea8edc8",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/7910c37e-d62c-4317-87b2-fea1fea8edc8",
     "modal": false
   },
   {
@@ -886,7 +886,7 @@
     "lieu": "mer",
     "meteo": "tempete",
     "description": "Je suis sur un bateau en pleine mer, c'est la tempête. J'ai peur car je suis entouré de monstres marins.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8c53575d-73d5-4ecc-806f-42adc9dfb61a",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/8c53575d-73d5-4ecc-806f-42adc9dfb61a",
     "modal": false
   },
   {
@@ -896,7 +896,7 @@
     "lieu": "mer",
     "meteo": "glacial",
     "description": "Je suis perdu au milieu de la banquise. Il fait sombre. C'est effrayant. Des ours polaires ont l'air affamés.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/781a95e1-7a39-4b46-9c00-9937e492f906",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/781a95e1-7a39-4b46-9c00-9937e492f906",
     "modal": false
   },
   {
@@ -906,7 +906,7 @@
     "lieu": "montagne",
     "meteo": "canicule",
     "description": "Une araignée géante surgit au milieu de la montagne en plein été.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2c131437-59e1-434c-9906-109065e7dbfd",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2c131437-59e1-434c-9906-109065e7dbfd",
     "modal": false
   },
   {
@@ -916,7 +916,7 @@
     "lieu": "montagne",
     "meteo": "tempete",
     "description": "Je suis en pleine tempête de neige dans les Pyrénées poursuivi par un pikachu géant qui veut me faire un calin et qui aimerait bien un bisou.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2caedfe1-edd4-47cd-9e6c-3f875f433a57",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2caedfe1-edd4-47cd-9e6c-3f875f433a57",
     "modal": false
   },
   {
@@ -926,7 +926,7 @@
     "lieu": "montagne",
     "meteo": "glacial",
     "description": "Je suis pris dans une avalanche et un Yeti me poursuit. J'ai peur.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/04dd4b4b-d16b-4cd9-a21c-a27466f95d97",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/04dd4b4b-d16b-4cd9-a21c-a27466f95d97",
     "modal": false
   },
   {
@@ -936,7 +936,7 @@
     "lieu": "campagne",
     "meteo": "canicule",
     "description": "Au milieu de la forêt, je mange mon sandwich quand des abeilles arrivent en trombe sur moi.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/d146a239-341a-4b6f-835a-ffe94a387932",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/d146a239-341a-4b6f-835a-ffe94a387932",
     "modal": false
   },
   {
@@ -946,7 +946,7 @@
     "lieu": "campagne",
     "meteo": "tempete",
     "description": "Je cours pendant qu'un ours me poursuit dans la forêt, une tempête fait rage !",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/1c6ea946-806f-452b-81a1-e4350a4f471d",
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/1c6ea946-806f-452b-81a1-e4350a4f471d",
     "modal": false
   },
   {
@@ -956,6 +956,6 @@
     "lieu": "campagne",
     "meteo": "glacial",
     "description": "Je suis perdu au milieu d'une forêt sombre et enneigée. J'ai peur.",
-    "URL": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2e20b23f-8800-4ffc-ba70-57bd84e6c97b"
+    "url": "https://lexica-serve-encoded-images2.sharif.workers.dev/md/2e20b23f-8800-4ffc-ba70-57bd84e6c97b"
   }
 ]

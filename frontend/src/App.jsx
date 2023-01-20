@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Apropos from "./pages/A-Propos";
 import Catalogue from "./pages/Catalogue";
 import Panier from "./pages/Panier";
-import Contact from "./pages/Contact";
+import Experience from "./pages/Experience";
 
 function App() {
   const [addToCart, setAddToCart] = useState([]);
@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Apropos" element={<Apropos />} />
+
         <Route
           path="/Catalogue"
           element={
@@ -23,9 +24,7 @@ function App() {
           }
         />
         <Route path="/Panier" element={<Panier addToCart={addToCart} />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Revelation" element={<Contact />} />
-        <Route path="/Experience" element={<Contact />} />
+        <Route path="/Experience" element={<Experience />} />
       </Routes>
     </BrowserRouter>
   );
