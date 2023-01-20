@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 
+import PropTypes from "prop-types";
 import data from "../../csvjson.json";
 import SearchBar from "./SearchBar";
 import TypePicker from "./TypePicker";
@@ -9,7 +10,7 @@ import EmotionPicker from "./EmotionPicker";
 import LocationPicker from "./LocationPicker";
 import WeatherPicker from "./WeatherPicker";
 
-function CardsList() {
+function CardsList({ setAddToCart, addToCart }) {
   const [search, setSearch] = useState(" ");
   const [selectedValue, setSelectedValue] = useState("");
   const [selectedEmotion, setSelectedEmotion] = useState("");
@@ -17,10 +18,10 @@ function CardsList() {
   const [selectedLocation, setSelectedLocation] = useState("");
   const [popUp, setPopUp] = useState(data);
 
-  const handlePopUpOn = (ID) => {
+  const handlePopUpOn = (id) => {
     setPopUp(
       popUp.filter((card) => {
-        if (card.ID === ID) return card;
+        if (card.id === id) return card;
         return null;
       })
     );
@@ -33,7 +34,12 @@ function CardsList() {
   return (
     <div className="flex flex-col justify-center bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m ">
       <div>
-        <PopUpCard popUp={popUp} onClose={() => handlePopUpOff()} />
+        <PopUpCard
+          popUp={popUp}
+          onClose={() => handlePopUpOff()}
+          addToCart={addToCart}
+          setAddToCart={setAddToCart}
+        />
       </div>
       <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m md:px-6">
         <div className="md:flex-row   flex flex-col  items-center justify-between flex-nowrap w-full">
@@ -60,31 +66,31 @@ function CardsList() {
             />
           </div>
         </div>
-        {data.filter((elem) => elem.DESCRIPTION.includes(search)).length ===
+        {data.filter((elem) => elem.description.includes(search)).length ===
         0 ? (
           <div> Aucun rêve trouvé </div>
         ) : (
           data
-            .filter((elem) => elem.DESCRIPTION.includes(search))
+            .filter((elem) => elem.description.includes(search))
             .filter((elem) =>
               selectedValue.length !== 0
-                ? elem.TYPE === selectedValue
-                : elem.TYPE
+                ? elem.type === selectedValue
+                : elem.type
             )
             .filter((elem) =>
               selectedEmotion.length !== 0
-                ? elem.EMOTION === selectedEmotion
-                : elem.EMOTION
+                ? elem.emotion === selectedEmotion
+                : elem.emotion
             )
             .filter((elem) =>
               selectedLocation.length !== 0
-                ? elem.LIEU === selectedLocation
-                : elem.LIEU
+                ? elem.lieu === selectedLocation
+                : elem.lieu
             )
             .filter((elem) =>
               selectedWeather.length !== 0
-                ? elem.METEO === selectedWeather
-                : elem.METEO
+                ? elem.meteo === selectedWeather
+                : elem.meteo
             )
 
             .map((elem) => {
@@ -95,5 +101,14 @@ function CardsList() {
     </div>
   );
 }
-
+CardsList.propTypes = {
+  addToCart: PropTypes.arrayOf(
+    PropTypes.shape({
+      ID: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      quantity: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  setAddToCart: PropTypes.func.isRequired,
+};
 export default CardsList;
