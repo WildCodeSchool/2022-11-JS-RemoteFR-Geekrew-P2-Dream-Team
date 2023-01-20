@@ -16,7 +16,28 @@ module.exports = {
       "2xl": "1536px",
     },
     supports: {},
-    colors: {
+    colors: ({ colors }) => ({
+      inherit: colors.inherit,
+      current: colors.current,
+      transparent: colors.transparent,
+      slate: colors.slate,
+      gray: colors.gray,
+      zinc: colors.zinc,
+      neutral: colors.neutral,
+      stone: colors.stone,
+      orange: colors.orange,
+      amber: colors.amber,
+      lime: colors.lime,
+      emerald: colors.emerald,
+      teal: colors.teal,
+      cyan: colors.cyan,
+      sky: colors.sky,
+      indigo: colors.indigo,
+      violet: colors.violet,
+      purple: colors.purple,
+      fuchsia: colors.fuchsia,
+      pink: colors.pink,
+      rose: colors.rose,
       "gradient-blue-d": "#101127",
       "gradient-blue-m": "#1B1D42",
       yellow: "#A8791D",
@@ -29,7 +50,7 @@ module.exports = {
       green: "#54A05C",
       red: "#FF4343",
       black: "#03030E",
-    },
+    }),
     columns: {
       auto: "auto",
       1: "1",
@@ -99,8 +120,10 @@ module.exports = {
       none: "none",
       spin: "spin 1s linear infinite",
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
-      pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      pulse: "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
+      glow: "glow 2s infinite",
+      move: "move 9s  linear infinite",
     },
     aria: {
       checked: 'checked="true"',
@@ -128,6 +151,9 @@ module.exports = {
     backdropSepia: ({ theme }) => theme("sepia"),
     backgroundColor: ({ theme }) => theme("colors"),
     backgroundImage: {
+      searchBarIcon: "url('./assets/icons/search.svg')",
+      searchBarCloud: "url('./assets/searchCloud/search-cloud.svg')",
+      filterCloud: "url('./assets/Cloud/cloud.svg')",
       none: "none",
       "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
       "gradient-to-tr":
@@ -141,6 +167,8 @@ module.exports = {
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl":
         "linear-gradient(to top left, var(--tw-gradient-stops))",
+      "noise-pattern": "url('./assets/noise.png')",
+      "scrolCloud ": "url('./assets/Cloud/cloud.svg')",
     },
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {
@@ -527,6 +555,7 @@ module.exports = {
       "1/3": "33.333333%",
       "2/3": "66.666667%",
       "1/4": "25%",
+      "1/5": "20%",
       "2/4": "50%",
       "3/4": "75%",
       full: "100%",
@@ -556,6 +585,23 @@ module.exports = {
         "50%": {
           transform: "none",
           animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
+        },
+      },
+      glow: {
+        "0%": { opacity: "0" },
+        "50%": { opacity: "1" },
+        "100%": { opacity: "0" },
+      },
+      move: {
+        "25%": {
+          opacity: ".5",
+        },
+        "50%": {
+          transform: "translateY(5%)",
+          opacity: "1",
+        },
+        "75%": {
+          opacity: ".5",
         },
       },
     },
@@ -628,6 +674,7 @@ module.exports = {
       min: "min-content",
       max: "max-content",
       fit: "fit-content",
+      "4/5": "75%",
     },
     minWidth: {
       0: "0px",

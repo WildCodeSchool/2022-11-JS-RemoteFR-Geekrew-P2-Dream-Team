@@ -1,3 +1,9 @@
+import Hero from "../components/Hero";
+
 export default function Home() {
-  return <header />;
+  return (
+    <div className="flex flex-col justify-center min-h-full">
+      <Hero />
+    </div>
+  );
 }
