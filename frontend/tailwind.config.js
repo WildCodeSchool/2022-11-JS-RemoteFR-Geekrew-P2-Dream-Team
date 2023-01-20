@@ -120,9 +120,10 @@ module.exports = {
       none: "none",
       spin: "spin 1s linear infinite",
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
-      pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      pulse: "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
       glow: "glow 2s infinite",
+      move: "move 9s  linear infinite",
     },
     aria: {
       checked: 'checked="true"',
@@ -590,6 +591,18 @@ module.exports = {
         "0%": { opacity: "0" },
         "50%": { opacity: "1" },
         "100%": { opacity: "0" },
+      },
+      move: {
+        "25%": {
+          opacity: ".5",
+        },
+        "50%": {
+          transform: "translateY(5%)",
+          opacity: "1",
+        },
+        "75%": {
+          opacity: ".5",
+        },
       },
     },
     letterSpacing: {
