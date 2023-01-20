@@ -6,6 +6,7 @@ import Apropos from "./pages/A-Propos";
 import Catalogue from "./pages/Catalogue";
 import Panier from "./pages/Panier";
 import Contact from "./pages/Contact";
+import Experience from "./pages/Experience";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Apropos" element={<Apropos />} />
+        <Route path="/Experience" element={<Experience />} />
         <Route path="/Catalogue" element={<Catalogue />} />
         <Route path="/Panier" element={<Panier />} />
         <Route path="/Contact" element={<Contact />} />
