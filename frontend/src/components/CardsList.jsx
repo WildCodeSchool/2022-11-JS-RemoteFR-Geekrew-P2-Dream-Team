@@ -96,7 +96,13 @@ function CardsList({ setAddToCart, addToCart }) {
             )
 
             .map((elem) => {
-              return <Card handlePopUpOn={handlePopUpOn} elem={elem} />;
+              return (
+                <Card
+                  handlePopUpOn={handlePopUpOn}
+                  elem={elem}
+                  key={elem.id + 1}
+                />
+              );
             })
         )}
       </div>

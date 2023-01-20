@@ -1,11 +1,18 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
 
-function Counter({ dream }) {
-  const [count, setCount] = useState(dream.quantity);
+function Counter({ dream, setAddToCart, addToCart }) {
+  function handleQuantityMore() {
+    const newDream = addToCart.map((elem) =>
+      elem.id === dream.id ? { ...elem, quantity: elem.quantity + 1 } : elem
+    );
+    setAddToCart([...newDream]);
+  }
 
-  function handleQuantity() {
-    setCount((oldCount) => oldCount + 1);
+  function handleQuantityLess() {
+    const newDream = addToCart.map((elem) =>
+      elem.id === dream.id ? { ...elem, quantity: elem.quantity - 1 } : elem
+    );
+    setAddToCart([...newDream]);
   }
 
   return (
@@ -14,14 +21,11 @@ function Counter({ dream }) {
         type="button"
         className="button bg-light-yellow text-sm rounded-3xl whitespace-nowrap w-full px-2 py-1"
       >
-        <button
-          type="button"
-          onClick={() => setCount((oldCount) => oldCount - 1)}
-        >
+        <button type="button" onClick={() => handleQuantityLess()}>
           -
         </button>{" "}
-        {count}{" "}
-        <button type="button" onClick={() => handleQuantity()}>
+        {dream.quantity}{" "}
+        <button type="button" onClick={() => handleQuantityMore()}>
           +
         </button>
       </button>
@@ -31,6 +35,14 @@ function Counter({ dream }) {
 
 Counter.propTypes = {
   dream: PropTypes.func.isRequired,
+  setAddToCart: PropTypes.func.isRequired,
+  addToCart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      quantity: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default Counter;

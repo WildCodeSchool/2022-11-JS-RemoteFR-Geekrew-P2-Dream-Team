@@ -42,6 +42,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
                 className="image md:aspect-square md:w-8/12 object-contain"
                 src={card.url}
                 alt="reve"
+                key={card.url}
               />
             );
           })}
@@ -58,7 +59,10 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
             <div className="content flex flex-col justify-around items-between my-8">
               {popUp.map((card) => {
                 return (
-                  <div className="flex flex-col justify-between">
+                  <div
+                    className="flex flex-col justify-between"
+                    key={card.id * 0.5}
+                  >
                     <h1 className="font-sans text-base md:w-11/12 md:text-right	 mt-8 md:mt-4 text text-white md:text-gradient-blue-d">
                       {card.description}
                     </h1>

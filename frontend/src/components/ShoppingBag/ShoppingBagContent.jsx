@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Counter from "./Counter";
 import trash from "../../assets/icons/trash2.svg";
 
-function ShoppingBagContent({ addToCart }) {
+function ShoppingBagContent({ addToCart, setAddToCart }) {
   return (
     <div className="flex flex-col items-center justify-between w-10/12 my-4 md:mt-4 md:mb-8">
       {addToCart.map((dream) => {
@@ -25,7 +25,11 @@ function ShoppingBagContent({ addToCart }) {
                     : dream.description}
                 </p>
                 <div className="flex flex-row text-gradient-blue-d">
-                  <Counter dream={dream} />
+                  <Counter
+                    dream={dream}
+                    addToCart={addToCart}
+                    setAddToCart={setAddToCart}
+                  />
                   <button type="button" className="text-light-yellow mx-4">
                     <img src={trash} alt="delete" />
                   </button>
@@ -33,7 +37,7 @@ function ShoppingBagContent({ addToCart }) {
               </div>
               <div className="flex flex-col text-white md:text-black items-end">
                 <p className="text-sm font-medium whitespace-nowrap">
-                  {dream.type === "reve" ? 30000 : 50000}
+                  {dream.type === "reve" ? 30000 : 5000}
                 </p>
                 <p className="text-[0.5rem]">dreameez</p>
               </div>
@@ -67,6 +71,7 @@ ShoppingBagContent.propTypes = {
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,
+  setAddToCart: PropTypes.func.isRequired,
 };
 
 export default ShoppingBagContent;
