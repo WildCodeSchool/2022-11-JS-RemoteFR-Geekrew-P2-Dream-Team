@@ -1,35 +1,34 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 function Card({ elem, handlePopUpOn }) {
   return (
     <button
-      key={elem.ID}
+      key={elem.id}
       className="flex flex-col items-center md:items-start w-5/12 md:w-1/5 md:mx-2 md:h-1/3 rounded-xl my-2 md:my-4 py-2 max-w-w-max-card md:max-w-none "
       type="button"
-      onClick={() => handlePopUpOn(elem.ID)}
+      onClick={() => handlePopUpOn(elem.id)}
     >
       <img
         className="aspect-square w-11/12 md:max-h-64 rounded-xl"
         src={elem.URL}
-        alt={elem.DESCRIPTION}
+        alt={elem.description}
       />
       <span className="hidden font-base font-medium md:flex">
-        {elem.DESCRIPTION.length > 75
-          ? `${elem.DESCRIPTION.substring(0, 70)} ...`
-          : elem.DESCRIPTION}
+        {elem.description.length > 75
+          ? `${elem.description.substring(0, 70)} ...`
+          : elem.description}
       </span>
-      <h4 className="hidden">{elem.TYPE}</h4>
-      <span className="hidden ">{elem.EMOTION}</span>
-      <span className="hidden">{elem.LIEU}</span>
-      <span className="hidden">{elem.METEO}</span>
-      {elem.TYPE === "Rêve" && (
+      <h4 className="hidden">{elem.type}</h4>
+      <span className="hidden ">{elem.emotion}</span>
+      <span className="hidden">{elem.lieu}</span>
+      <span className="hidden">{elem.meteo}</span>
+      {elem.type === "rêve" && (
         <span className="flex flex-row items-baseline text-white my-1">
           <p className="font-medium text-xl mr-1">30 000 {"  "}</p>
           <p className="font-normal text-xs"> {"  "}dreameez</p>
         </span>
       )}
-      {elem.TYPE === "Cauchemar" && (
+      {elem.type === "cauchemar" && (
         <span className="flex flex-row items-baseline text-white my-1">
           <p className="font-medium text-xl mr-1">5000 {"  "}</p>
           <p className="font-normal text-xs"> {"  "}dreameez</p>

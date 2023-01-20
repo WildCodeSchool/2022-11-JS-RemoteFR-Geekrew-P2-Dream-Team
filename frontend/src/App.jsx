@@ -22,7 +22,7 @@ function App() {
             <Catalogue setAddToCart={setAddToCart} addToCart={addToCart} />
           }
         />
-        <Route path="/Panier" element={<Panier />} />
+        <Route path="/Panier" element={<Panier addToCart={addToCart} />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Revelation" element={<Contact />} />
         <Route path="/Experience" element={<Contact />} />

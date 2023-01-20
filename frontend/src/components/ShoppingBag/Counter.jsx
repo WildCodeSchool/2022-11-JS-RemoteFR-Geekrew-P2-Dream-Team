@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 
-function Counter({ count, setCount }) {
+function Counter({ dream }) {
+  const [count, setCount] = useState(dream.quantity);
+
   return (
     <p>
       <button
@@ -15,8 +18,7 @@ function Counter({ count, setCount }) {
 }
 
 Counter.propTypes = {
-  count: PropTypes.number.isRequired,
-  setCount: PropTypes.func.isRequired,
+  dream: PropTypes.func.isRequired,
 };
 
 export default Counter;
