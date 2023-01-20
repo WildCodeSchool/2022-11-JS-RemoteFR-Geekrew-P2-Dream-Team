@@ -20,13 +20,11 @@ function WeatherPicker({ setSelectedWeather, selectedWeather }) {
       onChange={(e) => setSelectedWeather(e.target.value)}
       value={selectedWeather}
     >
-
       {options.map(({ value, label }) => (
         <option className="dropdown-item text-white" key={value} value={value}>
           {label}
         </option>
       ))}
-
     </select>
   );
 }

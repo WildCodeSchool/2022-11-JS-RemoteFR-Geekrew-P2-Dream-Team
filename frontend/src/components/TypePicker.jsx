@@ -16,13 +16,11 @@ export default function TypePicker({ selectedValue, setSelectedValue }) {
       onChange={(e) => setSelectedValue(e.target.value)}
       value={selectedValue}
     >
-
       {options.map(({ value, label }) => (
         <option className="dropdown-item text-white" key={value} value={value}>
           {label}
         </option>
       ))}
-
     </select>
   );
 }

@@ -7,7 +7,6 @@ import Catalogue from "./pages/Catalogue";
 import Panier from "./pages/Panier";
 import Contact from "./pages/Contact";
 
-
 function App() {
   const [addToCart, setAddToCart] = useState([]);
 

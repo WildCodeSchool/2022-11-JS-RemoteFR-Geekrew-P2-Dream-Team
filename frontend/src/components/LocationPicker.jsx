@@ -18,13 +18,11 @@ function LocationPicker({ setSelectedLocation, selectedLocation }) {
       onChange={(e) => setSelectedLocation(e.target.value)}
       value={selectedLocation}
     >
-
       {options.map(({ value, label }) => (
         <option className="dropdown-item text-white" key={value} value={value}>
           {label}
         </option>
       ))}
-
     </select>
   );
 }

@@ -22,13 +22,11 @@ function EmotionPicker({ setSelectedEmotion, selectedEmotion }) {
       onChange={(e) => setSelectedEmotion(e.target.value)}
       value={selectedEmotion}
     >
-
       {options.map(({ value, label }) => (
         <option className="dropdown-item text-white" key={value} value={value}>
           {label}
         </option>
       ))}
-
     </select>
   );
 }
