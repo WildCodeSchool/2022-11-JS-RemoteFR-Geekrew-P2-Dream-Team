@@ -11,7 +11,7 @@ function Card({ elem, handlePopUpOn }) {
     >
       <img
         className="aspect-square w-11/12 md:max-h-64 rounded-xl"
-        src={elem.URL}
+        src={elem.url}
         alt={elem.description}
       />
       <span className="hidden font-base font-medium md:flex">

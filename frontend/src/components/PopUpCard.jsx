@@ -37,7 +37,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
             return (
               <img
                 className="image md:aspect-square md:w-8/12 object-contain"
-                src={card.URL}
+                src={card.url}
                 alt="reve"
               />
             );

@@ -3,7 +3,9 @@ import React from "react";
 function Panier() {
   return (
     <div>
-      <h1>Bienvenue sur la page Panier</h1>
+      <h1 className="font-cinzel text-white flex justify-center ">
+        🛠️🛠️ Dream buy release coming soon 🛠️🛠️
+      </h1>
     </div>
   );
 }

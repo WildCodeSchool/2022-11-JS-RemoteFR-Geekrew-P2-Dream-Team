@@ -34,7 +34,7 @@ function Revelation({ type, emotion, loc, meteo }) {
 
       {isRevelated && (
         <>
-          <img src={dream.URL} alt={`${type} ${emotion} ${loc} ${meteo}`} />
+          <img src={dream.url} alt={`${type} ${emotion} ${loc} ${meteo}`} />
           <p className="pt-5 font-sans text-white">{dream.description}</p>
           <button
             onClick={() => {

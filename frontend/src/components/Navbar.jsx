@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className=" z-50 w-full flex md:flex  items-center flex-nowrap justify-between md:flex-nowrap  md:bg-opacity-0 ">
+      <nav className="w-full flex md:flex  items-center flex-nowrap justify-between md:flex-nowrap  md:bg-opacity-0 ">
         <div className="w-full flex flex-wrap justify-between md:items-center ">
           <img src={logo} alt="logo" className="flex" />
           <button
@@ -45,8 +45,8 @@ function Navbar() {
           <ul
             className={
               isOpen
-                ? "absolute min-h-[700%] md:min-h-[0%] bottom-0 top-20 w-full flex flex-col items-center md:flex-row md:justify-end bg-gradient-blue-m backdrop-blur-md md:backdrop-blur-0 bg-opacity-30 text-xl"
-                : "relative md:mr-6 hidden md:flex md:flex-row md:justify-end text-xl "
+                ? "absolute min-h-[700%] md:min-h-[0%] bottom-0 top-20 w-full flex flex-col items-center md:flex-row md:justify-end bg-gradient-blue-m backdrop-blur-md md:backdrop-blur-0 bg-opacity-30 text-xl md:z-0 z-30"
+                : "relative md:mr-6 hidden md:flex md:flex-row md:justify-end text-xl"
             }
           >
             <li className="mb-4 md:ml-4 pt-6 pb-6 md:p-0 ">
@@ -64,7 +64,7 @@ function Navbar() {
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
                 to="/Apropos"
-                className="  md:w-full px-3   text-white  "
+                className="md:w-full px-3   text-white  "
               >
                 A Propos
               </NavLink>
@@ -87,16 +87,6 @@ function Navbar() {
                 className=" md:w-full px-3  pb-6 text-white"
               >
                 Panier
-              </NavLink>
-            </li>
-            <li className="mb-4 md:ml-4 pb-6 md:p-0">
-              <NavLink
-                style={getActiveLinkStyle}
-                onClick={() => setIsOpen(false)}
-                to="/Contact"
-                className="md:w-full px-3  pb-6 text-white"
-              >
-                Contact
               </NavLink>
             </li>
           </ul>
