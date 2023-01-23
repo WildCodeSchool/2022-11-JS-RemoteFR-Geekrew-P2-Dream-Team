@@ -6,6 +6,7 @@ import Apropos from "./pages/A-Propos";
 import Catalogue from "./pages/Catalogue";
 import Panier from "./pages/Panier";
 import Experience from "./pages/Experience";
+import Confirmation from "./pages/Confirmation";
 
 function App() {
   const [addToCart, setAddToCart] = useState([]);
@@ -25,6 +26,7 @@ function App() {
         />
         <Route path="/Panier" element={<Panier />} />
         <Route path="/Experience" element={<Experience />} />
+        <Route path="/Confirmation" element={<Confirmation />} />
       </Routes>
     </BrowserRouter>
   );
