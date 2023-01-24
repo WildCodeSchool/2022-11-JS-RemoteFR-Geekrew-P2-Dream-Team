@@ -49,7 +49,7 @@ function Navbar() {
                 : "relative md:mr-6 hidden md:flex md:flex-row md:justify-end text-xl"
             }
           >
-            <li className="mb-4 md:ml-4 pt-6 pb-6 md:p-0 ">
+            <li className="mb-4 md:ml-4 pt-6 pb-6 md:p-0 md:z-30">
               <NavLink
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
@@ -59,7 +59,7 @@ function Navbar() {
                 Accueil
               </NavLink>
             </li>
-            <li className="mb-4 md:ml-4 pb-6 md:p-0">
+            <li className="mb-4 md:ml-4 pb-6 md:p-0 md:z-30">
               <NavLink
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
@@ -69,7 +69,7 @@ function Navbar() {
                 A Propos
               </NavLink>
             </li>
-            <li className="mb-4 md:ml-4 pb-6 md:p-0 ">
+            <li className="mb-4 md:ml-4 pb-6 md:p-0 md:z-30 ">
               <NavLink
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
@@ -79,7 +79,7 @@ function Navbar() {
                 Catalogue
               </NavLink>
             </li>
-            <li className="mb-4 md:ml-4 pb-6 md:p-0">
+            <li className="mb-4 md:ml-4 pb-6 md:p-0 md:z-30">
               <NavLink
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
