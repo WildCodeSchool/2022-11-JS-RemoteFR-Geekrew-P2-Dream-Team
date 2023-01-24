@@ -12,7 +12,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar addToCart={addToCart} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Apropos" element={<Apropos />} />

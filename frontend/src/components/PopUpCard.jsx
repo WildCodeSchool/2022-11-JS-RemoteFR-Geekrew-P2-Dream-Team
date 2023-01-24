@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
   if (popUp.length !== 1) return null;
-
   const [isInCart, setIsInCart] = useState(false);
 
   popUp.flat();
