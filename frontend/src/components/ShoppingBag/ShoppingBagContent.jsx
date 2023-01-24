@@ -8,7 +8,7 @@ function ShoppingBagContent({ addToCart, setAddToCart }) {
     <div className="flex flex-col items-center justify-between w-10/12 my-4 md:mt-4 md:mb-8">
       {addToCart.map((dream) => {
         return (
-          <div className="flex w-full">
+          <div key={dream.id} className="flex w-full">
             <div className="flex flex-row justify-between mb-2 md:w-full">
               <img
                 src={dream.url}
@@ -30,7 +30,17 @@ function ShoppingBagContent({ addToCart, setAddToCart }) {
                     addToCart={addToCart}
                     setAddToCart={setAddToCart}
                   />
-                  <button type="button" className="text-light-yellow mx-4">
+                  <button
+                    type="button"
+                    className="text-light-yellow mx-4"
+                    onClick={() =>
+                      setAddToCart(
+                        addToCart.filter(
+                          (dreamToDelete) => dreamToDelete.id !== dream.id
+                        )
+                      )
+                    }
+                  >
                     <img src={trash} alt="delete" />
                   </button>
                 </div>
@@ -48,6 +58,7 @@ function ShoppingBagContent({ addToCart, setAddToCart }) {
       <div className="flex flex-row w-11/12 my-2 md:mt-8">
         <input
           value=""
+          readOnly
           placeholder="entrez votre code promo"
           className="w-9/12 text-center rounded-l-3xl py-2"
         />
@@ -66,8 +77,8 @@ function ShoppingBagContent({ addToCart, setAddToCart }) {
 ShoppingBagContent.propTypes = {
   addToCart: PropTypes.arrayOf(
     PropTypes.shape({
-      ID: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,

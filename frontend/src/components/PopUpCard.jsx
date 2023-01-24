@@ -127,12 +127,20 @@ PopUpCard.propTypes = {
   addToCart: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      name: PropTypes.string,
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,
   setAddToCart: PropTypes.func.isRequired,
-  popUp: PropTypes.func.isRequired,
+  popUp: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      type: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      quantity: PropTypes.number,
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   onClose: PropTypes.func.isRequired,
 };
 

@@ -6,12 +6,12 @@ import Resume from "../components/ShoppingBag/Resume";
 
 function Panier({ addToCart, setAddToCart }) {
   return (
-    <div className="w-full flex flex-col items-center justify-between md:flex-row md:items-start md:ml-4">
+    <div className="w-full flex flex-col items-center justify-between md:flex-row md:items-start md:justify-around md:ml-4">
       <div className=" w-full md:w-11/12 flex flex-col items-center justify-between md:bg-white md:rounded-3xl">
         <ContinueBrowsing />
         <ShoppingBagContent addToCart={addToCart} setAddToCart={setAddToCart} />
       </div>
-      <div className="w-full md:w-7/12 flex flex-col items-center justify-between">
+      <div className="w-full flex flex-col items-center justify-between md:justify-center md:w-full">
         {addToCart.length > 0 ? (
           <Resume addToCart={addToCart} />
         ) : (
@@ -27,8 +27,8 @@ function Panier({ addToCart, setAddToCart }) {
 Panier.propTypes = {
   addToCart: PropTypes.arrayOf(
     PropTypes.shape({
-      ID: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,

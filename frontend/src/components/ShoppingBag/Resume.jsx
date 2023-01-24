@@ -4,65 +4,58 @@ import dreameez from "../../assets/icons/dreameez.svg";
 
 function Resume({ addToCart }) {
   const dreamSubTotal = addToCart.filter((dream) => dream.type === "reve");
-
-  // créer des states et des setters NEXT WEEK
-
-  const dreamsQuantity = addToCart
-    .filter((dream) => dream.type === "reve")
+  const dreamsQuantity = dreamSubTotal
     .map((elem) => elem.quantity)
-    .reduce((a, b) => a + b);
-
+    .reduce((a, b) => a + b, 0);
   const dreamsPrice = dreamSubTotal
     .map((elem) => elem.quantity * 30000)
-    .reduce((a, b) => a + b);
+    .reduce((a, b) => a + b, 0);
 
   const nightmareSubTotal = addToCart.filter(
     (dream) => dream.type === "cauchemar"
   );
+
   const nightmaresQuantity = addToCart
     .filter((dream) => dream.type === "cauchemar")
     .map((elem) => elem.quantity)
-    .reduce((a, b) => a + b);
+    .reduce((a, b) => a + b, 0);
 
-  const nightmaresPrice = dreamSubTotal
+  const nightmaresPrice = nightmareSubTotal
     .map((elem) => elem.quantity * 5000)
-    .reduce((a, b) => a + b);
-
-  // const nightmareSubTotal = addToCart.filter(
-  //   (dream) => dream.type === "cauchemar"
-  // ).length;
-  // const nightmaresPrice = nightmareSubTotal * 5000;
+    .reduce((a, b) => a + b, 0);
 
   const total = dreamsPrice + nightmaresPrice;
 
   return (
-    <div>
+    <div className="w-10/12">
       {" "}
       {!addToCart.length ? (
         <div> PANIER VIDE </div>
       ) : (
-        <div className="w-10/12 flex flex-col items-center md:bg-white md:rounded-2xl md:py-2">
+        <div className="w-full flex flex-col items-center md:bg-white md:rounded-2xl md:py-2">
           <p className="text-white md:text-black self-end text-left my-2 md:mx-2">
             {" "}
             Récapitulatif{" "}
           </p>
-          <hr className="text-white md:text-black h-2 w-full md:w-11/12" />
+          <hr className="text-white md:text-black h-2 w-full " />
           <div className="flex flex-col rounded-xl justify-between w-full items-center bg-blue md:bg-white text-white md:text-black m-2">
             <div className="flex flex-nowrap justify-between w-11/12 mt-4">
               <p>
-                {dreamsQuantity} {dreamSubTotal.length === 0 ? "rêve" : "rêves"}{" "}
+                {dreamSubTotal ? dreamsQuantity : 0}{" "}
+                {dreamsQuantity <= 1 ? "rêve" : "rêves"}{" "}
               </p>
               <p className="flex flex-nowrap justify-between w-3/12">
-                {dreamsPrice} <img src={dreameez} alt="dreameez" />
+                {dreamSubTotal ? dreamsPrice : 0}{" "}
+                <img src={dreameez} alt="dreameez" />
               </p>
             </div>
             <div className="flex justify-between flex-nowrap w-11/12 mt-4">
               <p>
-                {nightmaresQuantity}{" "}
-                {nightmareSubTotal === 0 ? "cauchemar" : "cauchemars"}
+                {nightmareSubTotal ? nightmaresQuantity : 0}{" "}
+                {nightmaresQuantity <= 1 ? "cauchemar" : "cauchemars"}
               </p>
               <p className="flex flex-nowrap justify-between w-3/12">
-                {nightmaresPrice}
+                {nightmareSubTotal ? nightmaresPrice : 0}
                 <img src={dreameez} alt="dreameez" />
               </p>
             </div>
@@ -70,7 +63,8 @@ function Resume({ addToCart }) {
             <div className="flex whitespace-nowrap flex-nowrap justify-between font-medium w-11/12 mt-4">
               <p className="">Total</p>
               <p className="flex flex-nowrap justify-between w-3/12">
-                {total} <img src={dreameez} alt="dreameez" />
+                {nightmaresPrice > 0 && total}{" "}
+                <img src={dreameez} alt="dreameez" />
               </p>
             </div>
             <button
@@ -90,8 +84,8 @@ function Resume({ addToCart }) {
 Resume.propTypes = {
   addToCart: PropTypes.arrayOf(
     PropTypes.shape({
-      ID: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,
