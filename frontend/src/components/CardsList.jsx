@@ -16,7 +16,9 @@ function CardsList({ setAddToCart, addToCart }) {
   const [selectedEmotion, setSelectedEmotion] = useState("");
   const [selectedWeather, setSelectedWeather] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
-  const [popUp, setPopUp] = useState(data);
+  const [popUp, setPopUp] = useState(
+    data.map((elem) => ({ ...elem, quantity: 0 }))
+  );
 
   const handlePopUpOn = (id) => {
     setPopUp(
@@ -94,7 +96,13 @@ function CardsList({ setAddToCart, addToCart }) {
             )
 
             .map((elem) => {
-              return <Card handlePopUpOn={handlePopUpOn} elem={elem} />;
+              return (
+                <Card
+                  handlePopUpOn={handlePopUpOn}
+                  elem={elem}
+                  key={elem.id + 1}
+                />
+              );
             })
         )}
       </div>
@@ -104,8 +112,8 @@ function CardsList({ setAddToCart, addToCart }) {
 CardsList.propTypes = {
   addToCart: PropTypes.arrayOf(
     PropTypes.shape({
-      ID: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,

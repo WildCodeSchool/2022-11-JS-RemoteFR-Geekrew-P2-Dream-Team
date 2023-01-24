@@ -22,6 +22,7 @@ function App() {
           alt="backimg"
           className="fixed w-3/5 md:w-1/3 z-0 top-0 left-0"
         />
+<<<<<<< HEAD
         <img
           src={backimg2}
           alt="backimg"
@@ -46,6 +47,15 @@ function App() {
         </Routes>
       </BrowserRouter>
     </main>
+=======
+        <Route
+          path="/Panier"
+          element={<Panier addToCart={addToCart} setAddToCart={setAddToCart} />}
+        />
+        <Route path="/Experience" element={<Experience />} />
+      </Routes>
+    </BrowserRouter>
+>>>>>>> c0581cac492ca06fdba0360ea8d022ae90e544e2
   );
 }
 
