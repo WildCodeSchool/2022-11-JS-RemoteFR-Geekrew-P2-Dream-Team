@@ -63,8 +63,7 @@ function Resume({ addToCart }) {
             <div className="flex whitespace-nowrap flex-nowrap justify-between font-medium w-11/12 mt-4">
               <p className="">Total</p>
               <p className="flex flex-nowrap justify-between w-3/12">
-                {nightmaresPrice > 0 && total}{" "}
-                <img src={dreameez} alt="dreameez" />
+                {total} <img src={dreameez} alt="dreameez" />
               </p>
             </div>
             <button
