@@ -27,7 +27,12 @@ function App() {
           path="/Panier"
           element={<Panier addToCart={addToCart} setAddToCart={setAddToCart} />}
         />
-        <Route path="/Experience" element={<Experience />} />
+        <Route
+          path="/Experience"
+          element={
+            <Experience addToCart={addToCart} setAddToCart={setAddToCart} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
