@@ -20,7 +20,7 @@ function Step1({ onSelectType }) {
           <button
             key={value}
             type="button"
-            className=" bg-yellow justify-center py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+            className="z-50 bg-yellow justify-center py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
             onClick={() => handleTypeChange({ value, label })}
           >
             {label}

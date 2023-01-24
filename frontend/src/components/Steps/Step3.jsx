@@ -21,7 +21,7 @@ function Step3({ onSelectLoc }) {
           <button
             key={value}
             type="button"
-            className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+            className="z-50 bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
             onClick={() => handleLocChange(value)}
           >
             {label}

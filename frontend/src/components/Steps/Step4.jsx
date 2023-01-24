@@ -13,7 +13,7 @@ function Step4({ onSelectMeteo, type }) {
   const negativeMeteos = [
     { value: "canicule", label: "Canicule" },
     { value: "tempete", label: "Tempête" },
-    { value: "glacial", label: "Galcial" },
+    { value: "glacial", label: "Glacial" },
   ];
 
   return (
@@ -27,7 +27,7 @@ function Step4({ onSelectMeteo, type }) {
             <button
               key={value}
               type="button"
-              className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+              className="z-50 bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
               onClick={() => handleMeteoChange(value)}
             >
               {label}
@@ -40,7 +40,7 @@ function Step4({ onSelectMeteo, type }) {
             <button
               key={value}
               type="button"
-              className=" bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+              className="z-50 bg-yellow px-8 py-4 mt-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
               onClick={() => handleMeteoChange(value)}
             >
               {label}

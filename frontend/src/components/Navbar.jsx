@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 function Navbar() {
@@ -12,10 +12,12 @@ function Navbar() {
   };
 
   return (
-    <div>
+    <div className="z-50">
       <nav className="w-full flex md:flex  items-center flex-nowrap justify-between md:flex-nowrap  md:bg-opacity-0 ">
         <div className="w-full flex flex-wrap justify-between md:items-center ">
-          <img src={logo} alt="logo" className="flex" />
+          <Link to="/">
+            <img src={logo} alt="logo" className="flex" />
+          </Link>
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}

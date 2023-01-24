@@ -26,7 +26,7 @@ function Revelation({ type, emotion, loc, meteo }) {
         <button
           onClick={() => setIsRevelated(true)}
           type="button"
-          className=" bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+          className="z-50 bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
         >
           Découvrir mon {type.label}
         </button>
@@ -41,14 +41,14 @@ function Revelation({ type, emotion, loc, meteo }) {
               addToCart();
             }}
             type="button"
-            className=" bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+            className="z-50  bg-yellow border-2 border-yellow px-8 py-4 my-2 rounded-full font-sans md:text-2xl text-xl text-white font-thin"
           >
             Ajouter au panier
           </button>
           <button
             onClick={() => navigate("/")}
             type="button"
-            className="border-solid border-2 border-yellow px-8 py-4 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+            className="z-50 border-2 border-yellow bg-transparent bg-yellow hover:border-2 hover:  px-8 py-4 rounded-full font-sans md:text-2xl text-xl text-white font-thin"
           >
             Retour à l'accueil
           </button>
