@@ -23,7 +23,7 @@ function Step2({ onSelectEmotion, type }) {
         Choisissez votre type d'émotion
       </h1>
       {type === "reve" ? (
-        <div className="z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey h-[32rem] w-[20rem] md:w-[40rem]">
+        <div className="z-50 bg-noise-pattern rounded-xl flex flex-col justify-center items-center border-solid border-2 border-medium-grey h-[32rem] w-[20rem] md:w-[40rem]">
           {positiveEmotions.map(({ value, label }) => (
             <button
               key={value}
@@ -36,7 +36,7 @@ function Step2({ onSelectEmotion, type }) {
           ))}
         </div>
       ) : (
-        <div className="z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey h-[32rem] w-[20rem] md:w-[40rem]">
+        <div className="z-50 bg-noise-pattern rounded-xl flex flex-col justify-center items-center border-solid border-2 border-medium-grey h-[32rem] w-[20rem] md:w-[40rem]">
           {negativeEmotions.map(({ value, label }) => (
             <button
               key={value}

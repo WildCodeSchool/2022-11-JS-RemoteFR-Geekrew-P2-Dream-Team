@@ -121,7 +121,7 @@ module.exports = {
       none: "none",
       spin: "spin 1s linear infinite",
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
-      pulse: "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      pulse: "pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
       glow: "glow 3s infinite",
       move: "move 9s  linear infinite",
@@ -170,6 +170,8 @@ module.exports = {
         "linear-gradient(to top left, var(--tw-gradient-stops))",
       "noise-pattern": "url('./assets/noise.png')",
       "scrolCloud ": "url('./assets/Cloud/cloud.svg')",
+      "dream-exp": "url('./assets/imgExperience/dream.jpg')",
+      "nightmare-exp": "url('./assets/imgExperience/nightmare.jpg')",
     },
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {
