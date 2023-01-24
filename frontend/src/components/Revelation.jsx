@@ -21,7 +21,7 @@ function Revelation({ type, emotion, loc, meteo }) {
   };
 
   return (
-    <div className="flex flex-col item-center">
+    <div className="flex flex-col items-center">
       {!isRevelated && (
         <button
           onClick={() => setIsRevelated(true)}
@@ -34,14 +34,20 @@ function Revelation({ type, emotion, loc, meteo }) {
 
       {isRevelated && (
         <>
-          <img src={dream.url} alt={`${type} ${emotion} ${loc} ${meteo}`} />
-          <p className="pt-5 font-sans text-white">{dream.description}</p>
+          <div className=" modal container max-w-lg md:max-h-[80%]   md:items-end py-12 md:bg-white rounded-xl px-12 md:px-0 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey  w-[20rem] md:w-[40rem]">
+            <img src={dream.url} alt={`${type} ${emotion} ${loc} ${meteo}`} />
+          </div>
+          <div>
+            <p className="text-center pt-5 font-sans text-white">
+              {dream.description}
+            </p>
+          </div>
           <button
             onClick={() => {
               addToCart();
             }}
             type="button"
-            className="z-50  bg-yellow border-2 border-yellow px-8 py-4 my-2 rounded-full font-sans md:text-2xl text-xl text-white font-thin"
+            className="z-50 bg-yellow border-2 border-yellow px-8 py-4 my-2 rounded-full font-sans md:text-2xl text-xl text-white font-thin"
           >
             Ajouter au panier
           </button>

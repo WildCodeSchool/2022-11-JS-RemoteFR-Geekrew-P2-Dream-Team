@@ -20,7 +20,7 @@ function App() {
         <img
           src={backimg1}
           alt="backimg"
-          className="fixed w-3/5 md:w-1/3 z-0 top-0 left-0"
+          className=" fixed w-3/5 md:w-1/3 z-0 top-0 left-0"
         />
         <img
           src={backimg2}
