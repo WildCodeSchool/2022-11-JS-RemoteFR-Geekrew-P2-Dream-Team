@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 function Card({ elem, handlePopUpOn }) {
@@ -40,8 +39,8 @@ function Card({ elem, handlePopUpOn }) {
 }
 
 Card.propTypes = {
-  elem: PropTypes.func.isRequired,
-  handlePopUpOn: PropTypes.shape().isRequired,
+  elem: PropTypes.shape().isRequired,
+  handlePopUpOn: PropTypes.func.isRequired,
 };
 
 export default Card;
