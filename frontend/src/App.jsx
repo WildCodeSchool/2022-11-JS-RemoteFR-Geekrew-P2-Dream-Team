@@ -12,7 +12,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar addToCart={addToCart} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Apropos" element={<Apropos />} />
@@ -23,10 +23,7 @@ function App() {
             <Catalogue setAddToCart={setAddToCart} addToCart={addToCart} />
           }
         />
-        <Route
-          path="/Panier"
-          element={<Panier addToCart={addToCart} setAddToCart={setAddToCart} />}
-        />
+        <Route path="/Panier" element={<Panier addToCart={addToCart} />} />
         <Route path="/Experience" element={<Experience />} />
       </Routes>
     </BrowserRouter>
