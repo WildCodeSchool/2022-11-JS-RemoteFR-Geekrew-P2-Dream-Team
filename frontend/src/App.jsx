@@ -23,8 +23,16 @@ function App() {
             <Catalogue setAddToCart={setAddToCart} addToCart={addToCart} />
           }
         />
-        <Route path="/Panier" element={<Panier addToCart={addToCart} />} />
-        <Route path="/Experience" element={<Experience />} />
+        <Route
+          path="/Panier"
+          element={<Panier addToCart={addToCart} setAddToCart={setAddToCart} />}
+        />
+        <Route
+          path="/Experience"
+          element={
+            <Experience addToCart={addToCart} setAddToCart={setAddToCart} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
