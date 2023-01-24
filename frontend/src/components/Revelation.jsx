@@ -34,8 +34,12 @@ function Revelation({ type, emotion, loc, meteo }) {
 
       {isRevelated && (
         <>
-          <div className=" modal container max-w-lg md:max-h-[80%]   md:items-end py-12 md:bg-white rounded-xl px-12 md:px-0 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey  w-[20rem] md:w-[40rem]">
-            <img src={dream.url} alt={`${type} ${emotion} ${loc} ${meteo}`} />
+          <div className="flex flex-col justify-center items-center">
+            <img
+              className="bg-noise-pattern border-solid border-2  rounded-xl border-medium-grey p-8 justify-center items-center h-[20rem] md:h-[30rem] my-1 "
+              src={dream.url}
+              alt={`${type} ${emotion} ${loc} ${meteo}`}
+            />
           </div>
           <div>
             <p className="text-center pt-5 font-sans text-white">
