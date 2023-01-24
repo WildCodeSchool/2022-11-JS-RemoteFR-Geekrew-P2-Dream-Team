@@ -121,7 +121,7 @@ module.exports = {
       none: "none",
       spin: "spin 1s linear infinite",
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
-      pulse: "pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      pulse: "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
       glow: "glow 3s infinite",
       move: "move 9s  linear infinite",
