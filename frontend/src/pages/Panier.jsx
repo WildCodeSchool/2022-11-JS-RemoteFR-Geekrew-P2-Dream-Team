@@ -6,7 +6,7 @@ import Resume from "../components/ShoppingBag/Resume";
 
 function Panier({ addToCart, setAddToCart }) {
   return (
-    <div className="w-full flex flex-col items-center justify-between md:flex-row md:items-start md:justify-around md:ml-4">
+    <div className="z-50 w-full flex flex-col items-center justify-between md:flex-row md:items-start md:justify-around md:ml-4">
       <div className=" w-full md:w-11/12 flex flex-col items-center justify-between md:bg-white md:rounded-3xl">
         <ContinueBrowsing />
         <ShoppingBagContent addToCart={addToCart} setAddToCart={setAddToCart} />

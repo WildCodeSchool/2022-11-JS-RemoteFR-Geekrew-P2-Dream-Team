@@ -4,7 +4,7 @@ import CardsList from "../components/CardsList";
 
 function Catalogue({ addToCart, setAddToCart }) {
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center z-10">
       <CardsList setAddToCart={setAddToCart} addToCart={addToCart} />
     </div>
   );
