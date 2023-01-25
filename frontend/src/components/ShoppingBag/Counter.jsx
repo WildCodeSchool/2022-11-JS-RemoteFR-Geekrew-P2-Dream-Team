@@ -21,10 +21,10 @@ function Counter({ dream, setAddToCart, addToCart }) {
   }
 
   return (
-    <p>
+    <div>
       <div className="button bg-light-yellow text-sm rounded-3xl whitespace-nowrap w-full md:ml-2 py-1">
         <button
-          className="md:p-2 md:pl-3"
+          className="p-2 md:p-2 md:pl-3"
           type="button"
           onClick={() => handleQuantityLess()}
         >
@@ -32,14 +32,14 @@ function Counter({ dream, setAddToCart, addToCart }) {
         </button>
         {dream.quantity}
         <button
-          className="md:p-2"
+          className="p-2 md:p-2"
           type="button"
           onClick={() => handleQuantityMore()}
         >
           <img src={addition} alt="addition" />
         </button>
       </div>
-    </p>
+    </div>
   );
 }
 

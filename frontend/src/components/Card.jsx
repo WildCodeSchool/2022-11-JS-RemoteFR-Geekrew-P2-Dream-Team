@@ -14,8 +14,8 @@ function Card({ elem, handlePopUpOn }) {
         alt={elem.description}
       />
       <span className="hidden font-base font-medium md:text-left md:pt-2 md:flex">
-        {elem.description.length > 75
-          ? `${elem.description.substring(0, 70)} ...`
+        {elem.description.length > 65
+          ? `${elem.description.substring(0, 68)} ...`
           : elem.description}
       </span>
       <h4 className="hidden">{elem.type}</h4>

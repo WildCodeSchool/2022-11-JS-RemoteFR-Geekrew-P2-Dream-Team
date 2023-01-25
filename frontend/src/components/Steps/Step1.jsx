@@ -11,7 +11,7 @@ function Step1({ onSelectType }) {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center  ">
       <h1 className="text-white font-cinzel text-2xl">
         Choisissez votre type de rêve
       </h1>

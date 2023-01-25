@@ -34,7 +34,7 @@ function CardsList({ setAddToCart, addToCart }) {
   }
 
   return (
-    <div className="flex flex-col justify-center ">
+    <div className="flex flex-col justify-center z-10">
       <div>
         <PopUpCard
           popUp={popUp}
@@ -43,13 +43,13 @@ function CardsList({ setAddToCart, addToCart }) {
           setAddToCart={setAddToCart}
         />
       </div>
-      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly md:px-6">
-        <div className="md:flex-row   flex flex-col  items-center justify-between flex-nowrap w-full">
-          <div className="">
+      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly">
+        <div className="flex flex-col  md:flex-row md:items-center md:justify-around flex-nowrap w-full md:w-10/12">
+          <div className="mb-2">
             <SearchBar search={search} setSearch={setSearch} />
           </div>
 
-          <div className="flex w-full justify-evenly md:w-4/5 ">
+          <div className="flex w-full justify-evenly">
             <TypePicker
               setSelectedValue={setSelectedValue}
               selectedValue={selectedValue}

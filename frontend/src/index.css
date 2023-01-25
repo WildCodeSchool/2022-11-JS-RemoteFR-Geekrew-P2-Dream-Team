@@ -8,8 +8,13 @@
     @apply box-border;
   }
 
+  html,
+  body,
+  #root {
+    @apply h-screen w-screen overflow-hidden;
+  }
   main {
-    @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m min-h-screen h-full;
+    @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m h-full overflow-scroll;
     @apply cursor-default;
   }
 
@@ -17,5 +22,4 @@
   button {
     @apply cursor-pointer;
   }
-
 }

@@ -13,19 +13,25 @@ function WeatherPicker({ setSelectedWeather, selectedWeather }) {
   ];
 
   return (
-    <select
-      aria-label="State"
-      className="bg-filterCloud flex text-xs text-center text-grey bg-gradient-blue-d bg-center w-[80px] h-[65px] bg-contain bg-no-repeat"
-      name="selectedType"
-      onChange={(e) => setSelectedWeather(e.target.value)}
-      value={selectedWeather}
-    >
-      {options.map(({ value, label }) => (
-        <option className="dropdown-item text-white" key={value} value={value}>
-          {label}
-        </option>
-      ))}
-    </select>
+    <div className="flex bg-filterCloud bg-center bg-no-repeat h-16 bg-cover justify-center w-20">
+      <select
+        aria-label="State"
+        className="flex text-xs text-center text-grey bg-transparent "
+        name="selectedType"
+        onChange={(e) => setSelectedWeather(e.target.value)}
+        value={selectedWeather}
+      >
+        {options.map(({ value, label }) => (
+          <option
+            className="dropdown-item text-white"
+            key={value}
+            value={value}
+          >
+            {label}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 }
 

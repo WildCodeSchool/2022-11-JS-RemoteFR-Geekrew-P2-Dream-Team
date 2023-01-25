@@ -14,7 +14,7 @@ function App() {
   const [addToCart, setAddToCart] = useState([]);
 
   return (
-    <main className="flex flex-col z-50">
+    <main className="">
       <BrowserRouter>
         <Navbar addToCart={addToCart} />
         <img
