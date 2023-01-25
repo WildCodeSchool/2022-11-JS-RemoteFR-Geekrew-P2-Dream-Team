@@ -10,5 +10,12 @@
 
   main {
     @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m min-h-screen h-full;
+    @apply cursor-default;
   }
+
+  a,
+  button {
+    @apply cursor-pointer;
+  }
+
 }

@@ -18,13 +18,13 @@ function ContinueBrowsing() {
               src={chevronLeft}
               alt="go back"
             />
-            <p className="hidden md:flex">Continuer de réver</p>
+            <p className="hidden md:flex">Continuer de rêver</p>
           </button>
         </div>
 
         <h3>Mon Panier</h3>
       </div>
-      <hr className="text-white md:text-black md:leading-6	 " />
+      <hr className="text-white md:text-black md:leading-6" />
     </div>
   );
 }

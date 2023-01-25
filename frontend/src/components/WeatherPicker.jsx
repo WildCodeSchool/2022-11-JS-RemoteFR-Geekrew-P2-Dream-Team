@@ -15,7 +15,7 @@ function WeatherPicker({ setSelectedWeather, selectedWeather }) {
   return (
     <select
       aria-label="State"
-      className="bg-filterCloud flex text-xs text-grey bg-gradient-blue-d bg-center w-[80px] h-[65px] bg-contain bg-no-repeat"
+      className="bg-filterCloud flex text-xs text-center text-grey bg-gradient-blue-d bg-center w-[80px] h-[65px] bg-contain bg-no-repeat"
       name="selectedType"
       onChange={(e) => setSelectedWeather(e.target.value)}
       value={selectedWeather}
