@@ -40,7 +40,7 @@ function Experience({ addToCart, setAddToCart }) {
     setIsFinish(true);
   };
   return (
-    <div className="mt-10 px-5">
+    <div className="z-10 flex justify-center items-center h-[calc(100vh-12rem)] ">
       {isStep1 && <Step1 onSelectType={handleType} />}
       {isStep2 && <Step2 onSelectEmotion={handleEmotion} type={type.value} />}
       {isStep3 && <Step3 onSelectLoc={handleLoc} emotion={emotion} />}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import logo from "../assets/logo.svg";
 
@@ -14,10 +14,12 @@ function Navbar({ addToCart }) {
   };
 
   return (
-    <div>
+    <div className="z-50">
       <nav className="w-full flex md:flex  items-center flex-nowrap justify-between md:flex-nowrap  md:bg-opacity-0 ">
         <div className="w-full flex flex-wrap justify-between md:items-center ">
-          <img src={logo} alt="logo" className="flex" />
+          <Link to="/">
+            <img src={logo} alt="logo" className="flex" />
+          </Link>
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
@@ -51,7 +53,7 @@ function Navbar({ addToCart }) {
                 : "relative md:mr-6 hidden md:align-middle md:items-center md:flex md:flex-row md:justify-end text-xl"
             }
           >
-            <li className="mb-4 md:ml-4 pt-6 pb-6 md:p-0 ">
+            <li className="mb-4 md:ml-4 pt-6 pb-6 md:p-0 md:z-30">
               <NavLink
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
@@ -61,7 +63,7 @@ function Navbar({ addToCart }) {
                 Accueil
               </NavLink>
             </li>
-            <li className="mb-4 md:ml-4 pb-6 md:p-0">
+            <li className="mb-4 md:ml-4 pb-6 md:p-0 md:z-30">
               <NavLink
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
@@ -71,7 +73,7 @@ function Navbar({ addToCart }) {
                 A Propos
               </NavLink>
             </li>
-            <li className="mb-4 md:ml-4 pb-6 md:p-0 ">
+            <li className="mb-4 md:ml-4 pb-6 md:p-0 md:z-30 ">
               <NavLink
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
@@ -81,7 +83,7 @@ function Navbar({ addToCart }) {
                 Catalogue
               </NavLink>
             </li>
-            <li className="mb-4 md:ml-4 pb-6 md:p-0 ">
+            <li className="mb-4 md:ml-4 pb-6 md:p-0 md:z-30">
               <NavLink
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}

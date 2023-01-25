@@ -93,7 +93,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
 
                 <p className="pl-[4%]">Débloquez ce rêve!</p>
               </button>
-              <div className="bg-green-500 z-40 text-green p-2 rounded-lg animate-pulse m-4">
+              <div className="bg-green-500 z-40 text-blue p-2 rounded-lg animate-pulse m-4">
                 {isInCart ? (
                   <p className="text-center">
                     Votre article a été ajouté au panier
@@ -105,7 +105,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
         </div>
       </div>
 
-      <button type="button" onClick={() => onClose} className="flex">
+      <button type="button" onClick={() => onClose()} className="flex">
         x
       </button>
     </div>
