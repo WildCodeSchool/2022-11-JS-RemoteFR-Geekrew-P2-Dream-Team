@@ -271,8 +271,8 @@ module.exports = {
     },
     cursor: {
       auto: "auto",
-      default: "default",
-      pointer: "pointer",
+      default: "url(./assets/cursor_default.png), default",
+      pointer: "url(./assets/cursor_pointer.png), pointer",
       wait: "wait",
       text: "text",
       move: "move",
