@@ -60,7 +60,7 @@ function Slider() {
           ))}
         </Carousel>
       </div>
-      <div className="max-[768px]:hidden md:flex justify-evenly h-96 z-50">
+      <div className="max-[1024px]:hidden md:flex justify-evenly h-96 z-50">
         <img
           className="object-none animate-move  relative top-3"
           src="./src/assets/images-carousel/img-carousel1.png"
