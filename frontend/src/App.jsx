@@ -16,7 +16,7 @@ function App() {
   return (
     <main className="flex flex-col z-50">
       <BrowserRouter>
-        <Navbar />
+        <Navbar addToCart={addToCart} />
         <img
           src={backimg1}
           alt="backimg"
@@ -47,7 +47,12 @@ function App() {
               <Panier addToCart={addToCart} setAddToCart={setAddToCart} />
             }
           />
-          <Route path="/Experience" element={<Experience />} />
+          <Route
+            path="/Experience"
+            element={
+              <Experience addToCart={addToCart} setAddToCart={setAddToCart} />
+            }
+          />
         </Routes>
       </BrowserRouter>
     </main>
