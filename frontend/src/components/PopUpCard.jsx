@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import close from "../assets/icons/x.svg";
 
 function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
   if (popUp.length !== 1) return null;
@@ -53,8 +54,11 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
               onClick={onClose}
               className="closed button fixed top-8 right-8 text-white md:text-gradient-blue-d"
             >
-              {" "}
-              X{" "}
+              <img
+                src={close}
+                alt="cross"
+                className="closed button fixed md:p-3 top-8 right-8 text-white md:text-gradient-blue-d"
+              />
             </button>
             <div className="content flex flex-col justify-around items-between my-8">
               {popUp.map((card) => {
@@ -63,7 +67,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
                     className="flex flex-col justify-between"
                     key={card.id * 0.5}
                   >
-                    <h1 className="font-sans text-base md:w-11/12 md:text-right	 mt-8 md:mt-4 text text-white md:text-gradient-blue-d">
+                    <h1 className="font-sans text-base md:w-11/12 md:text-center	 mt-8 md:mt-4 text text-white md:text-gradient-blue-d">
                       {card.description}
                     </h1>
                     <div className="flex flex-row items-baseline justify-between w-5/12 ">
@@ -115,10 +119,6 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
           </div>
         </div>
       </div>
-
-      <button type="button" onClick={() => onClose} className="flex">
-        x
-      </button>
     </div>
   );
 }

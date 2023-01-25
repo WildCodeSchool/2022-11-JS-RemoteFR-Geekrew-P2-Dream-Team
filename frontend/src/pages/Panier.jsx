@@ -15,7 +15,7 @@ function Panier({ addToCart, setAddToCart }) {
         {addToCart.length > 0 ? (
           <Resume addToCart={addToCart} />
         ) : (
-          <div className="text-white flex justify-center">
+          <div className="text-white flex justify-center p-5">
             Votre panier est vide, il est temps de commencer à rêver
           </div>
         )}
