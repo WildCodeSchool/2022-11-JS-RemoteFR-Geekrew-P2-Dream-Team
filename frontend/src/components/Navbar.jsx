@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import logo from "../assets/logo.svg";
 
-function Navbar() {
+function Navbar({ addToCart }) {
   const [isOpen, setIsOpen] = useState(false);
+
   const getActiveLinkStyle = ({ isActive }) => {
     if (isActive) {
       return { color: "#A8791D", fontWeight: "semibold", fontSize: "1.25rem" };
@@ -48,7 +50,7 @@ function Navbar() {
             className={
               isOpen
                 ? "absolute min-h-[700%] md:min-h-[0%] bottom-0 top-20 w-full flex flex-col items-center md:flex-row md:justify-end bg-gradient-blue-m backdrop-blur-md md:backdrop-blur-0 bg-opacity-30 text-xl md:z-0 z-30"
-                : "relative md:mr-6 hidden md:flex md:flex-row md:justify-end text-xl"
+                : "relative md:mr-6 hidden md:align-middle md:items-center md:flex md:flex-row md:justify-end text-xl"
             }
           >
             <li className="mb-4 md:ml-4 pt-6 pb-6 md:p-0 md:z-30">
@@ -56,7 +58,7 @@ function Navbar() {
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
                 to="/"
-                className=" md:w-full px-3  rounded-md text-white"
+                className=" md:w-full px-3  text-white"
               >
                 Accueil
               </NavLink>
@@ -86,9 +88,22 @@ function Navbar() {
                 style={getActiveLinkStyle}
                 onClick={() => setIsOpen(false)}
                 to="/Panier"
-                className=" md:w-full px-3  pb-6 text-white"
+                className="md:w-full px-3 text-white flex flex-nowrap "
               >
                 Panier
+                <div
+                  className="md:absolute md:inline-block md:top-0 md:right-0 md:bottom-auto 
+              md:left-auto md:translate-x-2/4 md:-translate-y-1/2 md:rotate-0 
+              md:skew-x-0 md:skew-y-0 md:scale-x-100 md:scale-y-100 md:py-1 md:px-2.5 
+              md:text-xs md:leading-none md:text-center
+              md:whitespace-nowrap md:align-baseline 
+              md:font-bold md:bg-red md:text-white md:rounded-full md:z-5 md:animate-pulse hidden"
+                >
+                  {addToCart.length &&
+                    addToCart
+                      .map((elem) => elem.quantity)
+                      .reduce((a, b) => a + b, 0)}
+                </div>
               </NavLink>
             </li>
           </ul>
@@ -97,5 +112,14 @@ function Navbar() {
     </div>
   );
 }
+Navbar.propTypes = {
+  addToCart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
+      quantity: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+};
 
 export default Navbar;

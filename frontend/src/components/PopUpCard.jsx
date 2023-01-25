@@ -3,33 +3,22 @@ import PropTypes from "prop-types";
 
 function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
   if (popUp.length !== 1) return null;
-
   const [isInCart, setIsInCart] = useState(false);
 
-  popUp.flat();
-
-  const handleClick = (item) => {
+  const handleClick = () => {
     setIsInCart(() => true);
-    if (!isInCart || addToCart.includes(!item[0].id)) {
-      setAddToCart((add) => [
-        ...add,
-        {
-          id: popUp[0].id,
-          type: popUp[0].type,
-          description: popUp[0].description,
-          url: popUp[0].url,
-          quantity: +1,
-        },
-      ]);
-    } else {
-      setAddToCart(
-        addToCart.map((popUpDream) => {
-          // Create a *new* object with changes
-          return { ...popUpDream, quantity: popUpDream.quantity + 1 };
-        })
-      );
-    }
-    // addToCart.filter((el) => éliminer les doublons)
+    const found = addToCart.find((d) => d.id === popUp[0].id);
+
+    setAddToCart([
+      ...addToCart.filter((d) => d.id !== popUp[0].id),
+      {
+        id: popUp[0].id,
+        type: popUp[0].type,
+        description: popUp[0].description,
+        url: popUp[0].url,
+        quantity: found ? found.quantity + 1 : 1,
+      },
+    ]);
   };
 
   return (
@@ -104,7 +93,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
 
                 <p className="pl-[4%]">Débloquez ce rêve!</p>
               </button>
-              <div className="bg-green-500 z-40 text-green p-2 rounded-lg animate-pulse m-4">
+              <div className="bg-green-500 z-40 text-blue p-2 rounded-lg animate-pulse m-4">
                 {isInCart ? (
                   <p className="text-center">
                     Votre article a été ajouté au panier
@@ -116,7 +105,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
         </div>
       </div>
 
-      <button type="button" onClick={() => onClose} className="flex">
+      <button type="button" onClick={() => onClose()} className="flex">
         x
       </button>
     </div>
