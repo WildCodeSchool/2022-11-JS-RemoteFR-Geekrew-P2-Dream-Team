@@ -34,7 +34,7 @@ function CardsList({ setAddToCart, addToCart }) {
   }
 
   return (
-    <div className="flex flex-col justify-center bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m ">
+    <div className="flex flex-col justify-center ">
       <div>
         <PopUpCard
           popUp={popUp}
@@ -43,7 +43,7 @@ function CardsList({ setAddToCart, addToCart }) {
           setAddToCart={setAddToCart}
         />
       </div>
-      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m md:px-6">
+      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly md:px-6">
         <div className="md:flex-row   flex flex-col  items-center justify-between flex-nowrap w-full">
           <div className="">
             <SearchBar search={search} setSearch={setSearch} />
