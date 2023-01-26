@@ -1,7 +1,6 @@
-import { React, useState } from "react";
-
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import data from "../../csvjson.json";
+import axios from "axios";
 import SearchBar from "./SearchBar";
 import TypePicker from "./TypePicker";
 import PopUpCard from "./PopUpCard";
@@ -16,9 +15,7 @@ function CardsList({ setAddToCart, addToCart }) {
   const [selectedEmotion, setSelectedEmotion] = useState("");
   const [selectedWeather, setSelectedWeather] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
-  const [popUp, setPopUp] = useState(
-    data.map((elem) => ({ ...elem, quantity: 0 }))
-  );
+  const [popUp, setPopUp] = useState([]);
 
   const handlePopUpOn = (id) => {
     setPopUp(
@@ -30,8 +27,16 @@ function CardsList({ setAddToCart, addToCart }) {
   };
 
   function handlePopUpOff() {
-    setPopUp(data);
+    setPopUp([]);
   }
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:8005/dreams").then((res) => {
+      setData(res.data);
+      setPopUp(res.data.map((elem) => ({ ...elem, quantity: 0 })));
+    });
+  }, []);
 
   return (
     <div className="flex flex-col justify-center ">
