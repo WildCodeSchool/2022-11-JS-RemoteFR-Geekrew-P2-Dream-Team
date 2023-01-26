@@ -101,7 +101,7 @@ VALUES (22, 'reve', 'amour', 'campagne', 'chaleur', 'La chaude campagne de nos e
 
 /* INSERT QUERY NO: 23 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
-VALUES (23, 'reve', 'amour', 'campagne', 'pluvieux', 'L\'amour à la campagne, sous la pluie, c\'est quand même bien!', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/15c25eb2-7365-4ea9-9be1-927cc3e583e0', 'false');
+VALUES (23, 'reve', 'amour', 'campagne', 'pluvieux', 'L\amour à la campagne, sous la pluie, c\est quand même bien!', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/15c25eb2-7365-4ea9-9be1-927cc3e583e0', 'false');
 
 /* INSERT QUERY NO: 24 */
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
@@ -395,4 +395,12 @@ VALUES (95, 'cauchemar', 'peur', 'campagne', 'tempete', 'Je cours pendant qu\un 
 INSERT INTO dream(`id`, `type`, `emotion`, `lieu`, `meteo`, `description`, `URL`, `modal`)
 VALUES (96, 'cauchemar', 'peur', 'campagne', 'glacial', 'Je suis perdu au milieu d\une forêt sombre et enneigée. J\ai peur.', 'https://lexica-serve-encoded-images2.sharif.workers.dev/md/2e20b23f-8800-4ffc-ba70-57bd84e6c97b', '');
 
-
+/*CREATE TABLE*/
+CREATE TABLE commande (
+'id' INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+'dream_id' INT NOT NULL,
+'quantity' INT NOT NULL,
+'price' DECIMAL(10,2) NOT NULL,
+'total' DECIMAL(10,2) NOT NULL,
+FOREIGN KEY (dream_id) REFERENCES dream(id) ON DELETE CASCADE
+);
