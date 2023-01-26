@@ -1,34 +1,27 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import close from "../assets/icons/x.svg";
 
 function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
   if (popUp.length !== 1) return null;
+  const [isInCart, setIsInCart] = useState(false);
 
-  const [isInCart, setIsInCart] = useState([]);
-  const [popUpShown, setPopUpShown] = useState(false);
+  const handleClick = () => {
+    setIsInCart(() => true);
+    const found = addToCart.find((d) => d.id === popUp[0].id);
 
-  const handleClick = (item) => {
-    if (!popUpShown) {
-      setPopUpShown(true);
-    }
-
-    if (isInCart.indexOf(item.ID) === -1) {
-      setIsInCart([...isInCart, item.ID]);
-      setAddToCart([...addToCart, { ...item, quantity: 1 }]);
-    } else {
-      setAddToCart(
-        addToCart.map((cartItem) => {
-          if (cartItem.ID === item.ID) {
-            return {
-              ...cartItem,
-              quantity: 1,
-            };
-          }
-          return cartItem;
-        })
-      );
-    }
+    setAddToCart([
+      ...addToCart.filter((d) => d.id !== popUp[0].id),
+      {
+        id: popUp[0].id,
+        type: popUp[0].type,
+        description: popUp[0].description,
+        url: popUp[0].url,
+        quantity: found ? found.quantity + 1 : 1,
+      },
+    ]);
   };
+
   return (
     <div className="overlay bg-gradient-blue-d md:bg-blue md:bg-opacity-30 fixed w-full h-full md:h-full backdrop-blur-sm ">
       <div className="modal container max-w-lg md:max-h-[80%] fixed top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex flex-col items-center md:items-end justify-between py-12 md:bg-white rounded-xl px-12 md:px-0">
@@ -39,6 +32,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
                 className="image md:aspect-square md:w-8/12 object-contain"
                 src={card.url}
                 alt="reve"
+                key={card.url}
               />
             );
           })}
@@ -49,14 +43,20 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
               onClick={onClose}
               className="closed button fixed top-8 right-8 text-white md:text-gradient-blue-d"
             >
-              {" "}
-              X{" "}
+              <img
+                src={close}
+                alt="cross"
+                className="closed button fixed md:p-3 top-8 right-8 text-white md:text-gradient-blue-d"
+              />
             </button>
             <div className="content flex flex-col justify-around items-between my-8">
               {popUp.map((card) => {
                 return (
-                  <div className="flex flex-col justify-between">
-                    <h1 className="font-sans text-base md:w-11/12 md:text-right	 mt-8 md:mt-4 text text-white md:text-gradient-blue-d">
+                  <div
+                    className="flex flex-col justify-between"
+                    key={card.id * 0.5}
+                  >
+                    <h1 className="font-sans text-base md:w-11/12 md:text-center	 mt-8 md:mt-4 text text-white md:text-gradient-blue-d">
                       {card.description}
                     </h1>
                     <div className="flex flex-row items-baseline justify-between w-5/12 ">
@@ -97,7 +97,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
 
                 <p className="pl-[4%]">Débloquez ce rêve!</p>
               </button>
-              <div className="bg-green-500 z-40 text-green p-2 rounded-lg animate-pulse m-4">
+              <div className="bg-green-500 z-40 text-blue p-2 rounded-lg animate-pulse m-4">
                 {isInCart ? (
                   <p className="text-center">
                     Votre article a été ajouté au panier
@@ -108,10 +108,6 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
           </div>
         </div>
       </div>
-
-      <button type="button" onClick={() => onClose} className="flex">
-        x
-      </button>
     </div>
   );
 }
@@ -119,13 +115,21 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
 PopUpCard.propTypes = {
   addToCart: PropTypes.arrayOf(
     PropTypes.shape({
-      ID: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,
   setAddToCart: PropTypes.func.isRequired,
-  popUp: PropTypes.func.isRequired,
+  popUp: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      type: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      quantity: PropTypes.number,
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   onClose: PropTypes.func.isRequired,
 };
 

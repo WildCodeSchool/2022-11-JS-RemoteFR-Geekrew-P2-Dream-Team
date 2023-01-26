@@ -16,7 +16,9 @@ function CardsList({ setAddToCart, addToCart }) {
   const [selectedEmotion, setSelectedEmotion] = useState("");
   const [selectedWeather, setSelectedWeather] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
-  const [popUp, setPopUp] = useState(data);
+  const [popUp, setPopUp] = useState(
+    data.map((elem) => ({ ...elem, quantity: 0 }))
+  );
 
   const handlePopUpOn = (id) => {
     setPopUp(
@@ -32,7 +34,7 @@ function CardsList({ setAddToCart, addToCart }) {
   }
 
   return (
-    <div className="flex flex-col justify-center bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m ">
+    <div className="flex flex-col justify-center ">
       <div>
         <PopUpCard
           popUp={popUp}
@@ -41,7 +43,7 @@ function CardsList({ setAddToCart, addToCart }) {
           setAddToCart={setAddToCart}
         />
       </div>
-      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m md:px-6">
+      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly md:px-6">
         <div className="md:flex-row   flex flex-col  items-center justify-between flex-nowrap w-full">
           <div className="">
             <SearchBar search={search} setSearch={setSearch} />
@@ -94,7 +96,13 @@ function CardsList({ setAddToCart, addToCart }) {
             )
 
             .map((elem) => {
-              return <Card handlePopUpOn={handlePopUpOn} elem={elem} />;
+              return (
+                <Card
+                  handlePopUpOn={handlePopUpOn}
+                  elem={elem}
+                  key={elem.id + 1}
+                />
+              );
             })
         )}
       </div>
@@ -104,8 +112,8 @@ function CardsList({ setAddToCart, addToCart }) {
 CardsList.propTypes = {
   addToCart: PropTypes.arrayOf(
     PropTypes.shape({
-      ID: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import dreams from "../../csvjson.json";
 
-function Revelation({ type, emotion, loc, meteo }) {
+function Revelation({ type, emotion, loc, meteo, addToCart, setAddToCart }) {
   const navigate = useNavigate();
   const dream = dreams.find(
     (d) =>
@@ -13,20 +13,31 @@ function Revelation({ type, emotion, loc, meteo }) {
       d.meteo === meteo
   );
   const [isRevelated, setIsRevelated] = useState(false);
-  const shoppingList = [];
 
-  const addToCart = () => {
-    shoppingList.push(dream);
+  const handleClick = () => {
+    const found = addToCart.find((d) => d.id === dream.id);
+
+    setAddToCart([
+      ...addToCart.filter((d) => d.id !== dream.id),
+      {
+        id: dream.id,
+        type: dream.type,
+        description: dream.description,
+        url: dream.url,
+        quantity: found ? found.quantity + 1 : 1,
+      },
+    ]);
+
     navigate("/Panier");
   };
 
   return (
-    <div className="flex flex-col item-center">
+    <div className="flex flex-col items-center">
       {!isRevelated && (
         <button
           onClick={() => setIsRevelated(true)}
           type="button"
-          className=" bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+          className="z-50 bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
         >
           Découvrir mon {type.label}
         </button>
@@ -34,21 +45,31 @@ function Revelation({ type, emotion, loc, meteo }) {
 
       {isRevelated && (
         <>
-          <img src={dream.url} alt={`${type} ${emotion} ${loc} ${meteo}`} />
-          <p className="pt-5 font-sans text-white">{dream.description}</p>
+          <div className="flex flex-col justify-center items-center">
+            <img
+              className="bg-noise-pattern border-solid border-2  rounded-xl border-medium-grey p-8 justify-center items-center h-[20rem] md:h-[30rem] my-1 "
+              src={dream.url}
+              alt={`${type} ${emotion} ${loc} ${meteo}`}
+            />
+          </div>
+          <div>
+            <p className="text-center pt-5 font-sans text-white">
+              {dream.description}
+            </p>
+          </div>
           <button
             onClick={() => {
-              addToCart();
+              handleClick(dream);
             }}
             type="button"
-            className=" bg-yellow px-8 py-4 my-7 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+            className="z-50 bg-yellow border-2 border-yellow px-8 py-4 my-2 rounded-full font-sans md:text-2xl text-xl text-white font-thin"
           >
             Ajouter au panier
           </button>
           <button
             onClick={() => navigate("/")}
             type="button"
-            className="border-solid border-2 border-yellow px-8 py-4 rounded-full font-sans md:text-1xl text-xl text-white font-thin"
+            className="z-50 border-2 border-yellow bg-transparent bg-yellow hover:border-2 hover:  px-8 py-4 rounded-full font-sans md:text-2xl text-xl text-white font-thin"
           >
             Retour à l'accueil
           </button>
@@ -64,6 +85,14 @@ Revelation.propTypes = {
   emotion: PropTypes.string.isRequired,
   loc: PropTypes.string.isRequired,
   meteo: PropTypes.string.isRequired,
+  addToCart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
+      quantity: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  setAddToCart: PropTypes.func.isRequired,
 };
 
 export default Revelation;

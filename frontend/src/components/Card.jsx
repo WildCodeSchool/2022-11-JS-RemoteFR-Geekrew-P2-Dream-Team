@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 function Card({ elem, handlePopUpOn }) {
@@ -14,7 +13,7 @@ function Card({ elem, handlePopUpOn }) {
         src={elem.url}
         alt={elem.description}
       />
-      <span className="hidden font-base font-medium md:flex">
+      <span className="hidden font-base font-medium md:text-left md:pt-2 md:flex">
         {elem.description.length > 75
           ? `${elem.description.substring(0, 70)} ...`
           : elem.description}
@@ -25,8 +24,8 @@ function Card({ elem, handlePopUpOn }) {
       <span className="hidden">{elem.meteo}</span>
       {elem.type === "reve" && (
         <span className="flex flex-row items-baseline text-white my-1">
-          <p className="font-medium text-xl mr-1">30 000 {"  "}</p>
-          <p className="font-normal text-xs"> {"  "}dreameez</p>
+          <p className="font-medium pt-2 text-xl mr-1">30 000 {"  "}</p>
+          <p className="font-normal pt-2 text-xs"> {"  "}dreameez</p>
         </span>
       )}
       {elem.type === "cauchemar" && (
@@ -40,8 +39,8 @@ function Card({ elem, handlePopUpOn }) {
 }
 
 Card.propTypes = {
-  elem: PropTypes.func.isRequired,
-  handlePopUpOn: PropTypes.shape().isRequired,
+  elem: PropTypes.shape().isRequired,
+  handlePopUpOn: PropTypes.func.isRequired,
 };
 
 export default Card;
