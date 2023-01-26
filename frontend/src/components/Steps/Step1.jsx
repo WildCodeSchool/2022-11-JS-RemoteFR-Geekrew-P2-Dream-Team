@@ -1,5 +1,11 @@
 import PropTypes from "prop-types";
+import dreammp3 from "../../assets/sounds/dream.mp3";
+import nightmaremp3 from "../../assets/sounds/nightmare2.mp3";
 
+const types = [
+  { value: "reve", label: "Rêve", url: dreammp3 },
+  { value: "cauchemar", label: "Cauchemar", url: nightmaremp3 },
+];
 function Step1({
   onSelectType,
   handleBackgrounds,
@@ -8,11 +14,10 @@ function Step1({
 }) {
   const handleTypeChange = (type) => {
     onSelectType(type);
+    const audio = new Audio();
+    audio.src = types.find((btn) => btn.value === type.value).url;
+    audio.play();
   };
-  const types = [
-    { value: "reve", label: "Rêve" },
-    { value: "cauchemar", label: "Cauchemar" },
-  ];
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -31,12 +36,17 @@ function Step1({
             className="z-50 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
             onMouseOver={() => handleMouseOver({ value, label })}
             onFocus={() => handleMouseOver}
-            onClick={() => handleTypeChange({ value, label })}
+            onClick={() => {
+              handleTypeChange({ value, label });
+            }}
           >
             {label}
           </button>
         ))}
       </div>
+      <audio id="audio">
+        <track kind="captions" />
+      </audio>
     </div>
   );
 }
