@@ -44,7 +44,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
             >
               <p className="closed button fixed md:p-3 top-8 right-8 font-bold text-lg text-white md:text-gradient-blue-d">
                 {" "}
-                x{" "}
+                X{" "}
               </p>
             </button>
             <div className="content flex flex-col justify-around items-between mb-4 md:my-6">
@@ -78,7 +78,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
             <div className="flex flex-col items-center md:w-[70%]">
               <button
                 type="button"
-                className="bg-yellow font-sans text-xl font-medium text-white flex justify-center whitespace-nowrap items-center px-4 py-4 rounded-3xl"
+                className="bg-yellow font-sans text-xl font-medium text-white flex justify-center whitespace-nowrap items-center px-4 py-4 rounded-full"
                 onClick={() => handleClick(popUp)}
               >
                 {!isInCart ? (
@@ -101,9 +101,9 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
                   <p className="pl-[4%]">Votre rêve est débloqué</p>
                 )}
               </button>
-              <div className="z-40 text-white md:text-blue p-2 rounded-lg animate-pulse md:whitespace-nowrap">
+              <div className="z-40 text-white md:text-blue p-2 rounded-lg md:whitespace-nowrap">
                 {isInCart ? (
-                  <p className="text-center">
+                  <p className="text-center text-green animate-pulse">
                     Votre article a été ajouté au panier
                   </p>
                 ) : null}

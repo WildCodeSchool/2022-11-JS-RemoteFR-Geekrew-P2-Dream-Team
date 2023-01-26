@@ -19,7 +19,7 @@ function ContinueBrowsing() {
 
         <h3>Mon Panier</h3>
       </div>
-      <hr className="text-white md:text-black md:leading-6" />
+      <hr className="text-white md:bg-light-grey md:h-0.5 md:leading-6" />
     </div>
   );
 }

@@ -6,12 +6,12 @@ import Resume from "../components/ShoppingBag/Resume";
 
 function Panier({ addToCart, setAddToCart }) {
   return (
-    <div className="z-10 w-full flex flex-col items-center justify-between md:flex-row md:items-start md:justify-around md:ml-4">
-      <div className=" w-full md:w-full flex flex-col items-center justify-between md:bg-white md:rounded-3xl">
+    <div className="z-10 w-full flex flex-col items-center md:flex-row md:items-start md:justify-evenly md:mt-10">
+      <div className="w-full md:w-7/12 flex flex-col items-center justify-between md:bg-white md:rounded-3xl mt-4 md:mt-0">
         <ContinueBrowsing />
         <ShoppingBagContent addToCart={addToCart} setAddToCart={setAddToCart} />
       </div>
-      <div className="w-full flex flex-col items-center justify-between md:justify-center md:w-full">
+      <div className="max-[768px]:w-full md:w-4/12 flex flex-col items-center justify-between md:justify-center">
         {addToCart.length > 0 ? (
           <Resume addToCart={addToCart} />
         ) : (

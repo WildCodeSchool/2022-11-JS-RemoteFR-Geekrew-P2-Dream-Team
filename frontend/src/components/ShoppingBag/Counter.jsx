@@ -21,8 +21,8 @@ function Counter({ dream, setAddToCart, addToCart }) {
   }
 
   return (
-    <div>
-      <div className="button bg-light-yellow text-sm rounded-3xl whitespace-nowrap w-full md:ml-2 py-1">
+    <div className="flex flex-row justify-start">
+      <div className="button bg-light-yellow text-sm rounded-3xl whitespace-nowrap w-full py-1">
         <button
           className="p-2 md:p-2 md:pl-3"
           type="button"

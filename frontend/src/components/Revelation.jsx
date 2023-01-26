@@ -69,7 +69,7 @@ function Revelation({ type, emotion, loc, meteo, addToCart, setAddToCart }) {
           <button
             onClick={() => navigate("/")}
             type="button"
-            className="z-50 border-2 border-yellow bg-transparent bg-yellow hover:border-2 hover:  px-4 py-2 mb-8 rounded-full font-sans md:text-xl text-xl text-white font-thin"
+            className="z-50 border-2 border-yellow bg-transparent bg-yellow hover:border-2 px-4 py-2 mb-8 rounded-full font-sans md:text-xl text-xl text-white font-thin"
           >
             Retour à l'accueil
           </button>
