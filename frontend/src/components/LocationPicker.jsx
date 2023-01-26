@@ -11,7 +11,7 @@ function LocationPicker({ setSelectedLocation, selectedLocation }) {
   ];
 
   return (
-    <div className="flex bg-filterCloud bg-center bg-no-repeat h-16 bg-cover justify-center w-20">
+    <div className="flex bg-filterCloud bg-center bg-no-repeat h-16 bg-contain justify-center w-20">
       <select
         aria-label="State"
         className="flex text-xs text-center text-grey bg-transparent "
