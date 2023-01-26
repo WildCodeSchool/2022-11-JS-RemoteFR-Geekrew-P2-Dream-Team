@@ -1,6 +1,12 @@
 import PropTypes from "prop-types";
 
-function Step2({ onSelectEmotion, type }) {
+function Step2({
+  onSelectEmotion,
+  type,
+  handleBackgrounds,
+  handleMouseOver,
+  handleMouseOut,
+}) {
   const handleEmotionChange = (emotion) => {
     onSelectEmotion(emotion);
   };
@@ -23,26 +29,38 @@ function Step2({ onSelectEmotion, type }) {
         Choisissez votre type d'émotion
       </h1>
       {type === "reve" ? (
-        <div className="z-50 bg-noise-pattern rounded-xl flex flex-col justify-center items-center border-solid border-2 border-medium-grey h-[32rem] w-[20rem] md:w-[40rem]">
+        <div
+          className={`z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
+          onMouseOut={handleMouseOut}
+          onBlur={() => handleMouseOut}
+        >
           {positiveEmotions.map(({ value, label }) => (
             <button
               key={value}
               type="button"
               className="z-50 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
               onClick={() => handleEmotionChange(value)}
+              onMouseOver={() => handleMouseOver({ value, label })}
+              onFocus={() => handleMouseOver}
             >
               {label}
             </button>
           ))}
         </div>
       ) : (
-        <div className="z-50 bg-noise-pattern rounded-xl flex flex-col justify-center items-center border-solid border-2 border-medium-grey h-[32rem] w-[20rem] md:w-[40rem]">
+        <div
+          className={`z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
+          onMouseOut={handleMouseOut}
+          onBlur={() => handleMouseOut}
+        >
           {negativeEmotions.map(({ value, label }) => (
             <button
               key={value}
               type="button"
               className="z-50 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
               onClick={() => handleEmotionChange(value)}
+              onMouseOver={() => handleMouseOver({ value, label })}
+              onFocus={() => handleMouseOver}
             >
               {label}
             </button>
@@ -55,6 +73,9 @@ function Step2({ onSelectEmotion, type }) {
 Step2.propTypes = {
   onSelectEmotion: PropTypes.func.isRequired,
   type: PropTypes.string.isRequired,
+  handleBackgrounds: PropTypes.func.isRequired,
+  handleMouseOut: PropTypes.func.isRequired,
+  handleMouseOver: PropTypes.func.isRequired,
 };
 
 export default Step2;
