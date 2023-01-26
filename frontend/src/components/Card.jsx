@@ -4,7 +4,7 @@ function Card({ elem, handlePopUpOn }) {
   return (
     <button
       key={elem.id}
-      className="flex flex-col items-center md:items-start w-5/12 md:w-1/5 md:mx-2 md:h-1/3 rounded-xl my-2 md:my-4 py-2 max-w-w-max-card md:max-w-none "
+      className="flex flex-col items-center md:items-start w-5/12 md:w-1/5 md:mx-2 rounded-xl my-2 md:my-4 py-2 max-w-w-max-card md:max-w-none "
       type="button"
       onClick={() => handlePopUpOn(elem.id)}
     >

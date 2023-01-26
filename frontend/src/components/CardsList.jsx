@@ -32,7 +32,7 @@ function CardsList({ setAddToCart, addToCart }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8005/dreams").then((res) => {
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/dreams`).then((res) => {
       setData(res.data);
       setPopUp(res.data.map((elem) => ({ ...elem, quantity: 0 })));
     });

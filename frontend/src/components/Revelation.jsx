@@ -9,7 +9,9 @@ function Revelation({ type, emotion, loc, meteo, addToCart, setAddToCart }) {
   const [isRevelated, setIsRevelated] = useState(false);
 
   useEffect(() => {
-    axios.get(`http://localhost:8005/dreams`).then((res) => setData(res.data));
+    axios
+      .get(`${import.meta.env.VITE_BACKEND_URL}/dreams`)
+      .then((res) => setData(res.data));
   }, []);
 
   const dream = data.find(
