@@ -1,18 +1,24 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import dreams from "../../csvjson.json";
+import axios from "axios";
 
 function Revelation({ type, emotion, loc, meteo, addToCart, setAddToCart }) {
   const navigate = useNavigate();
-  const dream = dreams.find(
+  const [data, setData] = useState([]);
+  const [isRevelated, setIsRevelated] = useState(false);
+
+  useEffect(() => {
+    axios.get("http://localhost:8005/dreams").then((res) => setData(res.data));
+  }, []);
+
+  const dream = data.find(
     (d) =>
       d.type === type.value &&
       d.emotion === emotion &&
       d.lieu === loc &&
       d.meteo === meteo
   );
-  const [isRevelated, setIsRevelated] = useState(false);
 
   const handleClick = () => {
     const found = addToCart.find((d) => d.id === dream.id);

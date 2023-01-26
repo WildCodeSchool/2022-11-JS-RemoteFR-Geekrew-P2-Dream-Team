@@ -49,7 +49,7 @@ function Navbar({ addToCart }) {
           <ul
             className={
               isOpen
-                ? "absolute min-h-[700%] md:min-h-[0%] bottom-0 top-20 w-full flex flex-col items-center md:flex-row md:justify-end bg-gradient-blue-m backdrop-blur-md md:backdrop-blur-0 bg-opacity-30 text-xl md:z-0 z-30"
+                ? "absolute min-h-[100%] md:min-h-[0%] bottom-0 top-20 w-full flex flex-col items-center md:flex-row md:justify-end bg-gradient-blue-m backdrop-blur-md md:backdrop-blur-0 bg-opacity-30 text-xl md:z-0 z-30"
                 : "relative md:mr-6 hidden md:align-middle md:items-center md:flex md:flex-row md:justify-end text-xl"
             }
           >
