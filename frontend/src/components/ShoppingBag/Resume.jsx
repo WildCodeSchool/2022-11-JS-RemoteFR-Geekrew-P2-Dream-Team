@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import dreameez from "../../assets/icons/dreameez.svg";
 
 function Resume({ addToCart }) {
@@ -66,13 +67,14 @@ function Resume({ addToCart }) {
                 {total} <img src={dreameez} alt="dreameez" />
               </p>
             </div>
-            <button
-              type="button"
-              className="bg-light-yellow w-11/12 rounded-2xl my-4 py-2"
-            >
-              {" "}
-              Valider votre merveilleux paiement
-            </button>
+            <Link to="/Confirmation">
+              <button
+                type="button"
+                className="bg-light-yellow w-11/12 rounded-2xl my-4 py-2"
+              >
+                Valider votre merveilleux paiement{" "}
+              </button>
+            </Link>
           </div>
         </div>
       )}

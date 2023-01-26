@@ -10,6 +10,7 @@ import Experience from "./pages/Experience";
 import CreateStarGroup from "./components/CreateStarGroup";
 import backimg1 from "./assets/backimg1.svg";
 import backimg2 from "./assets/backimg2.svg";
+import Confirmation from "./pages/Confirmation";
 
 function App() {
   const [addToCart, setAddToCart] = useState([]);
@@ -54,6 +55,7 @@ function App() {
               <Experience addToCart={addToCart} setAddToCart={setAddToCart} />
             }
           />
+          <Route path="/Confirmation" element={<Confirmation />} />
         </Routes>
       </BrowserRouter>
     </main>
