@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../components/Slider";
+import Staff from "../components/Staff";
 
 function Apropos() {
   return (
@@ -23,6 +24,13 @@ function Apropos() {
           50% du souvenir d’un rêve serait perdu. Après 10 minutes, 90% du rêve
           aurait disparu. Oniriq est la solution!
         </p>
+        <h2 className="m-6 font-cinzel text-2xl text-left">
+          Les Vendeurs de Rêves
+        </h2>
+        <div>
+          <br />
+          <Staff />
+        </div>
       </div>
     </div>
   );

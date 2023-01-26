@@ -23,8 +23,8 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
 
   return (
     <div className="overlay bg-gradient-blue-d md:bg-blue md:bg-opacity-30 fixed w-full h-full md:h-full backdrop-blur-sm top-0">
-      <div className="modal container max-w-lg md:max-h-[70%]  overflow-scroll fixed top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex flex-col items-center md:items-end justify-between py-12 md:bg-white rounded-xl px-12 md:px-0">
-        <div className="flex w-11/12  flex-col items-center md:pr-[10%]">
+      <div className="modal container max-w-lg md:max-h-[70%] overflow-scroll fixed top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex flex-col items-center md:items-end justify-between py-12 md:bg-white rounded-xl px-5 md:px-0">
+        <div className="flex w-11/12 flex-col items-center md:pr-[10%]">
           {popUp.map((card) => {
             return (
               <img

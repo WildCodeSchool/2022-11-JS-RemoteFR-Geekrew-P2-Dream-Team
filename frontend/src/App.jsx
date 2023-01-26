@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Apropos from "./pages/A-Propos";
@@ -9,6 +10,7 @@ import Experience from "./pages/Experience";
 import CreateStarGroup from "./components/CreateStarGroup";
 import backimg1 from "./assets/backimg1.svg";
 import backimg2 from "./assets/backimg2.svg";
+import Confirmation from "./pages/Confirmation";
 
 function App() {
   const [addToCart, setAddToCart] = useState([]);
@@ -53,6 +55,7 @@ function App() {
               <Experience addToCart={addToCart} setAddToCart={setAddToCart} />
             }
           />
+          <Route path="/Confirmation" element={<Confirmation />} />
         </Routes>
       </BrowserRouter>
     </main>
