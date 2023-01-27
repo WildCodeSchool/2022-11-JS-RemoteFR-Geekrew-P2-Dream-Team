@@ -23,14 +23,14 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
 
   return (
     <div className="overlay bg-gradient-blue-d md:bg-blue md:bg-opacity-30 fixed w-full h-full md:h-full backdrop-blur-sm top-0">
-      <div className="modal container max-w-lg md:max-h-[70%]  overflow-scroll fixed top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex flex-col items-center md:items-end justify-between md:py-12 md:bg-white rounded-xl md:px-0">
-        <div className="flex w-11/12 flex-col items-center md:pr-[10%]">
+      <div className="modal container max-w-lg md:max-h-[70%]  overflow-scroll fixed top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex flex-col items-center md:items-end justify-between md:bg-white rounded-xl md:px-0">
+        <div className="flex w-11/12 flex-col items-center md:w-full">
           <button
             type="button"
             onClick={onClose}
             className="closed button md:text-gradient-blue-d self-end"
           >
-            <p className="closed button font-bold text-lg text-white md:text-gradient-blue-d">
+            <p className="closed button font-bold text-lg text-white md:text-gradient-blue-d md:pr-2 md:pt-2">
               X
             </p>
           </button>
@@ -46,7 +46,7 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
               </div>
 
               <div className="modalRight flex flex-col items-center ">
-                <div className="content flex flex-col justify-around items-between mb-4 md:my-6">
+                <div className="content flex flex-col justify-around items-between mb-4">
                   <div
                     className="flex flex-col justify-between items-center"
                     key={card.id * 0.5}
