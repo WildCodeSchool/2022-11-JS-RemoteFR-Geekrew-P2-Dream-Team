@@ -25,30 +25,28 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
     <div className="overlay bg-gradient-blue-d md:bg-blue md:bg-opacity-30 fixed w-full h-full md:h-full backdrop-blur-sm top-0">
       <div className="modal container max-w-lg md:max-h-[70%]  overflow-scroll fixed top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex flex-col items-center md:items-end justify-between md:py-12 md:bg-white rounded-xl md:px-0">
         <div className="flex w-11/12 flex-col items-center md:pr-[10%]">
-          {popUp.map((card) => {
-            return (
-              <img
-                className="image md:aspect-square md:w-8/12 object-contain max-h-56 md:max-h-full"
-                src={card.url}
-                alt="reve"
-                key={card.url}
-              />
-            );
-          })}
+          <button
+            type="button"
+            onClick={onClose}
+            className="closed button md:text-gradient-blue-d self-end"
+          >
+            <p className="closed button font-bold text-lg text-white md:text-gradient-blue-d">
+              X
+            </p>
+          </button>
+          {popUp.map((card) => (
+            <>
+              <div className="flex flex-row items-start justify-center w-full">
+                <img
+                  className="image md:aspect-square md:w-8/12 object-contain max-h-56 md:max-h-full"
+                  src={card.url}
+                  alt="reve"
+                  key={card.url}
+                />
+              </div>
 
-          <div className="modalRight flex flex-col items-center ">
-            <button
-              type="button"
-              onClick={onClose}
-              className="closed button fixed top-8 right-8 text-white md:text-gradient-blue-d"
-            >
-              <p className="closed button fixed md:p-3 top-8 right-8 font-bold text-lg text-white md:text-gradient-blue-d">
-                X
-              </p>
-            </button>
-            <div className="content flex flex-col justify-around items-between mb-4 md:my-6">
-              {popUp.map((card) => {
-                return (
+              <div className="modalRight flex flex-col items-center ">
+                <div className="content flex flex-col justify-around items-between mb-4 md:my-6">
                   <div
                     className="flex flex-col justify-between items-center"
                     key={card.id * 0.5}
@@ -71,44 +69,45 @@ function PopUpCard({ popUp, onClose, addToCart, setAddToCart }) {
                       </span>
                     </div>
                   </div>
-                );
-              })}
-            </div>
-            <div className="flex flex-col items-center md:w-[70%]">
-              <button
-                type="button"
-                className="bg-yellow font-sans text-xl font-medium text-white flex justify-center whitespace-nowrap items-center px-4 py-4 rounded-full"
-                onClick={() => handleClick(popUp)}
-              >
-                {!isInCart ? (
-                  <div className="w-full flex flex-row">
-                    <svg
-                      className="fill-none stroke-white stroke-2 w-full"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M14.25 8.25H3.75C2.92157 8.25 2.25 8.92157 2.25 9.75V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 16.5 15.75 15.8284 15.75 15V9.75C15.75 8.92157 15.0784 8.25 14.25 8.25Z" />
-                      <path d="M5.25 8.25V5.25C5.25 4.25544 5.64509 3.30161 6.34835 2.59835C7.05161 1.89509 8.00544 1.5 9 1.5C9.99456 1.5 10.9484 1.89509 11.6517 2.59835C12.3549 3.30161 12.75 4.25544 12.75 5.25V8.25" />
-                    </svg>
+                </div>
 
-                    <p className="pl-[4%]">Débloquez ce rêve!</p>
+                <div className="flex flex-col items-center md:w-[70%]">
+                  <button
+                    type="button"
+                    className="bg-yellow font-sans text-xl font-medium text-white flex justify-center whitespace-nowrap items-center px-4 py-4 rounded-full"
+                    onClick={() => handleClick(popUp)}
+                  >
+                    {!isInCart ? (
+                      <div className="w-full flex flex-row">
+                        <svg
+                          className="fill-none stroke-white stroke-2 w-full"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M14.25 8.25H3.75C2.92157 8.25 2.25 8.92157 2.25 9.75V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 16.5 15.75 15.8284 15.75 15V9.75C15.75 8.92157 15.0784 8.25 14.25 8.25Z" />
+                          <path d="M5.25 8.25V5.25C5.25 4.25544 5.64509 3.30161 6.34835 2.59835C7.05161 1.89509 8.00544 1.5 9 1.5C9.99456 1.5 10.9484 1.89509 11.6517 2.59835C12.3549 3.30161 12.75 4.25544 12.75 5.25V8.25" />
+                        </svg>
+
+                        <p className="pl-[4%]">Débloquez ce rêve!</p>
+                      </div>
+                    ) : (
+                      <p className="pl-[4%]">Votre rêve est débloqué</p>
+                    )}
+                  </button>
+                  <div className="z-40 text-white md:text-blue p-2 rounded-lg md:whitespace-nowrap">
+                    {isInCart ? (
+                      <p className="text-center text-green animate-pulse">
+                        Votre article a été ajouté au panier
+                      </p>
+                    ) : null}
                   </div>
-                ) : (
-                  <p className="pl-[4%]">Votre rêve est débloqué</p>
-                )}
-              </button>
-              <div className="z-40 text-white md:text-blue p-2 rounded-lg md:whitespace-nowrap">
-                {isInCart ? (
-                  <p className="text-center text-green animate-pulse">
-                    Votre article a été ajouté au panier
-                  </p>
-                ) : null}
+                </div>
               </div>
-            </div>
-          </div>
+            </>
+          ))}
         </div>
       </div>
     </div>

@@ -16,10 +16,11 @@ function CardsList({ setAddToCart, addToCart }) {
   const [selectedWeather, setSelectedWeather] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
   const [popUp, setPopUp] = useState([]);
+  const [data, setData] = useState([]);
 
   const handlePopUpOn = (id) => {
     setPopUp(
-      popUp.filter((card) => {
+      data.filter((card) => {
         if (card.id === id) return card;
         return null;
       })
@@ -29,7 +30,6 @@ function CardsList({ setAddToCart, addToCart }) {
   function handlePopUpOff() {
     setPopUp([]);
   }
-  const [data, setData] = useState([]);
 
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_BACKEND_URL}/dreams`).then((res) => {
@@ -40,7 +40,7 @@ function CardsList({ setAddToCart, addToCart }) {
 
   return (
     <div className="flex flex-col justify-center z-10">
-      <div>
+      <div className="z-10">
         <PopUpCard
           popUp={popUp}
           onClose={() => handlePopUpOff()}

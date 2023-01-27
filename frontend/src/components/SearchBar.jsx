@@ -7,7 +7,7 @@ function SearchBar({ search, setSearch }) {
   };
 
   return (
-    <div className="flex bg-searchBarCloud bg-center bg-no-repeat h-20 bg-contain px-4 py-2 m-2 justify-center w-full">
+    <div className="flex bg-searchBarCloud bg-center bg-no-repeat h-20 bg-contain px-4 py-2 my-2 md:mx-2 justify-center w-full">
       <input
         className="h-1/3  flex self-end rounded-md bg-searchBarIcon bg-no-repeat bg-right text-black"
         type="text"
