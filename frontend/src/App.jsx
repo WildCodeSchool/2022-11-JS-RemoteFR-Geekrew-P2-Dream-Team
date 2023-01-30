@@ -16,7 +16,7 @@ function App() {
   const [addToCart, setAddToCart] = useState([]);
 
   return (
-    <main className="">
+    <main>
       <BrowserRouter>
         <Navbar addToCart={addToCart} />
         <img

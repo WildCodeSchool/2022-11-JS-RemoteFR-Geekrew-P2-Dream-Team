@@ -49,7 +49,7 @@ function CardsList({ setAddToCart, addToCart }) {
         />
       </div>
       <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly">
-        <div className="flex flex-col  md:flex-row md:items-center md:justify-around flex-nowrap w-full md:w-10/12">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-around flex-nowrap w-full md:w-10/12 xl:w-11/12">
           <div className="mb-2">
             <SearchBar search={search} setSearch={setSearch} />
           </div>

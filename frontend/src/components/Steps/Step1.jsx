@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import dreammp3 from "../../assets/sounds/dream.mp3";
-import nightmaremp3 from "../../assets/sounds/nightmare2.mp3";
+import nightmaremp3 from "../../assets/sounds/nightmare.mp3";
 
 const types = [
   { value: "reve", label: "Rêve", url: dreammp3 },

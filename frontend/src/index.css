@@ -14,7 +14,7 @@
     @apply h-screen w-screen;
   }
   main {
-    @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m h-full overflow-scroll flex flex-col;
+    @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m overflow-auto h-full flex flex-col;
     @apply cursor-default;
   }
 
