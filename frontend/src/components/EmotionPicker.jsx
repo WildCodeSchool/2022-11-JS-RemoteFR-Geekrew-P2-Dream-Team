@@ -25,7 +25,7 @@ function EmotionPicker({ setSelectedEmotion, selectedEmotion }) {
       >
         {options.map(({ value, label }) => (
           <option
-            className="dropdown-item text-white"
+            className="dropdown-item text-black"
             key={value}
             value={value}
           >

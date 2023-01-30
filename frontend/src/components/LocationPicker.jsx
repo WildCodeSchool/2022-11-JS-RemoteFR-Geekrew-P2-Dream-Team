@@ -21,7 +21,7 @@ function LocationPicker({ setSelectedLocation, selectedLocation }) {
       >
         {options.map(({ value, label }) => (
           <option
-            className="dropdown-item text-white"
+            className="dropdown-item text-black"
             key={value}
             value={value}
           >

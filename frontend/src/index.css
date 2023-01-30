@@ -11,7 +11,7 @@
   html,
   body,
   #root {
-    @apply h-screen w-screen overflow-hidden;
+    @apply h-screen w-screen;
   }
   main {
     @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m h-full overflow-scroll flex flex-col;
