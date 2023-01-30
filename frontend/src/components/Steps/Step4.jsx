@@ -25,7 +25,7 @@ function Step4({
   return (
     <div className="flex flex-col justify-center items-center">
       <h1 className="text-white font-cinzel text-2xl mb-10 pl-5 md:pl-0">
-        Choisissez votre type d'émotion
+        Choisissez votre type de météo
       </h1>
       {type === "reve" ? (
         <div

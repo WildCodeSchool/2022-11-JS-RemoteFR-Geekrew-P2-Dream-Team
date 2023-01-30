@@ -69,7 +69,7 @@ function Resume({ addToCart }) {
             <Link to="/Confirmation">
               <button
                 type="button"
-                className="bg-light-yellow flex whitespace-nowrap w-full px-4 rounded-full my-4 py-2"
+                className="bg-light-yellow flex whitespace-nowrap w-full px-4 md:px-2 rounded-full my-4 py-2"
               >
                 Valider votre merveilleux paiement{" "}
               </button>

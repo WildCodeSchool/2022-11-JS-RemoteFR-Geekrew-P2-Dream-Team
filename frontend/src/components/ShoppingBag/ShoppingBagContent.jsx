@@ -20,7 +20,7 @@ function ShoppingBagContent({ addToCart, setAddToCart }) {
                   <h2 className="text-sm font-medium">
                     Mon {dream.type === "reve" ? "Rêve" : "Cauchemar"}
                   </h2>
-                  <p className="text-[10px] font-light text-medium-grey md:text-black">
+                  <p className="text-[10px] md:text-sm font-light text-medium-grey md:text-black">
                     {dream.description.length > 60
                       ? `${dream.description.substring(0, 60)} ...`
                       : dream.description}
@@ -48,10 +48,10 @@ function ShoppingBagContent({ addToCart, setAddToCart }) {
                 </div>
               </div>
               <div className="flex flex-col text-white md:text-black items-end">
-                <p className="text-sm font-medium whitespace-nowrap">
+                <p className="text-base font-medium whitespace-nowrap">
                   {dream.type === "reve" ? 30000 : 5000}
                 </p>
-                <p className="text-[0.5rem]">dreameez</p>
+                <p className="text-base">dreameez</p>
               </div>
             </div>
           </div>
