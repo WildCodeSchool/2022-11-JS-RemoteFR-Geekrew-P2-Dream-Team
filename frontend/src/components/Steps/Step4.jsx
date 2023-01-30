@@ -24,8 +24,8 @@ function Step4({
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 className="text-white font-cinzel text-2xl">
-        Choisissez votre type d'émotion
+      <h1 className="text-white font-cinzel text-2xl mb-10 pl-5 md:pl-0">
+        Choisissez votre type de météo
       </h1>
       {type === "reve" ? (
         <div
@@ -37,7 +37,7 @@ function Step4({
             <button
               key={value}
               type="button"
-              className="z-50 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
+              className="z-10 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
               onClick={() => handleMeteoChange(value)}
               onMouseOver={() => handleMouseOver({ value, label })}
               onFocus={() => handleMouseOver}
@@ -56,7 +56,7 @@ function Step4({
             <button
               key={value}
               type="button"
-              className="z-50 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
+              className="z-10 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
               onClick={() => handleMeteoChange(value)}
               onMouseOver={() => handleMouseOver({ value, label })}
               onFocus={() => handleMouseOver}

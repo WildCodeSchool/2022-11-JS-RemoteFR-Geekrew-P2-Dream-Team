@@ -21,22 +21,24 @@ function Counter({ dream, setAddToCart, addToCart }) {
   }
 
   return (
-    <div className="button bg-light-yellow text-sm rounded-3xl whitespace-nowrap w-full md:ml-2 py-1">
-      <button
-        className="md:p-2 md:pl-3"
-        type="button"
-        onClick={() => handleQuantityLess()}
-      >
-        <img src={substraction} alt="substraction" />
-      </button>
-      {dream.quantity}
-      <button
-        className="md:p-2"
-        type="button"
-        onClick={() => handleQuantityMore()}
-      >
-        <img src={addition} alt="addition" />
-      </button>
+    <div className="flex flex-row justify-start">
+      <div className="button bg-light-yellow text-sm rounded-3xl whitespace-nowrap w-full py-1">
+        <button
+          className="p-2 md:p-2 md:pl-3"
+          type="button"
+          onClick={() => handleQuantityLess()}
+        >
+          <img src={substraction} alt="substraction" />
+        </button>
+        {dream.quantity}
+        <button
+          className="p-2 md:p-2"
+          type="button"
+          onClick={() => handleQuantityMore()}
+        >
+          <img src={addition} alt="addition" />
+        </button>
+      </div>
     </div>
   );
 }

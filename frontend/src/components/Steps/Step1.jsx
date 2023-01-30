@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import dreammp3 from "../../assets/sounds/dream.mp3";
-import nightmaremp3 from "../../assets/sounds/nightmare2.mp3";
+import nightmaremp3 from "../../assets/sounds/nightmare.mp3";
 
 const types = [
   { value: "reve", label: "Rêve", url: dreammp3 },
@@ -20,13 +20,14 @@ function Step1({
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h1 className="text-white font-cinzel text-2xl">
+    <div className="flex flex-col justify-center items-center  ">
+      <h1 className="text-white font-cinzel text-2xl mb-10 pl-5 md:pl-0">
         Choisissez votre type de rêve
       </h1>
       <div
         className={`transition-all duration-300 ease-in bg-center bg-origin-border
   z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
+
         onMouseOut={handleMouseOut}
         onBlur={() => handleMouseOut}
       >
@@ -34,7 +35,7 @@ function Step1({
           <button
             key={value}
             type="button"
-            className="z-50 hover flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6 "
+            className="z-10 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
             onMouseOver={() => handleMouseOver({ value, label })}
             onFocus={() => handleMouseOver}
             onClick={() => {

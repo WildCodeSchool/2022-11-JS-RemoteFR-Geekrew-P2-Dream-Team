@@ -4,7 +4,7 @@ function Card({ elem, handlePopUpOn }) {
   return (
     <button
       key={elem.id}
-      className="flex flex-col items-center md:items-start w-5/12 md:w-1/5 md:mx-2 md:h-1/3 rounded-xl my-2 md:my-4 py-2 max-w-w-max-card md:max-w-none "
+      className="flex flex-col items-center md:items-start w-5/12 md:w-1/5 md:mx-2 rounded-xl my-2 md:my-4 py-2 lg:max-w-[277px] lg:max-h-[350px] md:max-w-none "
       type="button"
       onClick={() => handlePopUpOn(elem.id)}
     >
@@ -14,8 +14,8 @@ function Card({ elem, handlePopUpOn }) {
         alt={elem.description}
       />
       <span className="hidden font-base font-medium md:text-left md:pt-2 md:flex">
-        {elem.description.length > 75
-          ? `${elem.description.substring(0, 70)} ...`
+        {elem.description.length > 65
+          ? `${elem.description.substring(0, 68)} ...`
           : elem.description}
       </span>
       <h4 className="hidden">{elem.type}</h4>

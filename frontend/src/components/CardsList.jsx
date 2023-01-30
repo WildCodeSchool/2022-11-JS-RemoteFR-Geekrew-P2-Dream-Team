@@ -16,10 +16,11 @@ function CardsList({ setAddToCart, addToCart }) {
   const [selectedWeather, setSelectedWeather] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
   const [popUp, setPopUp] = useState([]);
+  const [data, setData] = useState([]);
 
   const handlePopUpOn = (id) => {
     setPopUp(
-      popUp.filter((card) => {
+      data.filter((card) => {
         if (card.id === id) return card;
         return null;
       })
@@ -29,7 +30,6 @@ function CardsList({ setAddToCart, addToCart }) {
   function handlePopUpOff() {
     setPopUp([]);
   }
-  const [data, setData] = useState([]);
 
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_BACKEND_URL}/dreams`).then((res) => {
@@ -39,8 +39,8 @@ function CardsList({ setAddToCart, addToCart }) {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center ">
-      <div>
+    <div className="flex flex-col justify-center z-10">
+      <div className="z-10">
         <PopUpCard
           popUp={popUp}
           onClose={() => handlePopUpOff()}
@@ -48,13 +48,13 @@ function CardsList({ setAddToCart, addToCart }) {
           setAddToCart={setAddToCart}
         />
       </div>
-      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly md:px-6">
-        <div className="md:flex-row   flex flex-col  items-center justify-between flex-nowrap w-full">
-          <div className="">
+      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-around flex-nowrap w-full md:w-10/12 xl:w-11/12">
+          <div className="mb-2">
             <SearchBar search={search} setSearch={setSearch} />
           </div>
 
-          <div className="flex w-full justify-evenly md:w-4/5 ">
+          <div className="flex w-full justify-evenly">
             <TypePicker
               setSelectedValue={setSelectedValue}
               selectedValue={selectedValue}
