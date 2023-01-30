@@ -25,7 +25,8 @@ function Step1({
         Choisissez votre type de rêve
       </h1>
       <div
-        className={`z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
+        className={`transition-all duration-300 ease-in bg-center bg-origin-border
+  z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
         onMouseOut={handleMouseOut}
         onBlur={() => handleMouseOut}
       >
@@ -33,7 +34,7 @@ function Step1({
           <button
             key={value}
             type="button"
-            className="z-50 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
+            className="z-50 hover flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6 "
             onMouseOver={() => handleMouseOver({ value, label })}
             onFocus={() => handleMouseOver}
             onClick={() => {

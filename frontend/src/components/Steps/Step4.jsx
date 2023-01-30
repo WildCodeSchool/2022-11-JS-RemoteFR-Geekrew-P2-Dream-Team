@@ -29,7 +29,7 @@ function Step4({
       </h1>
       {type === "reve" ? (
         <div
-          className={`z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
+          className={`transition-all duration-300 ease-in bg-center bg-origin-border z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
           onMouseOut={handleMouseOut}
           onBlur={() => handleMouseOut}
         >
@@ -48,7 +48,7 @@ function Step4({
         </div>
       ) : (
         <div
-          className={`z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
+          className={`transition-all duration-300 ease-in bg-center bg-origin-border z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
           onMouseOut={handleMouseOut}
           onBlur={() => handleMouseOut}
         >

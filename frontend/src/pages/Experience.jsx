@@ -20,9 +20,17 @@ function Experience({ addToCart, setAddToCart }) {
   const [isStep4, setIsStep4] = useState(false);
   const [isFinish, setIsFinish] = useState(false);
   const backgrounds = [
-    { type: "reve", bg: "bg-reve-exp" },
-    { type: "cauchemar", bg: "bg-cauchemar-exp" },
-    { type: "joie", bg: "bg-joie-exp" },
+    { type: "reve", bg: "bg-reve-exp", opacity: "0" },
+    {
+      type: "cauchemar",
+      bg: "bg-cauchemar-exp",
+      anim: "animate-animate delay-300",
+    },
+    {
+      type: "joie",
+      bg: "bg-joie-exp",
+      anim: "animate-animate",
+    },
     { type: "amour", bg: "bg-amour-exp" },
     { type: "serenite", bg: "bg-serenite-exp" },
     { type: "amusement", bg: "bg-amusement-exp" },
@@ -48,7 +56,7 @@ function Experience({ addToCart, setAddToCart }) {
     const backgroundObject = backgrounds.find(
       (elem) => elem.type === background
     );
-    return backgroundObject ? backgroundObject.bg : "initial";
+    return backgroundObject ? `${backgroundObject.bg}` : "initial";
   };
   const handleMouseOver = (elem) => {
     setBackground(elem.value);
