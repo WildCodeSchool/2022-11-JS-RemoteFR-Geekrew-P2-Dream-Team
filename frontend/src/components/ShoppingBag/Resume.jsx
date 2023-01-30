@@ -28,18 +28,17 @@ function Resume({ addToCart }) {
   const total = dreamsPrice + nightmaresPrice;
 
   return (
-    <div className="w-10/12">
+    <div className="max-[768px]:w-10/12 md:w-full">
       {" "}
       {!addToCart.length ? (
         <div> PANIER VIDE </div>
       ) : (
-        <div className="w-full flex flex-col items-center md:bg-white md:rounded-2xl md:py-2">
+        <div className="z-10 flex flex-col items-center md:bg-white md:rounded-2xl md:py-2">
           <p className="text-white md:text-black self-end text-left my-2 md:mx-2">
             {" "}
             Récapitulatif{" "}
           </p>
-          <hr className="text-white md:text-black h-2 w-full " />
-          <div className="flex flex-col rounded-xl justify-between w-full items-center bg-blue md:bg-white text-white md:text-black m-2">
+          <div className="flex flex-col rounded-xl justify-between w-full items-center bg-blue md:bg-white text-white md:text-black">
             <div className="flex flex-nowrap justify-between w-11/12 mt-4">
               <p>
                 {dreamSubTotal ? dreamsQuantity : 0}{" "}
@@ -50,7 +49,7 @@ function Resume({ addToCart }) {
                 <img src={dreameez} alt="dreameez" />
               </p>
             </div>
-            <div className="flex justify-between flex-nowrap w-11/12 mt-4">
+            <div className="flex justify-between flex-nowrap w-11/12 my-4">
               <p>
                 {nightmareSubTotal ? nightmaresQuantity : 0}{" "}
                 {nightmaresQuantity <= 1 ? "cauchemar" : "cauchemars"}
@@ -60,7 +59,7 @@ function Resume({ addToCart }) {
                 <img src={dreameez} alt="dreameez" />
               </p>
             </div>
-            <hr className="w-11/12 h-2 mt-4" />
+            <hr className="bg-white md:bg-light-grey h-0.25 md:h-0.5 leading-6 w-11/12" />
             <div className="flex whitespace-nowrap flex-nowrap justify-between font-medium w-11/12 mt-4">
               <p className="">Total</p>
               <p className="flex flex-nowrap justify-between w-3/12">
@@ -70,7 +69,7 @@ function Resume({ addToCart }) {
             <Link to="/Confirmation">
               <button
                 type="button"
-                className="bg-light-yellow w-11/12 rounded-2xl my-4 py-2"
+                className="bg-light-yellow flex whitespace-nowrap w-full px-4 md:px-2 rounded-full my-4 py-2"
               >
                 Valider votre merveilleux paiement{" "}
               </button>

@@ -14,7 +14,7 @@ function CreateStar({ size, positionX, positionY }) {
   return (
     <div
       ref={starRef}
-      className="bg-white absolute h-full rounded-full animate-glow"
+      className="bg-white fixed h-full rounded-full animate-glow"
     />
   );
 }

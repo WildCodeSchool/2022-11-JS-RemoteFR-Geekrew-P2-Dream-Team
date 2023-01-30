@@ -8,8 +8,13 @@
     @apply box-border;
   }
 
+  html,
+  body,
+  #root {
+    @apply h-screen w-screen;
+  }
   main {
-    @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m min-h-screen h-full;
+    @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m overflow-auto h-full flex flex-col;
     @apply cursor-default;
   }
 

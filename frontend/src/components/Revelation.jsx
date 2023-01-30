@@ -52,7 +52,7 @@ function Revelation({ type, emotion, loc, meteo, addToCart, setAddToCart }) {
       )}
 
       {isRevelated && (
-        <>
+        <div className="flex flex-col justify-center items-center w-8/12">
           <div className="flex flex-col justify-center items-center">
             <img
               className="bg-noise-pattern border-solid border-2  rounded-xl border-medium-grey p-8 justify-center items-center h-[20rem] md:h-[30rem] my-1 "
@@ -60,8 +60,8 @@ function Revelation({ type, emotion, loc, meteo, addToCart, setAddToCart }) {
               alt={`${type} ${emotion} ${loc} ${meteo}`}
             />
           </div>
-          <div>
-            <p className="text-center pt-5 font-sans text-white">
+          <div className="flex justify-center w-full pt-4">
+            <p className="text-center font-sans text-white">
               {dream.description}
             </p>
           </div>
@@ -70,18 +70,18 @@ function Revelation({ type, emotion, loc, meteo, addToCart, setAddToCart }) {
               handleClick(dream);
             }}
             type="button"
-            className="z-50 bg-yellow border-2 border-yellow px-8 py-4 my-2 rounded-full font-sans md:text-2xl text-xl text-white font-thin"
+            className="z-50 bg-yellow border-2 border-yellow px-4 py-2 my-4 rounded-full font-sans md:text-xl text-xl text-white font-thin"
           >
             Ajouter au panier
           </button>
           <button
             onClick={() => navigate("/")}
             type="button"
-            className="z-50 border-2 border-yellow bg-transparent bg-yellow hover:border-2 hover:  px-8 py-4 rounded-full font-sans md:text-2xl text-xl text-white font-thin"
+            className="z-50 border-2 border-yellow bg-transparent bg-yellow hover:border-2 px-4 py-2 mb-8 rounded-full font-sans md:text-xl text-xl text-white font-thin"
           >
             Retour à l'accueil
           </button>
-        </>
+        </div>
       )}
     </div>
   );
