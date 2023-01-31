@@ -60,7 +60,7 @@ function Slider() {
         >
           {imgCarousel.map((slide) => (
             <div className="flex justify-center animate-pulse" key={slide.id}>
-              <img src={slide.src} alt={slide.desc} />
+              <img src={slide.src} alt="Nature" />
             </div>
           ))}
         </Carousel>
