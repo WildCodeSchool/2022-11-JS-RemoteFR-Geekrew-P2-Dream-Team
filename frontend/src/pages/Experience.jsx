@@ -54,12 +54,15 @@ function Experience({ addToCart, setAddToCart }) {
   }, [isStep1, isStep2, isStep3, isStep4]);
   const handleBackgrounds = () => {
     const backgroundObject = backgrounds.find(
-      (elem) => elem.type === background
+      (elem) => elem.type === background.split(" ")[0]
     );
-    return backgroundObject ? `${backgroundObject.bg}` : "initial";
+    return backgroundObject
+      ? `${backgroundObject.bg} animate-fadeIn`
+      : "initial animate-fadeOut";
   };
+
   const handleMouseOver = (elem) => {
-    setBackground(elem.value);
+    setBackground(`${elem.value}`);
   };
 
   const handleMouseOut = () => {
@@ -97,6 +100,7 @@ function Experience({ addToCart, setAddToCart }) {
           setBackground={setBackground}
           handleMouseOver={handleMouseOver}
           handleMouseOut={handleMouseOut}
+          background={background}
         />
       )}
       {isStep2 && (
