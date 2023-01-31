@@ -1,4 +1,9 @@
 import React from "react";
+import Antoine from "../assets/avatars/Antoine_Avatar.png";
+import Cassandra from "../assets/avatars/Cassandra_Avatar.png";
+import Julien from "../assets/avatars/Julien_Avatar.png";
+import Nassima from "../assets/avatars/Nassima_Avatar.png";
+import Iris from "../assets/avatars/Iris_Avatar.png";
 
 function Staff() {
   return (
@@ -10,8 +15,8 @@ function Staff() {
         <div className="w-2/5">
           <img
             className="w-[100px] rounded-full "
-            src="./src/assets/avatars/Antoine_Avatar.png"
-            alt=""
+            src={Antoine}
+            alt="Antoine"
           />
           <h1 className="text-lg md:text-xl">ANTOINE</h1>
           <p>Le listeur de rêves.</p>
@@ -20,8 +25,8 @@ function Staff() {
         <div className="w-2/5">
           <img
             className="w-[100px] h-[100px] rounded-full"
-            src="./src/assets/avatars/Cassandra_Avatar.png"
-            alt=""
+            src={Cassandra}
+            alt="Cassandra"
           />
           <h1 className="text-lg md:text-xl">CASSANDRA</h1>
           <p>
@@ -34,8 +39,8 @@ function Staff() {
         <div className="w-2/5">
           <img
             className="w-[100px] h-[100px] rounded-full"
-            src="./src/assets/avatars/Iris_Avatar.png"
-            alt=""
+            src={Iris}
+            alt="Iris"
           />
           <h1 className="text-lg md:text-xl">IRIS</h1>
           <p>Passe à la caisse avec elle.</p>
@@ -44,8 +49,8 @@ function Staff() {
         <div className="w-2/5">
           <img
             className="w-[100px] h-[100px] rounded-full"
-            src="./src/assets/avatars/Julien_Avatar.png"
-            alt=""
+            src={Julien}
+            alt="Julien"
           />
           <h1 className="text-lg md:text-xl">JULIEN</h1>
           <p>
@@ -57,8 +62,8 @@ function Staff() {
         <div className="w-2/5">
           <img
             className="w-[100px] h-[100px] rounded-full"
-            src="./src/assets/avatars/Nassima_Avatar.png"
-            alt=""
+            src={Nassima}
+            alt="Nassima"
           />
           <h1 className="text-lg md:text-xl">NASSIMA</h1>
           <p>Le back est dans ses données.</p>
