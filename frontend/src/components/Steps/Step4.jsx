@@ -6,6 +6,7 @@ function Step4({
   handleBackgrounds,
   handleMouseOver,
   handleMouseOut,
+  background,
 }) {
   const handleMeteoChange = (meteo) => {
     onSelectMeteo(meteo);
@@ -28,42 +29,52 @@ function Step4({
         Choisissez votre type de météo
       </h1>
       {type === "reve" ? (
-        <div
-          className={`transition-all duration-300 ease-in bg-center bg-origin-border z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
-          onMouseOut={handleMouseOut}
-          onBlur={() => handleMouseOut}
-        >
-          {positiveMeteos.map(({ value, label }) => (
-            <button
-              key={value}
-              type="button"
-              className="z-10 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
-              onClick={() => handleMeteoChange(value)}
-              onMouseOver={() => handleMouseOver({ value, label })}
-              onFocus={() => handleMouseOver}
-            >
-              {label}
-            </button>
-          ))}
+        <div className="relative">
+          <div className="z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem]" />
+          <div className="absolute top-0 flex flex-col justify-center items-center h-full w-full">
+            {positiveMeteos.map(({ value, label }) => (
+              <button
+                key={value}
+                type="button"
+                className="z-10 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
+                onClick={() => handleMeteoChange(value)}
+                onMouseOver={() => handleMouseOver({ value, label })}
+                onFocus={() => handleMouseOver}
+                onMouseOut={handleMouseOut}
+                onBlur={() => handleMouseOut}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          <div
+            key={background}
+            className={`absolute bg-center bg-origin-border w-full h-full top-0 border-solid border-2 border-medium-grey rounded-xl ${handleBackgrounds()}`}
+          />
         </div>
       ) : (
-        <div
-          className={`transition-all duration-300 ease-in bg-center bg-origin-border z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
-          onMouseOut={handleMouseOut}
-          onBlur={() => handleMouseOut}
-        >
-          {negativeMeteos.map(({ value, label }) => (
-            <button
-              key={value}
-              type="button"
-              className="z-10 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
-              onClick={() => handleMeteoChange(value)}
-              onMouseOver={() => handleMouseOver({ value, label })}
-              onFocus={() => handleMouseOver}
-            >
-              {label}
-            </button>
-          ))}
+        <div className="relative">
+          <div className="z-50 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem]" />
+          <div className="absolute top-0 flex flex-col justify-center items-center h-full w-full">
+            {negativeMeteos.map(({ value, label }) => (
+              <button
+                key={value}
+                type="button"
+                className="z-10 flex bg-yellow justify-center py-3 my-5 md:py-4 md:my-7 rounded-full font-sans md:text-2xl text-xl text-white font-thin w-3/6"
+                onClick={() => handleMeteoChange(value)}
+                onMouseOver={() => handleMouseOver({ value, label })}
+                onFocus={() => handleMouseOver}
+                onMouseOut={handleMouseOut}
+                onBlur={() => handleMouseOut}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          <div
+            key={background}
+            className={`absolute bg-center bg-origin-border w-full h-full top-0 border-solid border-2 border-medium-grey rounded-xl ${handleBackgrounds()}`}
+          />
         </div>
       )}
     </div>
@@ -75,6 +86,7 @@ Step4.propTypes = {
   handleBackgrounds: PropTypes.func.isRequired,
   handleMouseOut: PropTypes.func.isRequired,
   handleMouseOver: PropTypes.func.isRequired,
+  background: PropTypes.string.isRequired,
 };
 
 export default Step4;
