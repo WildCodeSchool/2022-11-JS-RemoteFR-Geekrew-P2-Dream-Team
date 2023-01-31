@@ -4,7 +4,7 @@ import Staff from "../components/Staff";
 
 function Apropos() {
   return (
-    <div className="mx-5 z-10 flex flex-col md:justify-evenly md:mx-20">
+    <div className="mx-5 mb-10 md:mb-20 z-10 flex flex-col md:justify-evenly md:mx-20">
       <title className="flex justify-around items-end my-4 md:my-8">
         <h1 className="font-cinzel md:text-8xl text-4xl  text-white">Oniriq</h1>
         <h2 className="font-sans md:text-xl text-lg text-white ">

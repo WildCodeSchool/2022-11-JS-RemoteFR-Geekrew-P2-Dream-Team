@@ -15,7 +15,10 @@ function Navbar({ addToCart }) {
 
   return (
     <div className="z-50">
-      <nav className="w-full flex md:flex  items-center flex-nowrap justify-between md:flex-nowrap  md:bg-opacity-0 ">
+      <nav
+        id="top"
+        className="w-full flex md:flex  items-center flex-nowrap justify-between md:flex-nowrap  md:bg-opacity-0 "
+      >
         <div className="w-full flex flex-wrap justify-between md:items-center ">
           <Link to="/">
             <img src={logo} alt="logo" className="flex" />

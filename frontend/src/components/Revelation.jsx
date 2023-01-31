@@ -40,7 +40,7 @@ function Revelation({ type, emotion, loc, meteo, addToCart, setAddToCart }) {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mt-[83px]">
       {!isRevelated && (
         <button
           onClick={() => setIsRevelated(true)}
