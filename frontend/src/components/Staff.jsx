@@ -10,51 +10,59 @@ function Staff() {
         <div className="w-2/5">
           <img
             className="w-[100px] rounded-full "
-            src="./src/assets/images-staff/antoine.png"
+            src="./src/assets/avatars/Antoine_Avatar.png"
             alt=""
           />
           <h1 className="text-lg md:text-xl">ANTOINE</h1>
-          <p>Le listeur de rêves</p>
-          <p>antoine@dream.com</p>
+          <p>Le listeur de rêves.</p>
+          <p className="underline">antoine@dream.com</p>
         </div>
         <div className="w-2/5">
           <img
             className="w-[100px] h-[100px] rounded-full"
-            src="./src/assets/images-staff/cassandra.png"
+            src="./src/assets/avatars/Cassandra_Avatar.png"
             alt=""
           />
           <h1 className="text-lg md:text-xl">CASSANDRA</h1>
-          <p>Vous emmène dans les nuages ou les étoiles</p>
-          <p>cassandra@dream.com</p>
+          <p>
+            Vous emmène dans les nuages
+            <br className="hidden md:block" /> ou les étoiles.
+          </p>
+
+          <p className="underline">cassandra@dream.com</p>
         </div>
         <div className="w-2/5">
           <img
             className="w-[100px] h-[100px] rounded-full"
-            src="./src/assets/images-staff/iris.png"
+            src="./src/assets/avatars/Iris_Avatar.png"
             alt=""
           />
           <h1 className="text-lg md:text-xl">IRIS</h1>
-          <p>Passe à la caisse avec elle</p>
-          <p>iris@dream.com</p>
+          <p>Passe à la caisse avec elle.</p>
+          <p className="underline">iris@dream.com</p>
         </div>
         <div className="w-2/5">
           <img
             className="w-[100px] h-[100px] rounded-full"
-            src="./src/assets/images-staff/julien.png"
+            src="./src/assets/avatars/Julien_Avatar.png"
             alt=""
           />
           <h1 className="text-lg md:text-xl">JULIEN</h1>
-          <p>Si tu cherches un rêve tu trouvera grâce à lui</p>
-          <p>julien@dream.com</p>
+          <p>
+            Si tu cherches un rêve, <br className="hidden md:block" />
+            tu trouveras grâce à lui.
+          </p>
+          <p className="underline">julien@dream.com</p>
         </div>
         <div className="w-2/5">
           <img
             className="w-[100px] h-[100px] rounded-full"
-            src="./src/assets/images-staff/nassima.png"
+            src="./src/assets/avatars/Nassima_Avatar.png"
             alt=""
           />
           <h1 className="text-lg md:text-xl">NASSIMA</h1>
-          <p>Le back est dans ses données</p> <p>nassima@dream.com</p>
+          <p>Le back est dans ses données.</p>
+          <p className="underline">nassima@dream.com</p>
         </div>
       </div>
     </div>

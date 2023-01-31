@@ -39,7 +39,7 @@ function CardsList({ setAddToCart, addToCart }) {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center z-10">
+    <div className="mb-10 md:mb-20 flex flex-col justify-center z-10">
       <div className="z-10">
         <PopUpCard
           popUp={popUp}

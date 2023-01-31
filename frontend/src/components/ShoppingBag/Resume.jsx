@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import dreameez from "../../assets/icons/dreameez.svg";
 
-function Resume({ addToCart }) {
+function Resume({ addToCart, setAddToCart }) {
   const dreamSubTotal = addToCart.filter((dream) => dream.type === "reve");
   const dreamsQuantity = dreamSubTotal
     .map((elem) => elem.quantity)
@@ -70,6 +70,7 @@ function Resume({ addToCart }) {
               <button
                 type="button"
                 className="bg-light-yellow flex whitespace-nowrap w-full px-4 md:px-2 rounded-full my-4 py-2"
+                onClick={() => setAddToCart([])}
               >
                 Valider votre merveilleux paiement{" "}
               </button>
@@ -89,6 +90,7 @@ Resume.propTypes = {
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,
+  setAddToCart: PropTypes.func.isRequired,
 };
 
 export default Resume;

@@ -51,6 +51,7 @@ module.exports = {
       green: "#54A05C",
       red: "#FF4343",
       black: "#03030E",
+      footer: "#3C3E73",
     }),
     columns: {
       auto: "auto",

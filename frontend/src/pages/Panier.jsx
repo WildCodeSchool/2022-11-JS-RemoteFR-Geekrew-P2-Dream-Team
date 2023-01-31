@@ -13,7 +13,7 @@ function Panier({ addToCart, setAddToCart }) {
       </div>
       <div className="max-[768px]:w-full md:w-4/12 flex flex-col items-center justify-between md:justify-center">
         {addToCart.length > 0 ? (
-          <Resume addToCart={addToCart} />
+          <Resume addToCart={addToCart} setAddToCart={setAddToCart} />
         ) : (
           <div className="text-white flex justify-center p-5">
             Votre panier est vide, il est temps de commencer à rêver
