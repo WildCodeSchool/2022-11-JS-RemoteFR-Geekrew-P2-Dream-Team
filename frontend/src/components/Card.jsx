@@ -1,11 +1,10 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 function Card({ elem, handlePopUpOn }) {
   return (
     <button
       key={elem.id}
-      className="flex flex-col items-center md:items-start w-5/12 md:w-1/5 md:mx-2 md:h-1/3 rounded-xl my-2 md:my-4 py-2 max-w-w-max-card md:max-w-none "
+      className="flex flex-col items-center md:items-start w-5/12 md:w-1/5 md:mx-2 rounded-xl my-2 md:my-4 py-2 lg:max-w-[277px] lg:max-h-[350px] md:max-w-none "
       type="button"
       onClick={() => handlePopUpOn(elem.id)}
     >
@@ -14,9 +13,9 @@ function Card({ elem, handlePopUpOn }) {
         src={elem.url}
         alt={elem.description}
       />
-      <span className="hidden font-base font-medium md:flex">
-        {elem.description.length > 75
-          ? `${elem.description.substring(0, 70)} ...`
+      <span className="hidden font-base font-medium md:text-left md:pt-2 md:flex">
+        {elem.description.length > 65
+          ? `${elem.description.substring(0, 68)} ...`
           : elem.description}
       </span>
       <h4 className="hidden">{elem.type}</h4>
@@ -25,8 +24,8 @@ function Card({ elem, handlePopUpOn }) {
       <span className="hidden">{elem.meteo}</span>
       {elem.type === "reve" && (
         <span className="flex flex-row items-baseline text-white my-1">
-          <p className="font-medium text-xl mr-1">30 000 {"  "}</p>
-          <p className="font-normal text-xs"> {"  "}dreameez</p>
+          <p className="font-medium pt-2 text-xl mr-1">30 000 {"  "}</p>
+          <p className="font-normal pt-2 text-xs"> {"  "}dreameez</p>
         </span>
       )}
       {elem.type === "cauchemar" && (
@@ -40,8 +39,8 @@ function Card({ elem, handlePopUpOn }) {
 }
 
 Card.propTypes = {
-  elem: PropTypes.func.isRequired,
-  handlePopUpOn: PropTypes.shape().isRequired,
+  elem: PropTypes.shape().isRequired,
+  handlePopUpOn: PropTypes.func.isRequired,
 };
 
 export default Card;

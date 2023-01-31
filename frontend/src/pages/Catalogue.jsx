@@ -4,7 +4,7 @@ import CardsList from "../components/CardsList";
 
 function Catalogue({ addToCart, setAddToCart }) {
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center z-10">
       <CardsList setAddToCart={setAddToCart} addToCart={addToCart} />
     </div>
   );
@@ -13,8 +13,8 @@ function Catalogue({ addToCart, setAddToCart }) {
 Catalogue.propTypes = {
   addToCart: PropTypes.arrayOf(
     PropTypes.shape({
-      ID: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,

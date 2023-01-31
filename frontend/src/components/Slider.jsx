@@ -45,7 +45,7 @@ function Slider() {
   ];
   return (
     <>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Carousel
           responsive={responsive}
           arrows={false}
@@ -55,42 +55,42 @@ function Slider() {
         >
           {imgCarousel.map((slide) => (
             <div className="flex justify-center animate-pulse" key={slide.id}>
-              <img className="" src={slide.src} alt={slide.desc} />
+              <img src={slide.src} alt={slide.desc} />
             </div>
           ))}
         </Carousel>
       </div>
-      <div className="max-[768px]:hidden md:flex justify-evenly h-96">
+      <div className="max-[1024px]:hidden lg:flex justify-evenly h-96 z-50">
         <img
           className="object-none animate-move  relative top-3"
           src="./src/assets/images-carousel/img-carousel1.png"
-          alt=""
+          alt="Enchanted forest"
         />
         <img
           className="object-none animate-move "
           src="./src/assets/images-carousel/img-carousel2.png"
-          alt=""
+          alt="Frozen river"
         />
         <img
           className="object-none animate-move relative top-7 "
           src="./src/assets/images-carousel/img-carousel3.png"
-          alt=""
+          alt="Mountain lac"
         />
         <img
           className="object-none animate-move relative "
           src="./src/assets/images-carousel/img-carousel4.png"
-          alt=""
+          alt="Ocean and bridge"
         />
         <img
           className="object-none animate-move relative top-4"
           src="./src/assets/images-carousel/img-carousel5.png"
-          alt=""
+          alt="Ocean and sand"
         />
         <img
-          className="object-none animate-move relative top-2
+          className="object-none max-[1280px]:hidden animate-move relative top-2
           "
           src="./src/assets/images-carousel/img-carousel6.png"
-          alt=""
+          alt="Cloud in the sky"
         />
       </div>
     </>

@@ -7,12 +7,19 @@
   * {
     @apply box-border;
   }
+
   html,
   body,
   #root {
-    @apply h-full;
+    @apply h-screen w-screen;
   }
-  body {
-    @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m;
+  main {
+    @apply bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m overflow-auto h-full flex flex-col;
+    @apply cursor-default;
+  }
+
+  a,
+  button {
+    @apply cursor-pointer;
   }
 }

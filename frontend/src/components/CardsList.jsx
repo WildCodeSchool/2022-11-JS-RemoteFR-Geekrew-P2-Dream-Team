@@ -1,7 +1,6 @@
-import { React, useState } from "react";
-
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import data from "../../csvjson.json";
+import axios from "axios";
 import SearchBar from "./SearchBar";
 import TypePicker from "./TypePicker";
 import PopUpCard from "./PopUpCard";
@@ -16,11 +15,12 @@ function CardsList({ setAddToCart, addToCart }) {
   const [selectedEmotion, setSelectedEmotion] = useState("");
   const [selectedWeather, setSelectedWeather] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
-  const [popUp, setPopUp] = useState(data);
+  const [popUp, setPopUp] = useState([]);
+  const [data, setData] = useState([]);
 
   const handlePopUpOn = (id) => {
     setPopUp(
-      popUp.filter((card) => {
+      data.filter((card) => {
         if (card.id === id) return card;
         return null;
       })
@@ -28,12 +28,19 @@ function CardsList({ setAddToCart, addToCart }) {
   };
 
   function handlePopUpOff() {
-    setPopUp(data);
+    setPopUp([]);
   }
 
+  useEffect(() => {
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/dreams`).then((res) => {
+      setData(res.data);
+      setPopUp(res.data.map((elem) => ({ ...elem, quantity: 0 })));
+    });
+  }, []);
+
   return (
-    <div className="flex flex-col justify-center bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m ">
-      <div>
+    <div className="flex flex-col justify-center z-10">
+      <div className="z-10">
         <PopUpCard
           popUp={popUp}
           onClose={() => handlePopUpOff()}
@@ -41,13 +48,13 @@ function CardsList({ setAddToCart, addToCart }) {
           setAddToCart={setAddToCart}
         />
       </div>
-      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly bg-gradient-to-b from-gradient-blue-d to-gradient-blue-m md:px-6">
-        <div className="md:flex-row   flex flex-col  items-center justify-between flex-nowrap w-full">
-          <div className="">
+      <div className="font-sans text-white flex flex-row flex-wrap w-full justify-evenly">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-around flex-nowrap w-full md:w-10/12 xl:w-11/12">
+          <div className="mb-2">
             <SearchBar search={search} setSearch={setSearch} />
           </div>
 
-          <div className="flex w-full justify-evenly md:w-4/5 ">
+          <div className="flex w-full justify-evenly">
             <TypePicker
               setSelectedValue={setSelectedValue}
               selectedValue={selectedValue}
@@ -94,7 +101,13 @@ function CardsList({ setAddToCart, addToCart }) {
             )
 
             .map((elem) => {
-              return <Card handlePopUpOn={handlePopUpOn} elem={elem} />;
+              return (
+                <Card
+                  handlePopUpOn={handlePopUpOn}
+                  elem={elem}
+                  key={elem.id + 1}
+                />
+              );
             })
         )}
       </div>
@@ -104,8 +117,8 @@ function CardsList({ setAddToCart, addToCart }) {
 CardsList.propTypes = {
   addToCart: PropTypes.arrayOf(
     PropTypes.shape({
-      ID: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
       quantity: PropTypes.number.isRequired,
     })
   ).isRequired,
