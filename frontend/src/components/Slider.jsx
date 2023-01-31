@@ -1,6 +1,11 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import Carousel1 from "../assets/images-carousel/img-carousel1.png";
+import Carousel2 from "../assets/images-carousel/img-carousel2.png";
+import Carousel3 from "../assets/images-carousel/img-carousel3.png";
+import Carousel4 from "../assets/images-carousel/img-carousel4.png";
+import Carousel5 from "../assets/images-carousel/img-carousel5.png";
+import Carousel6 from "../assets/images-carousel/img-carousel6.png";
 
 function Slider() {
   const responsive = {
@@ -20,27 +25,27 @@ function Slider() {
   const imgCarousel = [
     {
       id: 1,
-      src: "./src/assets/images-carousel/img-carousel1.png",
+      src: { Carousel1 },
     },
     {
       id: 2,
-      src: "./src/assets/images-carousel/img-carousel2.png",
+      src: { Carousel2 },
     },
     {
       id: 3,
-      src: "./src/assets/images-carousel/img-carousel3.png",
+      src: { Carousel3 },
     },
     {
       id: 4,
-      src: "./src/assets/images-carousel/img-carousel4.png",
+      src: { Carousel4 },
     },
     {
       id: 5,
-      src: "./src/assets/images-carousel/img-carousel5.png",
+      src: { Carousel5 },
     },
     {
       id: 6,
-      src: "./src/assets/images-carousel/img-carousel6.png",
+      src: { Carousel6 },
     },
   ];
   return (
@@ -63,33 +68,33 @@ function Slider() {
       <div className="max-[1024px]:hidden lg:flex justify-evenly h-96 z-50">
         <img
           className="object-none animate-move  relative top-3"
-          src="./src/assets/images-carousel/img-carousel1.png"
+          src={Carousel1}
           alt="Enchanted forest"
         />
         <img
           className="object-none animate-move "
-          src="./src/assets/images-carousel/img-carousel2.png"
+          src={Carousel2}
           alt="Frozen river"
         />
         <img
           className="object-none animate-move relative top-7 "
-          src="./src/assets/images-carousel/img-carousel3.png"
+          src={Carousel3}
           alt="Mountain lac"
         />
         <img
           className="object-none animate-move relative "
-          src="./src/assets/images-carousel/img-carousel4.png"
+          src={Carousel4}
           alt="Ocean and bridge"
         />
         <img
           className="object-none animate-move relative top-4"
-          src="./src/assets/images-carousel/img-carousel5.png"
+          src={Carousel5}
           alt="Ocean and sand"
         />
         <img
           className="object-none max-[1280px]:hidden animate-move relative top-2
           "
-          src="./src/assets/images-carousel/img-carousel6.png"
+          src={Carousel6}
           alt="Cloud in the sky"
         />
       </div>

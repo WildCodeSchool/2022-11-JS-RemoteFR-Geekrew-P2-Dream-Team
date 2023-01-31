@@ -169,7 +169,7 @@ module.exports = {
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl":
         "linear-gradient(to top left, var(--tw-gradient-stops))",
-      "noise-pattern": "url('./assets/noise.png')",
+      "noise-pattern": "url('./assets/Noise1.svg')",
       "scrolCloud ": "url('./assets/Cloud/cloud.svg')",
       "reve-exp": "url('./assets/imgExperience/reve.jpg')",
       "cauchemar-exp": "url('./assets/imgExperience/cauchemar.jpg')",
