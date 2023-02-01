@@ -24,12 +24,12 @@ function Step4({
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 className="text-white font-cinzel text-2xl mb-10 pl-5 md:pl-0">
+      <h1 className="text-white font-cinzel text-xl mt-10 pl-5 md:pl-0">
         Choisissez votre type de météo
       </h1>
       {type === "reve" ? (
         <div
-          className={`z-10 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
+          className={`mt-3 z-10 bg-noise-pattern flex flex-col justify-center items-center border-solid border-2 border-medium-grey rounded-xl h-[32rem] w-[20rem] md:w-[40rem] ${handleBackgrounds()}`}
           onMouseOut={handleMouseOut}
           onBlur={() => handleMouseOut}
         >
